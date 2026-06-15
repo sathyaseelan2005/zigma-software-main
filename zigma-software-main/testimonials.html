@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en" style="">
+
+<head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Testimonials | Zigma Software</title>
+        <script src="assets/js/tailwind.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Poppins:wght@600;700&amp;display=swap"
+                rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet">
+        <style>
+                .material-symbols-outlined {
+                        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+                }
+
+                .text-shadow-sm {
+                        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                }
+
+                .wave-divider {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        overflow: hidden;
+                        line-height: 0;
+                        transform: rotate(180deg);
+                }
+
+                .wave-divider svg {
+                        position: relative;
+                        display: block;
+                        width: calc(100% + 1.3px);
+                        height: 60px;
+                }
+
+                .wave-divider .shape-fill {
+                        fill: #f9f9ff;
+                        /* background color */
+                }
+        </style>
+        <script id="tailwind-config">
+                tailwind.config = {
+                        "darkMode": "class",
+                        "theme": {
+                                "extend": {
+                                        "colors": {
+                                                "on-primary-fixed": "#001d35",
+                                                "primary-fixed": "#d0e4ff",
+                                                "tertiary-fixed-dim": "#e9c349",
+                                                "on-tertiary-fixed": "#241a00",
+                                                "tertiary": "#735c00",
+                                                "surface-container-highest": "#d8e3fb",
+                                                "on-error": "#ffffff",
+                                                "on-error-container": "#93000a",
+                                                "surface-dim": "#cfdaf2",
+                                                "outline-variant": "#c0c7d2",
+                                                "on-secondary-fixed": "#410005",
+                                                "inverse-surface": "#263143",
+                                                "secondary-container": "#db3238",
+                                                "on-background": "#111c2d",
+                                                "on-surface-variant": "#404751",
+                                                "surface-container-high": "#dee8ff",
+                                                "secondary": "#b71323",
+                                                "surface-container-low": "#f0f3ff",
+                                                "surface-bright": "#f9f9ff",
+                                                "inverse-on-surface": "#ecf1ff",
+                                                "tertiary-fixed": "#ffe088",
+                                                "secondary-fixed-dim": "#ffb3ae",
+                                                "surface-container-lowest": "#ffffff",
+                                                "on-primary-container": "#e6f0ff",
+                                                "on-primary": "#ffffff",
+                                                "background": "#f9f9ff",
+                                                "surface-variant": "#d8e3fb",
+                                                "on-tertiary-container": "#4e3d00",
+                                                "on-surface": "#111c2d",
+                                                "error": "#ba1a1a",
+                                                "on-secondary": "#ffffff",
+                                                "surface-tint": "#0062a1",
+                                                "secondary-fixed": "#ffdad7",
+                                                "on-primary-fixed-variant": "#00497b",
+                                                "primary-fixed-dim": "#9ccaff",
+                                                "primary-container": "#0670b7",
+                                                "outline": "#717882",
+                                                "primary": "#005791",
+                                                "tertiary-container": "#cca72f",
+                                                "error-container": "#ffdad6",
+                                                "surface-container": "#e7eeff",
+                                                "on-tertiary-fixed-variant": "#574500",
+                                                "on-tertiary": "#ffffff",
+                                                "inverse-primary": "#9ccaff",
+                                                "surface": "#f9f9ff",
+                                                "on-secondary-fixed-variant": "#930016",
+                                                "on-secondary-container": "#fffbff"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "0.25rem",
+                                                "xl": "0.5rem",
+                                                "full": "0.75rem",
+                                                "card": "20px"
+                                        },
+                                        "spacing": {
+
+                                                "gutter": "24px",
+
+                                                "margin-desktop": "64px",
+
+                                                "margin-mobile": "16px",
+
+                                                "base": "8px",
+
+                                                "container-max": "1280px",
+
+                                                "container-margin-desktop": "40px",
+
+                                                "container-margin-mobile": "16px",
+
+                                                "xs": "4px",
+
+                                                "sm": "12px",
+
+                                                "md": "16px",
+
+                                                "lg": "24px",
+
+                                                "xl": "32px"
+
+                                        },
+                                        "fontFamily": {
+                                                "poppins": [
+                                                        "Poppins",
+                                                        "sans-serif"
+                                                ],
+                                                "headline-md": [
+                                                        "Poppins",
+                                                        "sans-serif"
+                                                ],
+                                                "label-md": [
+                                                        "Inter",
+                                                        "sans-serif"
+                                                ],
+                                                "title-lg": [
+                                                        "Poppins",
+                                                        "sans-serif"
+                                                ],
+                                                "body-md": [
+                                                        "Inter",
+                                                        "sans-serif"
+                                                ],
+                                                "headline-lg": [
+                                                        "Poppins",
+                                                        "sans-serif"
+                                                ],
+                                                "label-sm": [
+                                                        "Inter",
+                                                        "sans-serif"
+                                                ],
+                                                "display-lg": [
+                                                        "Poppins",
+                                                        "sans-serif"
+                                                ],
+                                                "body-lg": [
+                                                        "Inter",
+                                                        "sans-serif"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "headline-md": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "32px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "label-md": [
+                                                        "14px",
+                                                        {
+                                                                "lineHeight": "20px",
+                                                                "letterSpacing": "0.01em",
+                                                                "fontWeight": "500"
+                                                        }
+                                                ],
+                                                "title-lg": [
+                                                        "20px",
+                                                        {
+                                                                "lineHeight": "28px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "body-md": [
+                                                        "16px",
+                                                        {
+                                                                "lineHeight": "24px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "headline-lg": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "40px",
+                                                                "letterSpacing": "-0.01em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "label-sm": [
+                                                        "12px",
+                                                        {
+                                                                "lineHeight": "16px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "display-lg": [
+                                                        "48px",
+                                                        {
+                                                                "lineHeight": "56px",
+                                                                "letterSpacing": "-0.02em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "28px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ]
+                                        }
+                                }
+                        }
+                }
+        </script>
+</head>
+
+<body class="bg-surface font-body-md text-on-surface">
+        <div id="header-placeholder"></div>
+
+        <!-- 3. Hero Banner -->
+        <section
+                class="relative h-[340px] md:h-[420px] flex flex-col items-center justify-center text-center overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                        <img class="w-full h-full object-cover object-center" src="assets/images/img%203.jpg"
+                                alt="Testimonials Hero">
+                        <div
+                                class="absolute inset-0 bg-gradient-to-r from-[#001d35]/80 via-[#001d35]/30 to-[#001d35]/80">
+                        </div>
+                </div>
+                <div class="relative z-10 text-white">
+                        <h1 class="font-display-lg text-display-lg mb-sm text-shadow-sm">Testimonials</h1>
+                        <p class="font-label-md opacity-90"><a href="index.html" class="hover:underline">Home</a> <span
+                                        class="mx-xs">&gt;</span> Testimonials</p>
+                </div>
+        </section>
+        <!-- 4. Testimonials Section -->
+        <section class="py-xl bg-[#F8FAFC]">
+                <div class="max-w-7xl mx-auto px-container-margin-desktop">
+                        <div class="text-center mb-xl fade-up">
+                                <h2 class="font-headline-lg text-headline-lg text-on-surface mb-xs"
+                                        style="font-family: Poppins, sans-serif;">CLIENT TESTIMONIALS</h2>
+                                <div class="w-20 h-1 bg-secondary mx-auto mb-md"></div>
+                                <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">See what our clients
+                                        say about working with Zigma Software.</p>
+                        </div>
+                        <!-- Bento-style Asymmetric Grid for Testimonials -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+                                <!-- Card 1: Red Accent -->
+                                <div
+                                        class="fade-up bg-white rounded-card border border-outline-variant p-lg shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative group flex flex-col justify-between h-full overflow-hidden">
+                                        <div
+                                                class="absolute left-0 top-0 bottom-0 w-1 bg-secondary group-hover:w-2 transition-all">
+                                        </div>
+                                        <div>
+                                                <div
+                                                        class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-lg testimonial-avatar">
+                                                        <span class="material-symbols-outlined text-secondary"
+                                                                data-icon="format_quote"
+                                                                data-weight="fill">format_quote</span>
+                                                </div>
+                                                <p class="text-on-surface-variant italic mb-xl relative z-10">
+                                                        "Amazing company, very nice person and in fact whole team. Very
+                                                        wide experience in helping MSMEs.<br>Best place for any
+                                                        following services;<br>Billing and Accounting
+                                                        Software<br>Inventory Software<br>Complete GST
+                                                        Software<br>Customized Software for any specific
+                                                        requirements.<br>Amazing service!"
+                                                </p>
+                                        </div>
+                                        <div class="flex items-center gap-md">
+
+                                                <div>
+                                                        <h4 class="font-headline-md text-title-lg text-primary"
+                                                                style="font-family: Poppins, sans-serif;">Lavkush Shukla
+                                                        </h4>
+                                                        <p
+                                                                class="text-[11px] font-bold text-outline tracking-wider uppercase">
+                                                                Client</p>
+                                                </div>
+                                        </div>
+                                        <span class="material-symbols-outlined absolute bottom-4 right-4 text-surface-container-highest text-[80px] opacity-20 pointer-events-none"
+                                                data-icon="format_quote">format_quote</span>
+                                </div>
+                                <!-- Card 2: Blue Accent -->
+                                <div
+                                        class="fade-up bg-white rounded-card border border-outline-variant p-lg shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative group flex flex-col justify-between h-full overflow-hidden">
+                                        <div
+                                                class="absolute left-0 top-0 bottom-0 w-1 bg-primary group-hover:w-2 transition-all">
+                                        </div>
+                                        <div>
+                                                <div
+                                                        class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-lg testimonial-avatar">
+                                                        <span class="material-symbols-outlined text-primary"
+                                                                data-icon="format_quote"
+                                                                data-weight="fill">format_quote</span>
+                                                </div>
+                                                <p class="text-on-surface-variant italic mb-xl relative z-10">
+                                                        "Very wonderful software with excellent reports. The service
+                                                        they provided was awesome. Timely response for their team. They
+                                                        customized the software which suits to our industry 😊"
+                                                </p>
+                                        </div>
+                                        <div class="flex items-center gap-md">
+
+                                                <div>
+                                                        <h4 class="font-headline-md text-title-lg text-primary"
+                                                                style="font-family: Poppins, sans-serif;">Sarath Kumar
+                                                        </h4>
+                                                        <p
+                                                                class="text-[11px] font-bold text-outline tracking-wider uppercase">
+                                                                Client</p>
+                                                </div>
+                                        </div>
+
+                                        <span class="material-symbols-outlined absolute bottom-4 right-4 text-surface-container-highest text-[80px] opacity-20 pointer-events-none"
+                                                data-icon="format_quote">format_quote</span>
+                                </div>
+                                <!-- Card 3: Red Accent -->
+                                <div
+                                        class="fade-up bg-white rounded-card border border-outline-variant p-lg shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative group flex flex-col justify-between h-full overflow-hidden">
+                                        <div
+                                                class="absolute left-0 top-0 bottom-0 w-1 bg-secondary group-hover:w-2 transition-all">
+                                        </div>
+                                        <div>
+                                                <div
+                                                        class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-lg testimonial-avatar">
+                                                        <span class="material-symbols-outlined text-secondary"
+                                                                data-icon="format_quote"
+                                                                data-weight="fill">format_quote</span>
+                                                </div>
+                                                <p class="text-on-surface-variant italic mb-xl relative z-10">
+                                                        "Having best software tool for company, I suggest everyone to
+                                                        use their busy software for their office."
+                                                </p>
+                                        </div>
+                                        <div class="flex items-center gap-md">
+
+                                                <div>
+                                                        <h4 class="font-headline-md text-title-lg text-primary"
+                                                                style="font-family: Poppins, sans-serif;">sudhakar
+                                                                senthil</h4>
+                                                        <p
+                                                                class="text-[11px] font-bold text-outline tracking-wider uppercase">
+                                                                Client</p>
+                                                </div>
+                                        </div>
+                                        <span class="material-symbols-outlined absolute bottom-4 right-4 text-surface-container-highest text-[80px] opacity-20 pointer-events-none"
+                                                data-icon="format_quote">format_quote</span>
+                                </div>
+                                <!-- Card 4: Blue Accent (Spans 2 on MD) -->
+                                <div
+                                        class="fade-up md:col-span-2 bg-white rounded-card border border-outline-variant p-lg shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative group flex flex-col md:flex-row gap-lg justify-between items-center overflow-hidden">
+                                        <div
+                                                class="absolute left-0 top-0 bottom-0 w-1 bg-primary group-hover:w-2 transition-all">
+                                        </div>
+                                        <div class="flex-1">
+                                                <div
+                                                        class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-md testimonial-avatar">
+                                                        <span class="material-symbols-outlined text-primary"
+                                                                data-icon="format_quote"
+                                                                data-weight="fill">format_quote</span>
+                                                </div>
+                                                <p
+                                                        class="text-on-surface-variant italic text-lg leading-relaxed relative z-10">
+                                                        "Zigma Software has been working very well to take our business
+                                                        development to the next level by providing the software and
+                                                        training necessary for business advancement and has been
+                                                        providing us with great help. They have been working with
+                                                        experienced experts in this field for a long time."
+                                                </p>
+                                        </div>
+                                        <div class="flex flex-col items-center text-center min-w-[180px]">
+
+                                                <h4 class="font-headline-md text-headline-md text-primary"
+                                                        style="font-family: Poppins, sans-serif;">SELVAM K</h4>
+                                                <p class="text-[11px] font-bold text-outline tracking-wider uppercase">
+                                                        Client</p>
+                                        </div>
+                                        <span class="material-symbols-outlined absolute top-4 right-4 text-surface-container-highest text-[120px] opacity-10 pointer-events-none"
+                                                data-icon="format_quote">format_quote</span>
+                                </div>
+
+                        </div>
+                </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-[#001e2d] pt-20 pb-8 text-on-tertiary">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-margin-desktop max-w-container-max mx-auto mb-20">
+                        <div class="space-y-8">
+                                <a href="index.html" class="inline-block"><img src="assets/images/logo.png"
+                                                alt="Zigma Software Logo" class="h-14 w-auto"></a>
+                                <p class="text-surface-variant/70 text-lg leading-relaxed font-medium">
+                                        Zigma Software, Erode is a trusted digital solutions company delivering web,
+                                        mobile app, and software solutions to grow your business.
+                                </p>
+
+                        </div>
+                        <div>
+                                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Get In
+                                        Touch</h4>
+                                <ul class="space-y-6 text-surface-variant/80 font-medium">
+                                        <li class="flex gap-4">
+                                                <span
+                                                        class="material-symbols-outlined text-secondary shrink-0">location_on</span>
+                                                <span class="">Door No: 4/1c.12-A, Annamalai Gounder Layout, 1st Floor,
+                                                        Near Hotel Vignesh, Mettur Road, Erode. Tamil Nadu, India</span>
+                                        </li>
+                                        <li class="flex gap-4">
+                                                <span
+                                                        class="material-symbols-outlined text-secondary shrink-0">phone</span>
+                                                <span class="">+91-9942364454, 9791902386</span>
+                                        </li>
+                                        <li class="flex gap-4">
+                                                <span
+                                                        class="material-symbols-outlined text-secondary shrink-0">mail</span>
+                                                <span class="">info@zigmasoftware.in</span>
+                                        </li>
+                                </ul>
+                        </div>
+                        <div>
+                                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">
+                                        Important Links</h4>
+                                <ul class="space-y-4 font-medium">
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="about.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        About Us</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="products.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Products</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="web-development.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Services</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="blog.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Blogs</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="contact.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Contact Us</a></li>
+                                </ul>
+                        </div>
+                        <div>
+                                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Our
+                                        Services</h4>
+                                <ul class="space-y-4 font-medium">
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="software-support.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Business Analytics</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="mobile-development.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Mobile App Dev</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="software-support.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        HRMS &amp; Payroll</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="social-marketing.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Social Media Marketing</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="web-development.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Web Hosting</a></li>
+                                </ul>
+                        </div>
+                </div>
+                <div
+                        class="border-t border-white/5 pt-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-surface-variant/50 text-sm font-medium">
+                        <p class="">© 2026 Zigma Software. All Rights Reserved.</p>
+                        <div class="flex gap-8">
+                                <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                                <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                                <a class="hover:text-white transition-colors" href="#">Cookie Policy</a>
+                        </div>
+                </div>
+        </footer>
+        <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                        const testimonialCards = document.querySelectorAll('.rounded-card');
+                        testimonialCards.forEach(card => {
+                                const avatarCircle = card.querySelector('.testimonial-avatar');
+                                const nameHeader = card.querySelector('h4');
+                                if (avatarCircle && nameHeader) {
+                                        const name = nameHeader.textContent.trim();
+                                        const nameParts = name.split(/\s+/).filter(Boolean);
+                                        let initials = "";
+                                        if (nameParts.length > 0) {
+                                                const firstInitial = nameParts[0][0];
+                                                const lastInitial = nameParts.length > 1 ? nameParts[nameParts.length - 1][0] : "";
+                                                initials = (firstInitial + lastInitial).toUpperCase();
+                                        }
+                                        if (initials) {
+                                                const quoteIcon = avatarCircle.querySelector('.material-symbols-outlined');
+                                                let colorClass = 'text-primary';
+                                                if (quoteIcon) {
+                                                        if (quoteIcon.classList.contains('text-secondary')) {
+                                                                colorClass = 'text-secondary';
+                                                        } else if (quoteIcon.classList.contains('text-primary')) {
+                                                                colorClass = 'text-primary';
+                                                        }
+                                                }
+                                                avatarCircle.innerHTML = `<span class="font-poppins font-bold text-lg tracking-wider ${colorClass}">${initials}</span>`;
+                                        }
+                                }
+                        });
+                });
+
+                const observerOptions = { threshold: 0.1 };
+                const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                                }
+                        });
+                }, observerOptions);
+
+                document.querySelectorAll('section > div').forEach(el => {
+                        el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                        observer.observe(el);
+                });
+        </script>
+
+
+        <script src="assets/js/nav.js"></script>
+</body>
+
+</html>

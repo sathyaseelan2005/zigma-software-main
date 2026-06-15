@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Web Design &amp; Development | Zigma Software</title>
+    <script src="assets/js/tailwind.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Poppins:wght@400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-gradient-overlay {
+            background: linear-gradient(135deg, rgba(0, 87, 145, 0.92) 0%, rgba(18, 28, 45, 0.85) 100%);
+        }
+
+        .btn-gradient {
+            background: linear-gradient(90deg, #005791 0%, #b71323 100%);
+            transition: all 0.3s ease;
+        }
+
+        .btn-gradient:hover {
+            filter: brightness(1.1);
+            box-shadow: 0 4px 15px rgba(183, 19, 35, 0.3);
+        }
+
+        .wave-divider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .wave-divider svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 60px;
+        }
+
+        .wave-divider .shape-fill {
+            fill: #f9f9ff;
+        }
+
+        .text-shadow-sm {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#001d35",
+                        "background": "#f9f9ff",
+                        "surface-container": "#e7eeff",
+                        "on-tertiary-fixed": "#241a00",
+                        "primary-container": "#0670b7",
+                        "outline-variant": "#c0c7d2",
+                        "surface": "#f9f9ff",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#930016",
+                        "inverse-on-surface": "#ecf1ff",
+                        "on-surface-variant": "#404751",
+                        "secondary": "#b71323",
+                        "outline": "#717882",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "secondary-fixed": "#ffdad7",
+                        "on-primary-container": "#e6f0ff",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "primary": "#005791",
+                        "secondary-fixed-dim": "#ffb3ae",
+                        "on-background": "#111c2d",
+                        "tertiary": "#735c00",
+                        "inverse-primary": "#9ccaff",
+                        "primary-fixed": "#d0e4ff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#cca72f",
+                        "on-secondary-container": "#fffbff",
+                        "on-primary-fixed-variant": "#00497b",
+                        "surface-variant": "#d8e3fb",
+                        "on-surface": "#111c2d",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#dee8ff",
+                        "surface-tint": "#0062a1",
+                        "primary-fixed-dim": "#9ccaff",
+                        "on-tertiary-container": "#4e3d00",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f9f9ff",
+                        "surface-container-highest": "#d8e3fb",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#410005",
+                        "tertiary-fixed": "#ffe088",
+                        "surface-dim": "#cfdaf2",
+                        "secondary-container": "#db3238",
+                        "surface-container-low": "#f0f3ff",
+                        "inverse-surface": "#263143"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem",
+                        "20px": "20px"
+                    },
+                    "spacing": {
+
+                        "gutter": "24px",
+
+                        "margin-desktop": "64px",
+
+                        "margin-mobile": "16px",
+
+                        "base": "8px",
+
+                        "container-max": "1280px",
+
+                        "container-margin-desktop": "40px",
+
+                        "container-margin-mobile": "16px",
+
+                        "xs": "4px",
+
+                        "sm": "12px",
+
+                        "md": "16px",
+
+                        "lg": "24px",
+
+                        "xl": "32px"
+
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Hanken Grotesk"],
+                        "title-lg": ["Hanken Grotesk"],
+                        "label-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface font-inter">
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Banner -->
+    <section
+        class="relative h-[340px] md:h-[420px] flex flex-col items-center justify-center text-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover object-center" src="assets/images/img%203.jpg"
+                alt="Web Development Hero">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#001d35]/80 via-[#001d35]/30 to-[#001d35]/80"></div>
+        </div>
+        <div class="relative z-10 text-white">
+            <h1 class="font-display-lg text-display-lg mb-sm text-shadow-sm">Web Design &amp; Development</h1>
+            <p class="font-label-md opacity-90"><a href="index.html" class="hover:underline">Home</a> <span
+                    class="mx-xs">&gt;</span> Services <span class="mx-xs">&gt;</span> Web Development</p>
+        </div>
+    </section>
+    <!-- Introduction Section -->
+    <section class="py-xl bg-background">
+        <div class="max-w-[1280px] mx-auto px-container-margin-desktop text-center">
+            <h2
+                class="text-secondary font-bold tracking-[0.2em] text-[32px] md:text-[40px] uppercase mb-base block fade-up">
+                Crafting Excellence</h2>
+            <p class="font-poppins text-on-background text-label-lg font-bold mb-lg fade-up delay-100">
+                Precision-Engineered Digital Experiences</p>
+            <p class="text-on-surface-variant text-body-lg max-w-[900px] mx-auto leading-relaxed fade-up delay-200">
+                At Zigma Software, we don't just build websites; we engineer digital growth engines. Our approach
+                combines avant-garde creative direction with robust technical frameworks to ensure your brand stands out
+                in a saturated market while delivering peak performance at every click.
+            </p>
+        </div>
+    </section>
+    <!-- Why Choose Us Grid -->
+    <section class="py-xl bg-background">
+        <div class="max-w-[1280px] mx-auto px-container-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+                <!-- Card 1 -->
+                <div
+                    class="group bg-white p-lg rounded-20px shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 fade-up">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-white">palette</span>
+                    </div>
+                    <h3 class="font-poppins text-title-lg font-bold mb-sm">Creative &amp; Modern Designs</h3>
+                    <p class="text-on-surface-variant text-body-md">Sleek aesthetics that align with your brand identity
+                        and captivate your audience from the first second.</p>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="group bg-white p-lg rounded-20px shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 fade-up delay-100">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-white">devices</span>
+                    </div>
+                    <h3 class="font-poppins text-title-lg font-bold mb-sm">Responsive Development</h3>
+                    <p class="text-on-surface-variant text-body-md">Flawless performance across all devices, from mobile
+                        phones to high-resolution desktop monitors.</p>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="group bg-white p-lg rounded-20px shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 fade-up delay-200">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-white">search</span>
+                    </div>
+                    <h3 class="font-poppins text-title-lg font-bold mb-sm">SEO-Friendly Structure</h3>
+                    <p class="text-on-surface-variant text-body-md">Engineered with search engine algorithms in mind to
+                        ensure your business ranks where it belongs.</p>
+                </div>
+                <!-- Card 4 -->
+                <div
+                    class="group bg-white p-lg rounded-20px shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 fade-up">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-white">bolt</span>
+                    </div>
+                    <h3 class="font-poppins text-title-lg font-bold mb-sm">Fast Loading Speed</h3>
+                    <p class="text-on-surface-variant text-body-md">Optimized performance metrics that reduce bounce
+                        rates and improve user retention significantly.</p>
+                </div>
+                <!-- Card 5 -->
+                <div
+                    class="group bg-white p-lg rounded-20px shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 fade-up delay-100">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-white">payments</span>
+                    </div>
+                    <h3 class="font-poppins text-title-lg font-bold mb-sm">Affordable Pricing</h3>
+                    <p class="text-on-surface-variant text-body-md">Premium quality at competitive rates, designed to
+                        provide the highest ROI for your investment.</p>
+                </div>
+                <!-- Card 6 -->
+                <div
+                    class="group bg-white p-lg rounded-20px shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 fade-up delay-200">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-white">support_agent</span>
+                    </div>
+                    <h3 class="font-poppins text-title-lg font-bold mb-sm">Dedicated Support</h3>
+                    <p class="text-on-surface-variant text-body-md">Around-the-clock maintenance and support to keep
+                        your digital storefront running smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Website Development Section (Image Right) -->
+    <section class="py-[100px] bg-white overflow-hidden">
+        <div
+            class="max-w-[1280px] mx-auto px-container-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-[80px] items-center">
+            <div class="fade-up">
+                <h2 class="font-poppins text-[36px] font-bold text-on-surface mb-lg">End-to-End Development Lifecycle
+                </h2>
+                <p class="text-on-surface-variant text-body-lg mb-xl">Our development process is rooted in agile
+                    methodologies, ensuring transparent communication and rapid deployment without compromising on
+                    security or scalability.</p>
+                <ul class="space-y-md">
+                    <li class="flex items-center gap-md">
+                        <div class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-primary text-[18px]"
+                                style="font-variation-settings: 'wght' 700;">check</span>
+                        </div>
+                        <span class="font-medium text-on-surface">Custom CMS Integration</span>
+                    </li>
+                    <li class="flex items-center gap-md">
+                        <div class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-primary text-[18px]"
+                                style="font-variation-settings: 'wght' 700;">check</span>
+                        </div>
+                        <span class="font-medium text-on-surface">API &amp; Third-party Integrations</span>
+                    </li>
+                    <li class="flex items-center gap-md">
+                        <div class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-primary text-[18px]"
+                                style="font-variation-settings: 'wght' 700;">check</span>
+                        </div>
+                        <span class="font-medium text-on-surface">Advanced Data Encryption</span>
+                    </li>
+                </ul>
+                <button
+                    class="mt-xl border-2 border-primary text-primary font-bold px-xl py-md rounded-lg hover:bg-primary hover:text-white transition-all">Explore
+                    Technologies</button>
+            </div>
+            <div class="relative fade-up delay-200">
+                <div class="absolute -inset-4 bg-primary/5 rounded-[40px] -rotate-3"></div>
+                <img class="relative w-full rounded-20px shadow-2xl hover:scale-[1.02] transition-transform duration-500"
+                    data-alt="A top-down view of a modern workstation with a sleek laptop displaying clean, organized code. Surrounding the laptop are minimalist design sketches on high-quality paper, a digital tablet with a stylus, and a steaming cup of coffee. The environment is bathed in bright, natural morning light, creating a professional and creative atmosphere with a clean, light-mode aesthetic dominated by whites and soft grays."
+                    src="assets/images/analytics_dashboard.png" />
+            </div>
+        </div>
+    </section>
+    <!-- Services We Provide (Image Left) -->
+    <section class="py-[100px] bg-background">
+        <div
+            class="max-w-[1280px] mx-auto px-container-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-[80px] items-center">
+            <div class="order-2 lg:order-1 relative fade-up">
+                <div class="absolute -inset-4 bg-secondary/5 rounded-[40px] rotate-3"></div>
+                <img class="relative w-full rounded-20px shadow-2xl hover:scale-[1.02] transition-transform duration-500"
+                    data-alt="A bright, collaborative studio workspace where professional developers and designers are engaged in a planning session around a large touchscreen display. The display shows a colorful user interface layout. The room is modern with large windows, minimalist furniture, and a sophisticated vibe. The lighting is high-key and optimistic, reflecting a culture of innovation and precision. The overall aesthetic is clean, luxurious, and highly professional."
+                    src="assets/images/office_collaboration.png" />
+            </div>
+            <div class="order-1 lg:order-2 fade-up delay-200">
+                <h2 class="font-poppins text-[36px] font-bold text-on-surface mb-lg">Diverse Service Portfolio</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-y-base gap-x-lg">
+                    <div class="flex items-center gap-md py-sm border-b border-outline-variant">
+                        <span class="material-symbols-outlined text-primary animate-pulse">check_circle</span>
+                        <span class="font-medium">Website Design</span>
+                    </div>
+                    <div class="flex items-center gap-md py-sm border-b border-outline-variant">
+                        <span class="material-symbols-outlined text-primary animate-pulse">check_circle</span>
+                        <span class="font-medium">Web Development</span>
+                    </div>
+                    <div class="flex items-center gap-md py-sm border-b border-outline-variant">
+                        <span class="material-symbols-outlined text-primary animate-pulse">check_circle</span>
+                        <span class="font-medium">E-Commerce Solutions</span>
+                    </div>
+                    <div class="flex items-center gap-md py-sm border-b border-outline-variant">
+                        <span class="material-symbols-outlined text-primary animate-pulse">check_circle</span>
+                        <span class="font-medium">Responsive Layouts</span>
+                    </div>
+                    <div class="flex items-center gap-md py-sm border-b border-outline-variant">
+                        <span class="material-symbols-outlined text-primary animate-pulse">check_circle</span>
+                        <span class="font-medium">UI/UX Strategy</span>
+                    </div>
+                    <div class="flex items-center gap-md py-sm border-b border-outline-variant">
+                        <span class="material-symbols-outlined text-primary animate-pulse">check_circle</span>
+                        <span class="font-medium">Search Optimization</span>
+                    </div>
+                    <div class="flex items-center gap-md py-sm border-b border-outline-variant">
+                        <span class="material-symbols-outlined text-primary animate-pulse">check_circle</span>
+                        <span class="font-medium">Maintenance &amp; Care</span>
+                    </div>
+                    <div class="flex items-center gap-md py-sm border-b border-outline-variant">
+                        <span class="material-symbols-outlined text-primary animate-pulse">check_circle</span>
+                        <span class="font-medium">Business Portals</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="py-xl bg-white">
+        <div class="max-w-[800px] mx-auto px-container-margin-desktop">
+            <div class="text-center mb-xl">
+                <h2 class="font-poppins text-[32px] font-bold mb-base">Frequently Asked Questions</h2>
+                <div class="h-1 w-24 mx-auto flex">
+                    <div class="h-full w-1/2 bg-primary"></div>
+                    <div class="h-full w-1/2 bg-secondary"></div>
+                </div>
+            </div>
+            <div class="space-y-md">
+                <!-- FAQ Item 1 -->
+                <div
+                    class="border border-outline-variant rounded-16px overflow-hidden shadow-sm transition-all duration-300">
+                    <button class="w-full flex items-center justify-between p-lg text-left bg-white faq-toggle"
+                        data-target="faq-1">
+                        <span class="font-poppins font-semibold text-title-lg">How long does a typical website project
+                            take?</span>
+                        <div
+                            class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary transition-transform duration-300 icon-box">
+                            <span class="material-symbols-outlined">add</span>
+                        </div>
+                    </button>
+                    <div class="hidden px-lg pb-lg text-on-surface-variant leading-relaxed" id="faq-1">
+                        Standard corporate websites typically range from 4 to 8 weeks, while complex e-commerce or
+                        custom applications may take 12 weeks or more. We prioritize quality and thorough testing at
+                        every phase.
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div
+                    class="border border-outline-variant rounded-16px overflow-hidden shadow-sm transition-all duration-300">
+                    <button class="w-full flex items-center justify-between p-lg text-left bg-white faq-toggle"
+                        data-target="faq-2">
+                        <span class="font-poppins font-semibold text-title-lg">Do you provide content writing
+                            services?</span>
+                        <div
+                            class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary transition-transform duration-300 icon-box">
+                            <span class="material-symbols-outlined">add</span>
+                        </div>
+                    </button>
+                    <div class="hidden px-lg pb-lg text-on-surface-variant leading-relaxed" id="faq-2">
+                        Yes, we have a team of professional copywriters who specialize in SEO-optimized content that
+                        aligns with your brand voice and drives conversions.
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div
+                    class="border border-outline-variant rounded-16px overflow-hidden shadow-sm transition-all duration-300">
+                    <button class="w-full flex items-center justify-between p-lg text-left bg-white faq-toggle"
+                        data-target="faq-3">
+                        <span class="font-poppins font-semibold text-title-lg">Will my website be
+                            mobile-friendly?</span>
+                        <div
+                            class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary transition-transform duration-300 icon-box">
+                            <span class="material-symbols-outlined">add</span>
+                        </div>
+                    </button>
+                    <div class="hidden px-lg pb-lg text-on-surface-variant leading-relaxed" id="faq-3">
+                        Absolutely. All our websites are built using "Mobile-First" principles, ensuring a seamless and
+                        high-performance experience on smartphones, tablets, and desktops.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-[#001e2d] pt-20 pb-8 text-on-tertiary">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-margin-desktop max-w-container-max mx-auto mb-20">
+            <div class="space-y-8">
+                <a href="index.html" class="inline-block"><img src="assets/images/logo.png" alt="Zigma Software Logo"
+                        class="h-14 w-auto"></a>
+                <p class="text-surface-variant/70 text-lg leading-relaxed font-medium">
+                    Zigma Software, Erode is a trusted digital solutions company delivering web, mobile app, and
+                    software solutions to grow your business.
+                </p>
+
+            </div>
+            <div>
+                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Get In Touch</h4>
+                <ul class="space-y-6 text-surface-variant/80 font-medium">
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-secondary shrink-0">location_on</span>
+                        <span class="">Door No: 4/1c.12-A, Annamalai Gounder Layout, 1st Floor, Near Hotel Vignesh,
+                            Mettur Road, Erode. Tamil Nadu, India</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-secondary shrink-0">phone</span>
+                        <span class="">+91-9942364454, 9791902386</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-secondary shrink-0">mail</span>
+                        <span class="">info@zigmasoftware.in</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Important Links</h4>
+                <ul class="space-y-4 font-medium">
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="about.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> About
+                            Us</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="products.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                            Products</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="web-development.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                            Services</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="blog.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                            Blogs</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="contact.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> contact
+                            us Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Our Services</h4>
+                <ul class="space-y-4 font-medium">
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="software-support.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                            Business Analytics</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="mobile-development.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> Mobile
+                            App Dev</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="software-support.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> HRMS
+                            &amp; Payroll</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="social-marketing.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> Social
+                            Media Marketing</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="web-development.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> Web
+                            Hosting</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="border-t border-white/5 pt-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-surface-variant/50 text-sm font-medium">
+            <p class="">© 2026 Zigma Software. All Rights Reserved.</p>
+            <div class="flex gap-8">
+                <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                <a class="hover:text-white transition-colors" href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+
+        // FAQ Accordion Logic
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.getAttribute('data-target');
+                const content = document.getElementById(targetId);
+                const iconBox = button.querySelector('.icon-box');
+                const icon = iconBox.querySelector('span');
+
+                // Close other items
+                document.querySelectorAll('.faq-toggle').forEach(otherBtn => {
+                    if (otherBtn !== button) {
+                        const otherContent = document.getElementById(otherBtn.getAttribute('data-target'));
+                        otherContent.classList.add('hidden');
+                        otherBtn.querySelector('.icon-box').classList.remove('rotate-45');
+                        otherBtn.querySelector('.icon-box').classList.remove('bg-primary');
+                        otherBtn.querySelector('.icon-box').classList.remove('text-white');
+                        otherBtn.querySelector('.icon-box span').textContent = 'add';
+                    }
+                });
+
+                // Toggle Current
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    iconBox.classList.add('rotate-45');
+                    iconBox.classList.add('bg-primary');
+                    iconBox.classList.add('text-white');
+                    icon.textContent = 'add';
+                } else {
+                    content.classList.add('hidden');
+                    iconBox.classList.remove('rotate-45');
+                    iconBox.classList.remove('bg-primary');
+                    iconBox.classList.remove('text-white');
+                    icon.textContent = 'add';
+                }
+            });
+        });
+    </script>
+    <script src="assets/js/nav.js"></script>
+</body>
+
+</html>

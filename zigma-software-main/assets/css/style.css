@@ -1,0 +1,161 @@
+/* Zigma Software - Main Stylesheet */
+
+:root {
+  /* Color Palette */
+  --primary: #005791;
+  --primary-container: #0670b7;
+  --secondary: #b71323;
+  --secondary-container: #db3238;
+  --background: #f9f9ff;
+  --surface: #ffffff;
+  --on-background: #111c2d;
+  --on-surface: #111c2d;
+  --outline: #717882;
+  --outline-variant: #c0c7d2;
+}
+
+/* Base styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--on-background);
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure main navigation links are spaced evenly */
+#main-nav .nav-links {
+  display: none;
+  gap: 20px;
+  align-items: center;
+}
+
+#main-nav .nav-links a,
+#main-nav .nav-links button {
+  white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+  #main-nav .nav-links {
+    display: flex;
+  }
+
+  #mobile-menu-toggle {
+    display: none;
+  }
+}
+
+/* Crop logo in header to remove unwanted bottom artifact */
+#main-nav .logo-crop {
+  height: 48px;
+  /* slightly smaller than the image height to hide the bottom line */
+  overflow: hidden;
+  display: inline-block;
+}
+
+#main-nav .logo-crop img {
+  display: block;
+  transform: translateY(-3px);
+}
+
+/* Styles for 'Why Choose Us' feature cards */
+.why-card {
+  border: 2px solid #3b4652;
+  border-radius: 8px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #ffffff;
+}
+
+.why-card .icon {
+  font-size: 36px;
+  color: var(--secondary);
+  background: transparent;
+}
+
+.why-card h4 {
+  margin: 0.5rem 0 0.25rem 0;
+}
+
+.why-card p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--on-surface-variant);
+}
+
+/* Explicit section label/title sizing to ensure consistent visual order */
+.section-label {
+  font-size: 13px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  display: block;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  /* ~40px */
+}
+
+.section-title-lg {
+  font-size: 3rem;
+  /* ~48px for large screens */
+}
+
+/* Partner logos grid */
+.partners-grid .partner-card {
+  border: 1px dashed #e6edf2;
+  border-radius: 8px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.partner-logo {
+  max-height: 64px;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Hover effect for partner logo cards */
+.partner-logo-card {
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s, background-color 0.3s;
+}
+
+.partner-logo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 59, 117, 0.3);
+  border-color: #C8102E;
+  background-color: rgba(0, 59, 117, 0.1);
+}
+
+.partner-logo-card img {
+  transition: transform 0.3s;
+}
+
+.partner-logo-card:hover img {
+  transform: scale(1.05);
+}
+
+
+/* Footer contact us responsive */
+footer .grid>div:nth-child(2) ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  footer .grid>div:nth-child(2) ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

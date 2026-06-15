@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>SEO Services | Zigma Software</title>
+        <script src="assets/js/tailwind.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <style>
+                .material-symbols-outlined {
+                        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+                        display: inline-block;
+                        vertical-align: middle;
+                }
+
+                .glass-card {
+                        background: rgba(255, 255, 255, 0.8);
+                        backdrop-filter: blur(12px);
+                        border: 1px solid rgba(226, 232, 240, 0.8);
+                }
+
+                .hero-gradient {
+                        background: linear-gradient(135deg, #001d35 0%, #005791 100%);
+                }
+
+                .text-shadow-sm {
+                        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                }
+
+                .wave-divider {
+                        aspect-ratio: 960/100;
+                        width: 100%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                }
+        </style>
+        <script id="tailwind-config">
+                tailwind.config = {
+                        "darkMode": "class",
+                        "theme": {
+                                "extend": {
+                                        "colors": {
+                                                "on-error-container": "#93000a",
+                                                "on-secondary-fixed-variant": "#930016",
+                                                "background": "#f9f9ff",
+                                                "on-secondary-fixed": "#410005",
+                                                "primary-container": "#0670b7",
+                                                "on-tertiary-container": "#4e3d00",
+                                                "on-surface": "#111c2d",
+                                                "on-primary-container": "#e6f0ff",
+                                                "surface-variant": "#d8e3fb",
+                                                "surface-container-high": "#dee8ff",
+                                                "surface-container-lowest": "#ffffff",
+                                                "primary-fixed": "#d0e4ff",
+                                                "on-tertiary-fixed": "#241a00",
+                                                "tertiary-container": "#cca72f",
+                                                "surface-container": "#e7eeff",
+                                                "secondary-container": "#db3238",
+                                                "inverse-surface": "#263143",
+                                                "surface-dim": "#cfdaf2",
+                                                "on-background": "#111c2d",
+                                                "on-secondary": "#ffffff",
+                                                "on-secondary-container": "#fffbff",
+                                                "on-primary-fixed": "#001d35",
+                                                "surface-bright": "#f9f9ff",
+                                                "surface-container-low": "#f0f3ff",
+                                                "primary-fixed-dim": "#9ccaff",
+                                                "secondary-fixed": "#ffdad7",
+                                                "on-tertiary": "#ffffff",
+                                                "on-error": "#ffffff",
+                                                "on-surface-variant": "#404751",
+                                                "error-container": "#ffdad6",
+                                                "primary": "#005791",
+                                                "tertiary": "#735c00",
+                                                "secondary": "#b71323",
+                                                "outline-variant": "#c0c7d2",
+                                                "tertiary-fixed-dim": "#e9c349",
+                                                "on-tertiary-fixed-variant": "#574500",
+                                                "inverse-on-surface": "#ecf1ff",
+                                                "inverse-primary": "#9ccaff",
+                                                "tertiary-fixed": "#ffe088",
+                                                "secondary-fixed-dim": "#ffb3ae",
+                                                "on-primary": "#ffffff",
+                                                "surface": "#f9f9ff",
+                                                "error": "#ba1a1a",
+                                                "on-primary-fixed-variant": "#00497b",
+                                                "surface-tint": "#0062a1",
+                                                "surface-container-highest": "#d8e3fb",
+                                                "outline": "#717882"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "0.25rem",
+                                                "xl": "0.5rem",
+                                                "full": "0.75rem"
+                                        },
+                                        "spacing": {
+
+                                                "gutter": "24px",
+
+                                                "margin-desktop": "64px",
+
+                                                "margin-mobile": "16px",
+
+                                                "base": "8px",
+
+                                                "container-max": "1280px",
+
+                                                "container-margin-desktop": "40px",
+
+                                                "container-margin-mobile": "16px",
+
+                                                "xs": "4px",
+
+                                                "sm": "12px",
+
+                                                "md": "16px",
+
+                                                "lg": "24px",
+
+                                                "xl": "32px"
+
+                                        },
+                                        "fontFamily": {
+                                                "poppins": [
+                                                        "Poppins",
+                                                        "sans-serif"
+                                                ],
+                                                "headline-md": [
+                                                        "Hanken Grotesk"
+                                                ],
+                                                "label-sm": [
+                                                        "Inter"
+                                                ],
+                                                "headline-lg-mobile": [
+                                                        "Hanken Grotesk"
+                                                ],
+                                                "label-md": [
+                                                        "Inter"
+                                                ],
+                                                "body-lg": [
+                                                        "Inter"
+                                                ],
+                                                "title-lg": [
+                                                        "Poppins"
+                                                ],
+                                                "body-md": [
+                                                        "Inter"
+                                                ],
+                                                "headline-lg": [
+                                                        "Poppins"
+                                                ],
+                                                "display-lg": [
+                                                        "Poppins"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "headline-md": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "32px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "label-sm": [
+                                                        "12px",
+                                                        {
+                                                                "lineHeight": "16px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "headline-lg-mobile": [
+                                                        "28px",
+                                                        {
+                                                                "lineHeight": "36px",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "label-md": [
+                                                        "14px",
+                                                        {
+                                                                "lineHeight": "20px",
+                                                                "letterSpacing": "0.01em",
+                                                                "fontWeight": "500"
+                                                        }
+                                                ],
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "28px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "title-lg": [
+                                                        "20px",
+                                                        {
+                                                                "lineHeight": "28px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "body-md": [
+                                                        "16px",
+                                                        {
+                                                                "lineHeight": "24px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "headline-lg": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "40px",
+                                                                "letterSpacing": "-0.01em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "display-lg": [
+                                                        "48px",
+                                                        {
+                                                                "lineHeight": "56px",
+                                                                "letterSpacing": "-0.02em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ]
+                                        }
+                                }
+                        }
+                }
+        </script>
+        <style>
+                body {
+                        min-height: max(884px, 100dvh);
+                }
+        </style>
+</head>
+
+<body
+        class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed font-inter">
+        <div id="header-placeholder"></div>
+
+        <main>
+                <!-- Hero Banner -->
+                <section
+                        class="relative h-[340px] md:h-[420px] flex flex-col items-center justify-center text-center overflow-hidden">
+                        <div class="absolute inset-0 z-0">
+                                <img class="w-full h-full object-cover object-center" src="assets/images/img%203.jpg"
+                                        alt="SEO Services Hero">
+                                <div
+                                        class="absolute inset-0 bg-gradient-to-r from-[#001d35]/80 via-[#001d35]/30 to-[#001d35]/80">
+                                </div>
+                        </div>
+                        <div class="relative z-10 text-white">
+                                <h1 class="font-display-lg text-display-lg mb-sm text-shadow-sm">SEO Services</h1>
+                                <p class="font-label-md opacity-90"><a href="index.html"
+                                                class="hover:underline">Home</a> <span class="mx-xs">&gt;</span>
+                                        Services <span class="mx-xs">&gt;</span> SEO Services</p>
+                        </div>
+                </section>
+                <!-- Introduction -->
+                <section
+                        class="py-xl px-container-margin-mobile md:px-container-desktop max-w-[1280px] mx-auto text-center mt-lg">
+                        <span
+                                class="inline-block px-md py-xs bg-secondary-fixed text-on-secondary-fixed-variant text-headline-lg-mobile md:text-headline-lg font-headline-lg rounded-full mb-md tracking-wider">SEO
+                                SOLUTIONS</span>
+                        <h2 class="text-label-lg font-label-md text-on-surface mb-lg">Grow Your Business with Powerful
+                                SEO Strategies</h2>
+                        <p class="text-body-lg text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
+                                At Zigma Software, we don't just chase rankings; we drive revenue. Our approach combines
+                                data-driven analytics with creative content strategies to ensure your brand dominates
+                                the search engine results pages (SERPs) and converts traffic into loyal customers.
+                        </p>
+                </section>
+                <!-- Why Choose Us -->
+                <section class="py-xl bg-surface-container-low">
+                        <div class="px-container-margin-mobile md:px-container-desktop max-w-[1280px] mx-auto">
+                                <h3 class="text-headline-md font-headline-md text-center mb-xl text-on-surface">Why
+                                        Partner with Zigma?</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+                                        <!-- Card 1 -->
+                                        <div
+                                                class="bg-surface-container-lowest p-lg rounded-[20px] shadow-sm border border-outline-variant hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                                                <div
+                                                        class="w-12 h-12 rounded-xl bg-primary-container/10 flex items-center justify-center mb-md">
+                                                        <span class="material-symbols-outlined text-primary text-3xl"
+                                                                data-icon="insights">insights</span>
+                                                </div>
+                                                <h4 class="text-title-lg font-title-lg mb-sm text-on-surface">Proven SEO
+                                                        Strategies</h4>
+                                                <p class="text-on-surface-variant text-body-md">Data-backed
+                                                        methodologies that have consistently delivered substantial
+                                                        growth for our enterprise clients.</p>
+                                        </div>
+                                        <!-- Card 2 -->
+                                        <div
+                                                class="bg-surface-container-lowest p-lg rounded-[20px] shadow-sm border border-outline-variant hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                                                <div
+                                                        class="w-12 h-12 rounded-xl bg-primary-container/10 flex items-center justify-center mb-md">
+                                                        <span class="material-symbols-outlined text-primary text-3xl"
+                                                                data-icon="groups">groups</span>
+                                                </div>
+                                                <h4 class="text-title-lg font-title-lg mb-sm text-on-surface">
+                                                        Experienced SEO Team</h4>
+                                                <p class="text-on-surface-variant text-body-md">A dedicated group of
+                                                        specialists with extensive experience in technical and creative
+                                                        SEO.</p>
+                                        </div>
+                                        <!-- Card 3 -->
+                                        <div
+                                                class="bg-surface-container-lowest p-lg rounded-[20px] shadow-sm border border-outline-variant hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                                                <div
+                                                        class="w-12 h-12 rounded-xl bg-primary-container/10 flex items-center justify-center mb-md">
+                                                        <span class="material-symbols-outlined text-primary text-3xl"
+                                                                data-icon="verified_user">verified_user</span>
+                                                </div>
+                                                <h4 class="text-title-lg font-title-lg mb-sm text-on-surface">White-Hat
+                                                        Techniques</h4>
+                                                <p class="text-on-surface-variant text-body-md">Ethical optimization
+                                                        that builds long-term authority without the risk of search
+                                                        engine penalties.</p>
+                                        </div>
+                                        <!-- Card 4 -->
+                                        <div
+                                                class="bg-surface-container-lowest p-lg rounded-[20px] shadow-sm border border-outline-variant hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                                                <div
+                                                        class="w-12 h-12 rounded-xl bg-primary-container/10 flex items-center justify-center mb-md">
+                                                        <span class="material-symbols-outlined text-primary text-3xl"
+                                                                data-icon="edit_note">edit_note</span>
+                                                </div>
+                                                <h4 class="text-title-lg font-title-lg mb-sm text-on-surface">Customized
+                                                        SEO Plans</h4>
+                                                <p class="text-on-surface-variant text-body-md">Tailored strategies
+                                                        built around your specific business goals, industry, and
+                                                        competitive landscape.</p>
+                                        </div>
+                                        <!-- Card 5 -->
+                                        <div
+                                                class="bg-surface-container-lowest p-lg rounded-[20px] shadow-sm border border-outline-variant hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                                                <div
+                                                        class="w-12 h-12 rounded-xl bg-primary-container/10 flex items-center justify-center mb-md">
+                                                        <span class="material-symbols-outlined text-primary text-3xl"
+                                                                data-icon="bar_chart">bar_chart</span>
+                                                </div>
+                                                <h4 class="text-title-lg font-title-lg mb-sm text-on-surface">
+                                                        Transparent Reporting</h4>
+                                                <p class="text-on-surface-variant text-body-md">Real-time dashboards and
+                                                        monthly deep-dives so you always know exactly where your
+                                                        investment goes.</p>
+                                        </div>
+                                        <!-- Card 6 -->
+                                        <div
+                                                class="bg-surface-container-lowest p-lg rounded-[20px] shadow-sm border border-outline-variant hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                                                <div
+                                                        class="w-12 h-12 rounded-xl bg-primary-container/10 flex items-center justify-center mb-md">
+                                                        <span class="material-symbols-outlined text-primary text-3xl"
+                                                                data-icon="payments">payments</span>
+                                                </div>
+                                                <h4 class="text-title-lg font-title-lg mb-sm text-on-surface">Affordable
+                                                        Pricing</h4>
+                                                <p class="text-on-surface-variant text-body-md">Premium enterprise
+                                                        service at competitive rates, ensuring maximum return on your
+                                                        marketing spend.</p>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- SEO-Friendly Website Development -->
+                <section class="py-xl bg-[#EEF6FC]">
+                        <div
+                                class="px-container-margin-mobile md:px-container-desktop max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+                                <div class="order-2 md:order-1">
+                                        <span
+                                                class="text-secondary font-bold text-label-md tracking-widest uppercase mb-sm block">Performance
+                                                Architecture</span>
+                                        <h2
+                                                class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface mb-lg">
+                                                SEO-Friendly Website Development</h2>
+                                        <p class="text-body-lg text-on-surface-variant mb-lg">A beautiful website is
+                                                useless if it's invisible. We build lightning-fast, accessible, and
+                                                crawlable sites from the ground up.</p>
+                                        <ul class="space-y-md">
+                                                <li class="flex items-start gap-md">
+                                                        <div
+                                                                class="w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-1 flex-shrink-0">
+                                                                <span class="material-symbols-outlined text-white text-[16px]"
+                                                                        data-icon="check">check</span>
+                                                        </div>
+                                                        <span class="text-on-surface font-medium">Core Web Vitals
+                                                                Optimization for faster load times.</span>
+                                                </li>
+                                                <li class="flex items-start gap-md">
+                                                        <div
+                                                                class="w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-1 flex-shrink-0">
+                                                                <span class="material-symbols-outlined text-white text-[16px]"
+                                                                        data-icon="check">check</span>
+                                                        </div>
+                                                        <span class="text-on-surface font-medium">Semantic HTML
+                                                                structure for better search indexing.</span>
+                                                </li>
+                                                <li class="flex items-start gap-md">
+                                                        <div
+                                                                class="w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-1 flex-shrink-0">
+                                                                <span class="material-symbols-outlined text-white text-[16px]"
+                                                                        data-icon="check">check</span>
+                                                        </div>
+                                                        <span class="text-on-surface font-medium">Mobile-first
+                                                                responsive design for cross-device ranking.</span>
+                                                </li>
+                                                <li class="flex items-start gap-md">
+                                                        <div
+                                                                class="w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-1 flex-shrink-0">
+                                                                <span class="material-symbols-outlined text-white text-[16px]"
+                                                                        data-icon="check">check</span>
+                                                        </div>
+                                                        <span class="text-on-surface font-medium">Schema Markup
+                                                                implementation for rich snippets.</span>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="order-1 md:order-2">
+                                        <div class="rounded-[20px] overflow-hidden shadow-2xl">
+                                                <img class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
+                                                        data-alt="A clean, professional workspace displaying a laptop screen with high-level SEO analytics and performance charts. The environment is a bright, modern corporate office with soft natural lighting coming from large windows. The desk is minimalist with a notebook and a coffee cup, maintaining a Royal Blue and White color scheme that feels reliable and sophisticated."
+                                                        src="assets/images/analytics_dashboard.png" />
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- Services We Provide / Why SEO Is Important -->
+                <section class="py-xl bg-white">
+                        <div
+                                class="px-container-margin-mobile md:px-container-desktop max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-xl">
+                                <!-- Left: Services -->
+                                <div class="glass-card p-xl rounded-2xl">
+                                        <h3
+                                                class="text-headline-md font-headline-md text-primary mb-xl flex items-center gap-sm">
+                                                <span class="material-symbols-outlined"
+                                                        data-icon="settings_suggest">settings_suggest</span>
+                                                Services We Provide
+                                        </h3>
+                                        <div class="grid grid-cols-1 gap-md">
+                                                <div
+                                                        class="flex items-center gap-lg p-md hover:bg-surface-container-low transition-colors rounded-xl border border-transparent hover:border-outline-variant">
+                                                        <div
+                                                                class="w-10 h-10 rounded-full border-2 border-primary flex items-center justify-center">
+                                                                <span class="material-symbols-outlined text-primary text-xl"
+                                                                        data-icon="search">search</span>
+                                                        </div>
+                                                        <span class="text-body-lg font-medium text-on-surface">Keyword
+                                                                Research &amp; Strategy</span>
+                                                </div>
+                                                <div
+                                                        class="flex items-center gap-lg p-md hover:bg-surface-container-low transition-colors rounded-xl border border-transparent hover:border-outline-variant">
+                                                        <div
+                                                                class="w-10 h-10 rounded-full border-2 border-primary flex items-center justify-center">
+                                                                <span class="material-symbols-outlined text-primary text-xl"
+                                                                        data-icon="description">description</span>
+                                                        </div>
+                                                        <span class="text-body-lg font-medium text-on-surface">Comprehensive
+                                                                On-Page SEO</span>
+                                                </div>
+                                                <div
+                                                        class="flex items-center gap-lg p-md hover:bg-surface-container-low transition-colors rounded-xl border border-transparent hover:border-outline-variant">
+                                                        <div
+                                                                class="w-10 h-10 rounded-full border-2 border-primary flex items-center justify-center">
+                                                                <span class="material-symbols-outlined text-primary text-xl"
+                                                                        data-icon="terminal">terminal</span>
+                                                        </div>
+                                                        <span class="text-body-lg font-medium text-on-surface">Technical
+                                                                SEO Audits</span>
+                                                </div>
+                                                <div
+                                                        class="flex items-center gap-lg p-md hover:bg-surface-container-low transition-colors rounded-xl border border-transparent hover:border-outline-variant">
+                                                        <div
+                                                                class="w-10 h-10 rounded-full border-2 border-primary flex items-center justify-center">
+                                                                <span class="material-symbols-outlined text-primary text-xl"
+                                                                        data-icon="link">link</span>
+                                                        </div>
+                                                        <span class="text-body-lg font-medium text-on-surface">Off-Page
+                                                                &amp; Authority Building</span>
+                                                </div>
+                                                <div
+                                                        class="flex items-center gap-lg p-md hover:bg-surface-container-low transition-colors rounded-xl border border-transparent hover:border-outline-variant">
+                                                        <div
+                                                                class="w-10 h-10 rounded-full border-2 border-primary flex items-center justify-center">
+                                                                <span class="material-symbols-outlined text-primary text-xl"
+                                                                        data-icon="location_on">location_on</span>
+                                                        </div>
+                                                        <span class="text-body-lg font-medium text-on-surface">Local SEO
+                                                                Dominance</span>
+                                                </div>
+                                                <div
+                                                        class="flex items-center gap-lg p-md hover:bg-surface-container-low transition-colors rounded-xl border border-transparent hover:border-outline-variant">
+                                                        <div
+                                                                class="w-10 h-10 rounded-full border-2 border-primary flex items-center justify-center">
+                                                                <span class="material-symbols-outlined text-primary text-xl"
+                                                                        data-icon="store">store</span>
+                                                        </div>
+                                                        <span class="text-body-lg font-medium text-on-surface">GMB
+                                                                Profile Optimization</span>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Right: Importance -->
+                                <div class="glass-card p-xl rounded-2xl">
+                                        <h3
+                                                class="text-headline-md font-headline-md text-secondary mb-xl flex items-center gap-sm">
+                                                <span class="material-symbols-outlined"
+                                                        data-icon="trending_up">trending_up</span>
+                                                Why SEO Is Important
+                                        </h3>
+                                        <div class="grid grid-cols-1 gap-md">
+                                                <div
+                                                        class="flex items-center gap-lg p-md hover:bg-surface-container-low transition-colors rounded-xl border border-transparent hover:border-outline-variant">
+                                                        <div
+                                                                class="w-10 h-10 rounded-full border-2 border-secondary flex items-center justify-center">
+                                                                <span class="material-symbols-outlined text-secondary text-xl"
+                                                                        data-icon="visibility">visibility</span>
+                                                        </div>
+                                                        <span class="text-body-lg font-medium text-on-surface">Increased
+                                                                Global Visibility</span>
+                                                </div>
+                                                <div
+                                                        class="flex items-center gap-lg p-md hover:bg-surface-container-low transition-colors rounded-xl border border-transparent hover:border-outline-variant">
+                                                        <div
+                                                                class="w-10 h-10 rounded-full border-2 border-secondary flex items-center justify-center">
+                                                                <span class="material-symbols-outlined text-secondary text-xl"
+                                                                        data-icon="group_add">group_add</span>
+                                                        </div>
+                                                        <span class="text-body-lg font-medium text-on-surface">Qualified
+                                                                Organic Traffic</span>
+                                                </div>
+                                                <div
+                                                        class="flex items-center gap-lg p-md hover:bg-surface-container-low transition-colors rounded-xl border border-transparent hover:border-outline-variant">
+                                                        <div
+                                                                class="w-10 h-10 rounded-full border-2 border-secondary flex items-center justify-center">
+                                                                <span class="material-symbols-outlined text-secondary text-xl"
+                                                                        data-icon="handshake">handshake</span>
+                                                        </div>
+                                                        <span class="text-body-lg font-medium text-on-surface">Brand
+                                                                Credibility &amp; Trust</span>
+                                                </div>
+                                                <div
+                                                        class="flex items-center gap-lg p-md hover:bg-surface-container-low transition-colors rounded-xl border border-transparent hover:border-outline-variant">
+                                                        <div
+                                                                class="w-10 h-10 rounded-full border-2 border-secondary flex items-center justify-center">
+                                                                <span class="material-symbols-outlined text-secondary text-xl"
+                                                                        data-icon="ads_click">ads_click</span>
+                                                        </div>
+                                                        <span class="text-body-lg font-medium text-on-surface">High-Quality
+                                                                Lead Generation</span>
+                                                </div>
+                                                <div
+                                                        class="flex items-center gap-lg p-md hover:bg-surface-container-low transition-colors rounded-xl border border-transparent hover:border-outline-variant">
+                                                        <div
+                                                                class="w-10 h-10 rounded-full border-2 border-secondary flex items-center justify-center">
+                                                                <span class="material-symbols-outlined text-secondary text-xl"
+                                                                        data-icon="savings">savings</span>
+                                                        </div>
+                                                        <span class="text-body-lg font-medium text-on-surface">Sustainable
+                                                                Long-Term ROI</span>
+                                                </div>
+                                                <div
+                                                        class="flex items-center gap-lg p-md hover:bg-surface-container-low transition-colors rounded-xl border border-transparent hover:border-outline-variant">
+                                                        <div
+                                                                class="w-10 h-10 rounded-full border-2 border-secondary flex items-center justify-center">
+                                                                <span class="material-symbols-outlined text-secondary text-xl"
+                                                                        data-icon="trophy">trophy</span>
+                                                        </div>
+                                                        <span class="text-body-lg font-medium text-on-surface">Unfair
+                                                                Competitive Advantage</span>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- FAQ Section -->
+                <section class="py-xl bg-background">
+                        <div class="px-container-margin-mobile md:px-container-desktop max-w-[800px] mx-auto">
+                                <div class="text-center mb-xl">
+                                        <h2
+                                                class="text-headline-lg font-headline-lg text-on-surface inline-block relative">
+                                                Frequently Asked Questions
+                                                <span
+                                                        class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-primary to-secondary"></span>
+                                        </h2>
+                                </div>
+                                <div class="space-y-md">
+                                        <!-- Accordion 1 -->
+                                        <div
+                                                class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm transition-all overflow-hidden group">
+                                                <button class="w-full flex items-center justify-between p-lg text-left"
+                                                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.toggle-icon').textContent = this.nextElementSibling.classList.contains('hidden') ? 'add_circle' : 'do_not_disturb_on'">
+                                                        <span class="text-title-lg text-on-surface font-semibold">How
+                                                                long does it take to see SEO results?</span>
+                                                        <span class="material-symbols-outlined text-primary toggle-icon text-3xl"
+                                                                data-icon="add_circle">add_circle</span>
+                                                </button>
+                                                <div
+                                                        class="hidden px-lg pb-lg text-body-md text-on-surface-variant animate-fade-in">
+                                                        Typically, initial results can be seen within 3-6 months.
+                                                        However, SEO is a long-term strategy, and significant growth in
+                                                        authority and competitive rankings usually occurs between 6-12
+                                                        months of consistent optimization.
+                                                </div>
+                                        </div>
+                                        <!-- Accordion 2 -->
+                                        <div
+                                                class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm transition-all overflow-hidden group">
+                                                <button class="w-full flex items-center justify-between p-lg text-left"
+                                                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.toggle-icon').textContent = this.nextElementSibling.classList.contains('hidden') ? 'add_circle' : 'do_not_disturb_on'">
+                                                        <span class="text-title-lg text-on-surface font-semibold">Do you
+                                                                guarantee #1 rankings?</span>
+                                                        <span class="material-symbols-outlined text-primary toggle-icon text-3xl"
+                                                                data-icon="add_circle">add_circle</span>
+                                                </button>
+                                                <div class="hidden px-lg pb-lg text-body-md text-on-surface-variant">
+                                                        No ethical SEO agency can guarantee a #1 ranking as search
+                                                        algorithms change constantly. However, we guarantee
+                                                        best-in-class methodologies and have a proven track record of
+                                                        placing our clients on the first page of Google.
+                                                </div>
+                                        </div>
+                                        <!-- Accordion 3 -->
+                                        <div
+                                                class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm transition-all overflow-hidden group">
+                                                <button class="w-full flex items-center justify-between p-lg text-left"
+                                                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.toggle-icon').textContent = this.nextElementSibling.classList.contains('hidden') ? 'add_circle' : 'do_not_disturb_on'">
+                                                        <span class="text-title-lg text-on-surface font-semibold">What
+                                                                is the difference between SEO and SEM?</span>
+                                                        <span class="material-symbols-outlined text-primary toggle-icon text-3xl"
+                                                                data-icon="add_circle">add_circle</span>
+                                                </button>
+                                                <div class="hidden px-lg pb-lg text-body-md text-on-surface-variant">
+                                                        SEO (Search Engine Optimization) focuses on earning traffic
+                                                        through organic, non-paid rankings. SEM (Search Engine
+                                                        Marketing) involves paid strategies like PPC to gain visibility
+                                                        in search results. Both are part of a holistic digital strategy.
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-[#001e2d] pt-20 pb-8 text-on-tertiary">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-margin-desktop max-w-container-max mx-auto mb-20">
+                        <div class="space-y-8">
+                                <a href="index.html" class="inline-block"><img src="assets/images/logo.png"
+                                                alt="Zigma Software Logo" class="h-14 w-auto"></a>
+                                <p class="text-surface-variant/70 text-lg leading-relaxed font-medium">
+                                        Zigma Software, Erode is a trusted digital solutions company delivering web,
+                                        mobile app, and software solutions to grow your business.
+                                </p>
+
+                        </div>
+                        <div>
+                                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Get In
+                                        Touch</h4>
+                                <ul class="space-y-6 text-surface-variant/80 font-medium">
+                                        <li class="flex gap-4">
+                                                <span
+                                                        class="material-symbols-outlined text-secondary shrink-0">location_on</span>
+                                                <span class="">Door No: 4/1c.12-A, Annamalai Gounder Layout, 1st Floor,
+                                                        Near Hotel Vignesh, Mettur Road, Erode. Tamil Nadu, India</span>
+                                        </li>
+                                        <li class="flex gap-4">
+                                                <span
+                                                        class="material-symbols-outlined text-secondary shrink-0">phone</span>
+                                                <span class="">+91-9942364454, 9791902386</span>
+                                        </li>
+                                        <li class="flex gap-4">
+                                                <span
+                                                        class="material-symbols-outlined text-secondary shrink-0">mail</span>
+                                                <span class="">info@zigmasoftware.in</span>
+                                        </li>
+                                </ul>
+                        </div>
+                        <div>
+                                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">
+                                        Important Links</h4>
+                                <ul class="space-y-4 font-medium">
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="about.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        About Us</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="products.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Products</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="web-development.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Services</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="blog.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Blogs</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="contact.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Contact Us</a></li>
+                                </ul>
+                        </div>
+                        <div>
+                                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Our
+                                        Services</h4>
+                                <ul class="space-y-4 font-medium">
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="software-support.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Business Analytics</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="mobile-development.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Mobile App Dev</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="software-support.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        HRMS &amp; Payroll</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="social-marketing.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Social Media Marketing</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="web-development.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Web Hosting</a></li>
+                                </ul>
+                        </div>
+                </div>
+                <div
+                        class="border-t border-white/5 pt-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-surface-variant/50 text-sm font-medium">
+                        <p class="">© 2026 Zigma Software. All Rights Reserved.</p>
+                        <div class="flex gap-8">
+                                <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                                <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                                <a class="hover:text-white transition-colors" href="#">Cookie Policy</a>
+                        </div>
+                </div>
+        </footer>
+        <script>
+                const observerOptions = { threshold: 0.1 };
+                const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                                }
+                        });
+                }, observerOptions);
+
+                document.querySelectorAll('section > div').forEach(el => {
+                        el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                        observer.observe(el);
+                });
+        </script>
+        <script src="assets/js/nav.js"></script>
+</body>
+
+</html>

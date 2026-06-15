@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>About Us | Zigma Software</title>
+    <script src="assets/js/tailwind.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Poppins:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            "darkMode": "class",
+            "theme": {
+                "extend": {
+                    "colors": {
+                        "surface": "#f9f9fc",
+                        "on-tertiary-fixed": "#001e2d",
+                        "surface-dim": "#dadadc",
+                        "on-secondary-container": "#fffbff",
+                        "outline-variant": "#c2c6d1",
+                        "primary-fixed-dim": "#a3c9ff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#c6e7ff",
+                        "surface-container-high": "#e8e8ea",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f9f9fc",
+                        "primary-fixed": "#d3e4ff",
+                        "secondary-fixed-dim": "#ffb3ae",
+                        "outline": "#727781",
+                        "on-primary-fixed-variant": "#004882",
+                        "on-primary-fixed": "#001c38",
+                        "on-background": "#1a1c1e",
+                        "background": "#f9f9fc",
+                        "on-secondary-fixed-variant": "#930015",
+                        "secondary-fixed": "#ffdad7",
+                        "surface-variant": "#e2e2e5",
+                        "surface-container-low": "#f3f3f6",
+                        "secondary": "#bb001e",
+                        "primary": "#003461",
+                        "error": "#ba1a1a",
+                        "primary-container": "#004b87",
+                        "surface-container-highest": "#e2e2e5",
+                        "inverse-surface": "#2f3133",
+                        "inverse-primary": "#a3c9ff",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#004f6f",
+                        "surface-tint": "#27609d",
+                        "on-surface": "#1a1c1e",
+                        "on-secondary-fixed": "#410004",
+                        "on-tertiary-container": "#55c4ff",
+                        "on-primary-container": "#8abcff",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#00374f",
+                        "surface-container": "#eeeef0",
+                        "on-tertiary-fixed-variant": "#004c6b",
+                        "tertiary-fixed-dim": "#82cfff",
+                        "on-surface-variant": "#424750",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#e32130",
+                        "inverse-on-surface": "#f0f0f3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "container-margin-desktop": "40px",
+                        "container-margin-mobile": "16px",
+                        "xs": "4px",
+                        "sm": "12px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "xl": "32px"
+                    },
+                    "fontFamily": {
+                        "poppins": [
+                            "Poppins",
+                            "sans-serif"
+                        ],
+                        "label-sm": [
+                            "Inter"
+                        ],
+                        "display-lg": [
+                            "Inter"
+                        ],
+                        "body-md": [
+                            "Inter"
+                        ],
+                        "title-md": [
+                            "Inter"
+                        ],
+                        "body-lg": [
+                            "Inter"
+                        ],
+                        "headline-lg-mobile": [
+                            "Inter"
+                        ],
+                        "headline-lg": [
+                            "Inter"
+                        ]
+                    },
+                    "fontSize": {
+                        "label-sm": [
+                            "12px",
+                            {
+                                "lineHeight": "1",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "display-lg": [
+                            "48px",
+                            {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                            }
+                        ],
+                        "body-md": [
+                            "16px",
+                            {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "title-md": [
+                            "20px",
+                            {
+                                "lineHeight": "1.4",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "body-lg": [
+                            "18px",
+                            {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-lg-mobile": [
+                            "24px",
+                            {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "headline-lg": [
+                            "32px",
+                            {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "label-md": [
+                            "14px",
+                            {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.01em",
+                                "fontWeight": "500"
+                            }
+                        ],
+                        "headline-md": [
+                            "24px",
+                            {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "title-lg": [
+                            "20px",
+                            {
+                                "lineHeight": "28px",
+                                "fontWeight": "600"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+        }
+
+        .shimmer-btn {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shimmer-btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transform: rotate(45deg);
+            transition: 0.5s;
+        }
+
+        .shimmer-btn:hover::after {
+            left: 100%;
+            top: 100%;
+        }
+
+        .vibrant-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .vibrant-card:hover {
+            transform: scale(1.03) translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+
+        .color-bg-blue {
+            background-color: #f0f7ff;
+        }
+
+        .color-bg-blue:hover {
+            background-color: #dbeafe;
+        }
+
+        .color-bg-red {
+            background-color: #fff1f2;
+        }
+
+        .color-bg-red:hover {
+            background-color: #ffe4e6;
+        }
+
+        .color-bg-teal {
+            background-color: #f0fdfa;
+        }
+
+        .color-bg-teal:hover {
+            background-color: #ccfbf1;
+        }
+
+        .color-bg-purple {
+            background-color: #faf5ff;
+        }
+
+        .color-bg-purple:hover {
+            background-color: #f3e8ff;
+        }
+
+        .color-bg-amber {
+            background-color: #fffbeb;
+        }
+
+        .color-bg-amber:hover {
+            background-color: #fef3c7;
+        }
+
+        .color-bg-indigo {
+            background-color: #eef2ff;
+        }
+
+        .color-bg-indigo:hover {
+            background-color: #e0e7ff;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .glass-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .shimmer-btn {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shimmer-btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transform: rotate(45deg);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%) rotate(45deg);
+            }
+
+            100% {
+                transform: translateX(100%) rotate(45deg);
+            }
+        }
+
+        .mesh-gradient {
+            background: radial-gradient(at 0% 0%, #ffdad7 0%, transparent 50%),
+                radial-gradient(at 100% 0%, #d3e4ff 0%, transparent 50%),
+                radial-gradient(at 100% 100%, #c6e7ff 0%, transparent 50%),
+                radial-gradient(at 0% 100%, #e2e2e5 0%, transparent 50%);
+        }
+
+        .text-shadow-sm {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .wave-divider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .wave-divider svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 60px;
+        }
+
+        .wave-divider .shape-fill {
+            fill: #f9f9ff;
+        }
+    </style>
+
+</head>
+
+<body class="bg-surface font-body-md text-on-surface selection:bg-primary selection:text-white">
+    <div id="header-placeholder"></div>
+
+
+
+
+    <main class="bg-surface">
+        <!-- Hero Section -->
+        <section
+            class="relative h-[340px] md:h-[420px] flex flex-col items-center justify-center text-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover object-center" src="assets/images/img%203.jpg"
+                    alt="About Us background">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#001d35]/80 via-[#001d35]/30 to-[#001d35]/80"></div>
+            </div>
+            <div class="relative z-10 text-white">
+                <h1 class="font-display-lg text-6xl mb-sm text-shadow-sm">About Us</h1>
+                <p class="font-label-md opacity-90"><a href="index.html" class="hover:underline">Home</a> <span
+                        class="mx-xs">&gt;</span> About Us</p>
+            </div>
+        </section>
+        <!-- ABOUT US Section -->
+        <section
+            class="min-h-screen flex flex-col items-center justify-center px-margin-mobile md:px-margin-desktop bg-white">
+            <div class="w-full max-w-5xl mx-auto">
+                <div class="flex flex-col gap-12">
+                    <div
+                        class="w-full text-gray-700 space-y-6 text-[18px] md:text-[20px] lg:text-[22px] leading-[1.8] text-left">
+
+                        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#001D35] uppercase"></h2>
+                        <p class="text-justify">We, Zigma Software Consultancy, are a professional Organization
+                            comprising
+                            a set of dedicated software professionals around 10 plus, ever striving towards perfection
+                            from 1991 onwards. Doing Tailor-made software projects for large &amp; medium Manufacturing
+                            entities, trading houses, various product Exporters, Corporate administrative offices,
+                            Professionals and Chartered Accountants etc., like Financial Accounting Systems, Payroll
+                            Management Systems, Schedule Management Systems, Equipment History Management Systems,
+                            Textile Design Management Systems, Marketing Management Systems, Ticket Booking (Travels)
+                            Systems, Bus Collection Maintenance Systems etc.,</p>
+
+                        <p class="text-justify">“FA – Financial Accounting” System was developed in the year 1991 by our
+                            venerated Founder Mr.T.Mani Sekaran Msc., (Electronics) with the Simple Accounting
+                            Methodology derived by our revered Chartered Accountant Mr.G.N.Jayaram F.C.A, one of the
+                            leading C.A. Professional in Coimbatore and Erode Region. It is a simple and very powerful
+                            accounting tool, till used by more than 200s of Auditors. Mr.K.P.Muthrasu one of the founder
+                            of Zigma Computers paved a great contribution for the development of the firm in myriad
+                            ways.</p>
+
+                        <p class="text-justify">With their contribution and using their Basic Accounting System, in the
+                            year 1994 Mr.R.Manokar, with the five years of Corporate Experience, innovated the
+                            outstanding, State-of-the-art software Package – “Zigma Integrated Financial Accounting
+                            system Software (ZIGFAS)” by integrating the Inventory package with the existing Accounting
+                            system. The software was developed by using the Foxpro in a DOS Version. It was designed for
+                            the Manufacturing Industries and Trading houses and considerably enhances the quality of the
+                            major modules from purchase to end sale.</p>
+
+                        <p class="text-justify">We proud to state that our team developed an embedded software for North
+                            Eastern Railway (Raipur) through a third party to drive their electronic controller through
+                            our software to test the Locomotive Engine’s Traction Generator and generate a TG Graph
+                            which states the current condition’s and performance status. In addition to that, we also
+                            developed a software through third party to Southern Railway (Hyderabad) which gather the
+                            Locomotive’s Governor’s conditions status through an electronic controller and generate
+                            Empty Load, Half Load, Full Load test etc. to test the Governor’s Conditions. Both software
+                            are running successfully for the past 7 to 9 years. Thus we develop software for any
+                            verticals, against the order.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Business Section -->
+        <section class="py-24 px-margin-mobile md:px-margin-desktop bg-[#f4f7f9]">
+            <div class="max-w-container-max mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-[#001D35]">Our Business</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+
+                    <!-- Column 1: Image + Mission -->
+                    <div class="flex flex-col gap-6 relative">
+                        <!-- Top image placeholder -->
+                        <div class="w-full flex justify-center mb-2 h-48">
+                            <img src="assets/images/office_collaboration.png" alt="Our Team"
+                                class="h-full object-contain drop-shadow-xl z-10 relative">
+                        </div>
+
+                        <!-- Our Mission Card -->
+                        <div
+                            class="bg-white rounded-[2rem] p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-lg transition-shadow border border-gray-100 flex flex-col items-center text-center relative mt-[-60px] pt-16 flex-grow">
+                            <span class="material-symbols-outlined text-[#EC3F43] text-5xl mb-4"
+                                style="font-variation-settings: 'wght' 300;">track_changes</span>
+                            <h3 class="text-2xl font-bold text-[#001D35] mb-4">Our Mission</h3>
+                            <p class="text-gray-600 text-[15px] leading-relaxed">Consistent commitment towards enhancing
+                                the business growth of our customers through innovative technologies and ideas in
+                                delivering credible best business solutions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Core Values -->
+                    <div class="flex flex-col h-full mt-8 md:mt-0">
+                        <!-- Our Core Values Card -->
+                        <div
+                            class="bg-white rounded-[2rem] p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-lg transition-shadow border border-gray-100 flex flex-col items-center text-center h-full">
+                            <span class="material-symbols-outlined text-[#EC3F43] text-5xl mb-4 mt-4"
+                                style="font-variation-settings: 'wght' 300;">account_tree</span>
+                            <h3 class="text-2xl font-bold text-[#001D35] mb-4">Our Core Values</h3>
+                            <p class="text-gray-600 text-[15px] leading-relaxed mb-8">At Zigma Software, Erode, we
+                                provide end-to-end digital solutions designed to strengthen your brand and accelerate
+                                business growth.</p>
+
+                            <ul class="text-left space-y-4 text-[15px] text-gray-500 w-full pl-2 font-medium">
+                                <li class="flex items-center gap-4">
+                                    <div class="w-3 h-3 rounded-full border-2 border-gray-300"></div> Innovative and
+                                    skilled persons
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <div class="w-3 h-3 rounded-full border-2 border-gray-300"></div> Tailor-made
+                                    digital strategies
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <div class="w-3 h-3 rounded-full border-2 border-gray-300"></div> Cost-effective
+                                    solutions
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <div class="w-3 h-3 rounded-full border-2 border-gray-300"></div> Timely project
+                                    execution
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <div class="w-3 h-3 rounded-full border-2 border-gray-300"></div> Reliable customer
+                                    support
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Vision + Image -->
+                    <div class="flex flex-col gap-6 mt-8 md:mt-0 h-full">
+                        <!-- Our Vision Card -->
+                        <div
+                            class="bg-white rounded-[2rem] p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-lg transition-shadow border border-gray-100 flex flex-col items-center text-center flex-grow">
+                            <span class="material-symbols-outlined text-[#EC3F43] text-5xl mb-4"
+                                style="font-variation-settings: 'wght' 300;">visibility</span>
+                            <h3 class="text-2xl font-bold text-[#001D35] mb-4">Our Vision</h3>
+                            <p class="text-gray-600 text-[15px] leading-relaxed">Create simple technocrat software that
+                                serves as a dedicated digital assistant for any average person to manage their business
+                                and personal accounts, as well as day-to-day activities that contribute to their success
+                            </p>
+                        </div>
+
+                        <!-- Bottom image placeholder -->
+                        <div class="w-full h-56 rounded-[2rem] overflow-hidden shadow-md shrink-0">
+                            <img src="assets/images/analytics_dashboard.png" alt="Innovation"
+                                class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#001e2d] pt-20 pb-8 text-on-tertiary">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-margin-desktop max-w-container-max mx-auto mb-20">
+            <div class="space-y-8">
+                <a href="index.html" class="inline-block"><img src="assets/images/logo.png" alt="Zigma Software Logo"
+                        class="h-14 w-auto"></a>
+                <p class="text-surface-variant/70 text-lg leading-relaxed font-medium">
+                    Zigma Software, Erode is a trusted digital solutions company delivering web, mobile app, and
+                    software solutions to grow your business.
+                </p>
+
+            </div>
+            <div>
+                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Get In Touch</h4>
+                <ul class="space-y-6 text-surface-variant/80 font-medium">
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-secondary shrink-0">location_on</span>
+                        <span class="">Door No: 4/1c.12-A, Annamalai Gounder Layout, 1st Floor, Near Hotel Vignesh,
+                            Mettur Road, Erode. Tamil Nadu, India</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-secondary shrink-0">phone</span>
+                        <span class="">+91-9942364454, 9791902386</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-secondary shrink-0">mail</span>
+                        <span class="">info@zigmasoftware.in</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Important Links</h4>
+                <ul class="space-y-4 font-medium">
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="about.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> About
+                            Us</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="products.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                            Products</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="web-development.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                            Services</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="blog.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                            Blogs</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="contact.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> contact
+                            us
+                            Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Our Services</h4>
+                <ul class="space-y-4 font-medium">
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="software-support.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                            Business Analytics</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="mobile-development.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> Mobile
+                            App Dev</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="software-support.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> HRMS
+                            &amp; Payroll</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="social-marketing.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> Social
+                            Media Marketing</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="web-development.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> Web
+                            Hosting</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="border-t border-white/5 pt-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-surface-variant/50 text-sm font-medium">
+            <p class="">© 2026 Zigma Software. All Rights Reserved.</p>
+            <div class="flex gap-8">
+                <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                <a class="hover:text-white transition-colors" href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+    <script src="assets/js/nav.js"></script>
+</body>
+
+</html>

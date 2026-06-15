@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap"
+                rel="stylesheet" />
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Zigma Software | Premium Mobile App Development</title>
+        <script src="assets/js/tailwind.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <script id="tailwind-config">
+                tailwind.config = {
+                        "darkMode": "class",
+                        "theme": {
+                                "extend": {
+                                        "colors": {
+                                                "outline-variant": "#c0c7d2",
+                                                "surface-container": "#e7eeff",
+                                                "on-secondary": "#ffffff",
+                                                "error-container": "#ffdad6",
+                                                "primary-fixed": "#d0e4ff",
+                                                "on-error": "#ffffff",
+                                                "on-background": "#111c2d",
+                                                "surface-bright": "#f9f9ff",
+                                                "secondary-container": "#db3238",
+                                                "on-primary-fixed-variant": "#00497b",
+                                                "surface-container-lowest": "#ffffff",
+                                                "secondary-fixed-dim": "#ffb3ae",
+                                                "tertiary-fixed": "#ffe088",
+                                                "secondary": "#b71323",
+                                                "on-tertiary-fixed": "#241a00",
+                                                "on-surface": "#111c2d",
+                                                "on-error-container": "#93000a",
+                                                "tertiary-fixed-dim": "#e9c349",
+                                                "on-tertiary-fixed-variant": "#574500",
+                                                "on-secondary-container": "#fffbff",
+                                                "error": "#ba1a1a",
+                                                "secondary-fixed": "#ffdad7",
+                                                "on-primary-container": "#e6f0ff",
+                                                "surface-container-high": "#dee8ff",
+                                                "surface-container-low": "#f0f3ff",
+                                                "on-tertiary-container": "#4e3d00",
+                                                "on-tertiary": "#ffffff",
+                                                "surface-tint": "#0062a1",
+                                                "background": "#f9f9ff",
+                                                "inverse-surface": "#263143",
+                                                "primary-container": "#0670b7",
+                                                "primary": "#005791",
+                                                "inverse-primary": "#9ccaff",
+                                                "on-primary-fixed": "#001d35",
+                                                "outline": "#717882",
+                                                "on-surface-variant": "#404751",
+                                                "inverse-on-surface": "#ecf1ff",
+                                                "surface": "#f9f9ff",
+                                                "surface-dim": "#cfdaf2",
+                                                "surface-container-highest": "#d8e3fb",
+                                                "primary-fixed-dim": "#9ccaff",
+                                                "tertiary-container": "#cca72f",
+                                                "surface-variant": "#d8e3fb",
+                                                "on-secondary-fixed-variant": "#930016",
+                                                "tertiary": "#735c00",
+                                                "on-secondary-fixed": "#410005",
+                                                "on-primary": "#ffffff"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "0.25rem",
+                                                "xl": "0.5rem",
+                                                "full": "0.75rem"
+                                        },
+                                        "spacing": {
+
+                                                "gutter": "24px",
+
+                                                "margin-desktop": "64px",
+
+                                                "margin-mobile": "16px",
+
+                                                "base": "8px",
+
+                                                "container-max": "1280px",
+
+                                                "container-margin-desktop": "40px",
+
+                                                "container-margin-mobile": "16px",
+
+                                                "xs": "4px",
+
+                                                "sm": "12px",
+
+                                                "md": "16px",
+
+                                                "lg": "24px",
+
+                                                "xl": "32px"
+
+                                        },
+                                        "fontFamily": {
+                                                "poppins": [
+                                                        "Poppins",
+                                                        "sans-serif"
+                                                ],
+                                                "label-sm": [
+                                                        "Inter"
+                                                ],
+                                                "body-lg": [
+                                                        "Inter"
+                                                ],
+                                                "label-md": [
+                                                        "Inter"
+                                                ],
+                                                "headline-lg": [
+                                                        "Hanken Grotesk"
+                                                ],
+                                                "body-md": [
+                                                        "Inter"
+                                                ],
+                                                "title-lg": [
+                                                        "Hanken Grotesk"
+                                                ],
+                                                "headline-md": [
+                                                        "Hanken Grotesk"
+                                                ],
+                                                "headline-lg-mobile": [
+                                                        "Hanken Grotesk"
+                                                ],
+                                                "display-lg": [
+                                                        "Hanken Grotesk"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "label-sm": [
+                                                        "12px",
+                                                        {
+                                                                "lineHeight": "16px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "28px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "label-md": [
+                                                        "14px",
+                                                        {
+                                                                "lineHeight": "20px",
+                                                                "letterSpacing": "0.01em",
+                                                                "fontWeight": "500"
+                                                        }
+                                                ],
+                                                "headline-lg": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "40px",
+                                                                "letterSpacing": "-0.01em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "body-md": [
+                                                        "16px",
+                                                        {
+                                                                "lineHeight": "24px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "title-lg": [
+                                                        "20px",
+                                                        {
+                                                                "lineHeight": "28px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "headline-md": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "32px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "headline-lg-mobile": [
+                                                        "28px",
+                                                        {
+                                                                "lineHeight": "36px",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "display-lg": [
+                                                        "48px",
+                                                        {
+                                                                "lineHeight": "56px",
+                                                                "letterSpacing": "-0.02em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ]
+                                        }
+                                }
+                        }
+                }
+        </script>
+        <style>
+                .material-symbols-outlined {
+                        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+                }
+
+                .glass-card {
+                        background: rgba(255, 255, 255, 0.8);
+                        backdrop-filter: blur(8px);
+                        border: 1px solid rgba(226, 232, 240, 0.5);
+                }
+
+                .text-shadow-sm {
+                        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                }
+
+                .wave-divider {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        overflow: hidden;
+                        line-height: 0;
+                        transform: rotate(180deg);
+                }
+
+                .wave-divider svg {
+                        position: relative;
+                        display: block;
+                        width: calc(100% + 1.3px);
+                        height: 60px;
+                }
+
+                .wave-divider .shape-fill {
+                        fill: #f9f9ff;
+                }
+        </style>
+        <style>
+                body {
+                        min-height: max(884px, 100dvh);
+                }
+        </style>
+</head>
+
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+        <div id="header-placeholder"></div>
+
+        <!-- Hero Banner -->
+        <section
+                class="relative h-[340px] md:h-[420px] flex flex-col items-center justify-center text-center overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                        <img class="w-full h-full object-cover object-center" src="assets/images/img%203.jpg"
+                                alt="Mobile App Development Hero">
+                        <div
+                                class="absolute inset-0 bg-gradient-to-r from-[#001d35]/80 via-[#001d35]/30 to-[#001d35]/80">
+                        </div>
+                </div>
+                <div class="relative z-10 text-white">
+                        <h1 class="font-display-lg text-display-lg mb-sm text-shadow-sm">Mobile App Development</h1>
+                        <p class="font-label-md opacity-90"><a href="index.html" class="hover:underline">Home</a> <span
+                                        class="mx-xs">&gt;</span> Services <span class="mx-xs">&gt;</span> Mobile
+                                Development</p>
+                </div>
+        </section>
+        <!-- Intro Section -->
+        <section
+                class="py-xl px-container-margin-mobile md:px-container-margin-desktop max-w-[1280px] mx-auto text-center mt-lg">
+                <div class="reveal">
+                        <span
+                                class="inline-block px-md py-xs bg-primary-fixed text-on-primary-fixed-variant rounded-full text-headline-lg md:text-display-lg font-headline-lg mb-md">PREMIUM
+                                SOLUTIONS</span>
+                        <p class="text-label-lg font-label-sm text-on-surface mb-lg">Transform Your Ideas Into Powerful
+                                Mobile Apps</p>
+                        <p class="text-on-surface-variant text-body-lg leading-relaxed">
+                                At Zigma Software, we don't just build apps; we engineer digital experiences. Our expert
+                                team combines strategic thinking with cutting-edge technology to deliver mobile
+                                solutions that are scalable, secure, and stunningly designed. From enterprise internal
+                                tools to consumer-facing marketplaces, we bring your vision to life on every screen.
+                        </p>
+                </div>
+        </section>
+        <!-- Why Choose Us Grid -->
+        <section class="py-xl bg-surface-container-low px-container-margin-mobile md:px-container-margin-desktop">
+                <div class="max-w-7xl mx-auto">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-lg reveal">
+                                <!-- Card 1 -->
+                                <div
+                                        class="bg-white p-xl rounded-[20px] border border-outline-variant hover:shadow-xl hover:-translate-y-2 transition-all group">
+                                        <div
+                                                class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center mb-lg group-hover:shadow-[0_0_20px_rgba(0,87,145,0.3)] transition-all">
+                                                <span class="material-symbols-outlined text-primary text-[28px]"
+                                                        data-icon="developer_mode">developer_mode</span>
+                                        </div>
+                                        <h3 class="text-title-lg font-title-lg mb-sm">Custom App Development</h3>
+                                        <p class="text-on-surface-variant">Tailored mobile solutions designed
+                                                specifically for your unique business requirements and target audience.
+                                        </p>
+                                </div>
+                                <!-- Card 2 -->
+                                <div
+                                        class="bg-white p-xl rounded-[20px] border border-outline-variant hover:shadow-xl hover:-translate-y-2 transition-all group">
+                                        <div
+                                                class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center mb-lg group-hover:shadow-[0_0_20px_rgba(0,87,145,0.3)] transition-all">
+                                                <span class="material-symbols-outlined text-primary text-[28px]"
+                                                        data-icon="devices">devices</span>
+                                        </div>
+                                        <h3 class="text-title-lg font-title-lg mb-sm">Android &amp; iOS Development</h3>
+                                        <p class="text-on-surface-variant">Native performance across all platforms,
+                                                ensuring a seamless experience for every mobile user.</p>
+                                </div>
+                                <!-- Card 3 -->
+                                <div
+                                        class="bg-white p-xl rounded-[20px] border border-outline-variant hover:shadow-xl hover:-translate-y-2 transition-all group">
+                                        <div
+                                                class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center mb-lg group-hover:shadow-[0_0_20px_rgba(0,87,145,0.3)] transition-all">
+                                                <span class="material-symbols-outlined text-primary text-[28px]"
+                                                        data-icon="palette">palette</span>
+                                        </div>
+                                        <h3 class="text-title-lg font-title-lg mb-sm">Modern UI/UX Design</h3>
+                                        <p class="text-on-surface-variant">Exceptional visual interfaces and user
+                                                journeys that drive engagement and retention.</p>
+                                </div>
+                                <!-- Card 4 -->
+                                <div
+                                        class="bg-white p-xl rounded-[20px] border border-outline-variant hover:shadow-xl hover:-translate-y-2 transition-all group">
+                                        <div
+                                                class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center mb-lg group-hover:shadow-[0_0_20px_rgba(0,87,145,0.3)] transition-all">
+                                                <span class="material-symbols-outlined text-primary text-[28px]"
+                                                        data-icon="security">security</span>
+                                        </div>
+                                        <h3 class="text-title-lg font-title-lg mb-sm">High Performance &amp; Security
+                                        </h3>
+                                        <p class="text-on-surface-variant">Optimized codebases with enterprise-grade
+                                                security protocols to protect sensitive data.</p>
+                                </div>
+                                <!-- Card 5 -->
+                                <div
+                                        class="bg-white p-xl rounded-[20px] border border-outline-variant hover:shadow-xl hover:-translate-y-2 transition-all group">
+                                        <div
+                                                class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center mb-lg group-hover:shadow-[0_0_20px_rgba(0,87,145,0.3)] transition-all">
+                                                <span class="material-symbols-outlined text-primary text-[28px]"
+                                                        data-icon="account_tree">account_tree</span>
+                                        </div>
+                                        <h3 class="text-title-lg font-title-lg mb-sm">Scalable Architecture</h3>
+                                        <p class="text-on-surface-variant">Build apps that grow with you, handling
+                                                increasing users and complexity effortlessly.</p>
+                                </div>
+                                <!-- Card 6 -->
+                                <div
+                                        class="bg-white p-xl rounded-[20px] border border-outline-variant hover:shadow-xl hover:-translate-y-2 transition-all group">
+                                        <div
+                                                class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center mb-lg group-hover:shadow-[0_0_20px_rgba(0,87,145,0.3)] transition-all">
+                                                <span class="material-symbols-outlined text-primary text-[28px]"
+                                                        data-icon="support_agent">support_agent</span>
+                                        </div>
+                                        <h3 class="text-title-lg font-title-lg mb-sm">Ongoing Support</h3>
+                                        <p class="text-on-surface-variant">Continuous maintenance and updates to keep
+                                                your application ahead of the competition.</p>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- Mobile Services Column Section -->
+        <section
+                class="py-xl md:py-32 bg-white px-container-margin-mobile md:px-container-margin-desktop overflow-hidden">
+                <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-xl">
+                        <div class="reveal">
+                                <h2 class="text-headline-lg font-headline-lg mb-lg">Comprehensive Mobile Capabilities
+                                </h2>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+                                        <div class="flex items-center gap-sm">
+                                                <span class="material-symbols-outlined text-primary"
+                                                        data-icon="check_circle">check_circle</span>
+                                                <span class="font-medium">Native Android (Kotlin)</span>
+                                        </div>
+                                        <div class="flex items-center gap-sm">
+                                                <span class="material-symbols-outlined text-primary"
+                                                        data-icon="check_circle">check_circle</span>
+                                                <span class="font-medium">Native iOS (Swift)</span>
+                                        </div>
+                                        <div class="flex items-center gap-sm">
+                                                <span class="material-symbols-outlined text-primary"
+                                                        data-icon="check_circle">check_circle</span>
+                                                <span class="font-medium">Cross-Platform (Flutter)</span>
+                                        </div>
+                                        <div class="flex items-center gap-sm">
+                                                <span class="material-symbols-outlined text-primary"
+                                                        data-icon="check_circle">check_circle</span>
+                                                <span class="font-medium">React Native</span>
+                                        </div>
+                                        <div class="flex items-center gap-sm">
+                                                <span class="material-symbols-outlined text-primary"
+                                                        data-icon="check_circle">check_circle</span>
+                                                <span class="font-medium">Hybrid App Solutions</span>
+                                        </div>
+                                        <div class="flex items-center gap-sm">
+                                                <span class="material-symbols-outlined text-primary"
+                                                        data-icon="check_circle">check_circle</span>
+                                                <span class="font-medium">UI/UX Strategy</span>
+                                        </div>
+                                        <div class="flex items-center gap-sm">
+                                                <span class="material-symbols-outlined text-primary"
+                                                        data-icon="check_circle">check_circle</span>
+                                                <span class="font-medium">API Integration</span>
+                                        </div>
+                                        <div class="flex items-center gap-sm">
+                                                <span class="material-symbols-outlined text-primary"
+                                                        data-icon="check_circle">check_circle</span>
+                                                <span class="font-medium">QA &amp; Automation Testing</span>
+                                        </div>
+                                </div>
+                                <div class="mt-xl">
+                                        <button
+                                                class="bg-secondary text-white px-xl py-md rounded-xl hover:bg-secondary-container transition-all flex items-center gap-sm">
+                                                Get Service Details <span
+                                                        class="material-symbols-outlined">arrow_forward</span>
+                                        </button>
+                                </div>
+                        </div>
+                        <div class="relative reveal flex justify-center lg:justify-end">
+                                <div class="relative w-[300px] md:w-[400px]">
+                                        <img alt="Smartphone Illustration"
+                                                class="rounded-[40px] shadow-2xl relative z-10 hover:scale-105 transition-transform duration-500"
+                                                data-alt="A premium 3D render of a high-end smartphone display showcasing a vibrant software dashboard. Floating around the phone are stylized icons for cloud syncing, secure encryption, and fast analytics. The scene is lit by soft studio lights with blue and red rim highlights, set against a clean white and light-blue background. The overall style is clean, corporate SaaS, and highly modern."
+                                                src="assets/images/analytics_dashboard.png" />
+                                        <div
+                                                class="absolute -top-10 -right-10 w-24 h-24 bg-tertiary-fixed-dim/20 rounded-full blur-2xl animate-pulse">
+                                        </div>
+                                        <div
+                                                class="absolute -bottom-10 -left-10 w-32 h-32 bg-primary-fixed/30 rounded-full blur-3xl">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- Process Timeline -->
+        <section
+                class="py-xl md:py-32 bg-surface-container-low px-container-margin-mobile md:px-container-margin-desktop">
+                <div class="max-w-7xl mx-auto">
+                        <div class="text-center mb-xl reveal">
+                                <h2 class="text-headline-lg font-headline-lg">Our Strategic Roadmap</h2>
+                                <p class="text-on-surface-variant">A proven development lifecycle that ensures quality
+                                        at every milestone.</p>
+                        </div>
+                        <div class="relative max-w-4xl mx-auto reveal">
+                                <!-- Vertical Line -->
+                                <div
+                                        class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-1 h-full bg-primary-fixed-dim/50 rounded-full">
+                                </div>
+                                <!-- Step 1 -->
+                                <div
+                                        class="relative flex flex-col md:flex-row items-center justify-between mb-xl w-full">
+                                        <div class="md:w-5/12 ml-12 md:ml-0 md:text-right">
+                                                <div
+                                                        class="bg-white p-lg rounded-xl shadow-sm border border-outline-variant">
+                                                        <h4 class="font-bold text-primary mb-xs">Requirement Analysis
+                                                        </h4>
+                                                        <p class="text-on-surface-variant text-label-md">Deep dive into
+                                                                your business goals, user personas, and technical
+                                                                constraints.</p>
+                                                </div>
+                                        </div>
+                                        <div
+                                                class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-primary border-4 border-white flex items-center justify-center z-20">
+                                                <span class="text-white text-[10px]">01</span>
+                                        </div>
+                                        <div class="md:w-5/12"></div>
+                                </div>
+                                <!-- Step 2 -->
+                                <div
+                                        class="relative flex flex-col md:flex-row items-center justify-between mb-xl w-full">
+                                        <div class="md:w-5/12"></div>
+                                        <div
+                                                class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-primary border-4 border-white flex items-center justify-center z-20">
+                                                <span class="text-white text-[10px]">02</span>
+                                        </div>
+                                        <div class="md:w-5/12 ml-12 md:ml-0">
+                                                <div
+                                                        class="bg-white p-lg rounded-xl shadow-sm border border-outline-variant">
+                                                        <h4 class="font-bold text-primary mb-xs">Strategy &amp; Design
+                                                        </h4>
+                                                        <p class="text-on-surface-variant text-label-md">Creating
+                                                                wireframes, interactive prototypes, and architectural
+                                                                blueprints.</p>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Step 3 -->
+                                <div
+                                        class="relative flex flex-col md:flex-row items-center justify-between mb-xl w-full">
+                                        <div class="md:w-5/12 ml-12 md:ml-0 md:text-right">
+                                                <div
+                                                        class="bg-white p-lg rounded-xl shadow-sm border border-outline-variant">
+                                                        <h4 class="font-bold text-primary mb-xs">Development</h4>
+                                                        <p class="text-on-surface-variant text-label-md">Agile coding
+                                                                using modern stacks like Flutter, Swift, and Kotlin.</p>
+                                                </div>
+                                        </div>
+                                        <div
+                                                class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-primary border-4 border-white flex items-center justify-center z-20">
+                                                <span class="text-white text-[10px]">03</span>
+                                        </div>
+                                        <div class="md:w-5/12"></div>
+                                </div>
+                                <!-- Step 4 -->
+                                <div class="relative flex flex-col md:flex-row items-center justify-between w-full">
+                                        <div class="md:w-5/12"></div>
+                                        <div
+                                                class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-primary border-4 border-white flex items-center justify-center z-20">
+                                                <span class="text-white text-[10px]">04</span>
+                                        </div>
+                                        <div class="md:w-5/12 ml-12 md:ml-0">
+                                                <div
+                                                        class="bg-white p-lg rounded-xl shadow-sm border border-outline-variant">
+                                                        <h4 class="font-bold text-primary mb-xs">Deployment &amp;
+                                                                Support</h4>
+                                                        <p class="text-on-surface-variant text-label-md">Launching to
+                                                                App Stores and providing ongoing maintenance.</p>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- FAQ Accordion -->
+        <section class="py-xl md:py-32 bg-background px-container-margin-mobile md:px-container-margin-desktop">
+                <div class="max-w-3xl mx-auto reveal">
+                        <h2 class="text-headline-lg font-headline-lg text-center mb-xl">Frequently Asked Questions</h2>
+                        <div class="space-y-md">
+                                <div class="bg-white rounded-xl border border-outline-variant overflow-hidden">
+                                        <button class="w-full flex justify-between items-center p-lg text-left hover:bg-surface-container-low transition-all"
+                                                onclick="toggleFaq(0)">
+                                                <span class="font-bold text-on-surface">How long does it take to develop
+                                                        a mobile app?</span>
+                                                <span class="material-symbols-outlined text-primary transition-transform duration-300"
+                                                        id="faq-icon-0">add_circle</span>
+                                        </button>
+                                        <div class="max-h-0 overflow-hidden transition-all duration-300"
+                                                id="faq-content-0">
+                                                <div class="p-lg pt-0 text-on-surface-variant">Typical timelines range
+                                                        from 3 to 6 months depending on complexity, feature set, and
+                                                        platform requirements.</div>
+                                        </div>
+                                </div>
+                                <div class="bg-white rounded-xl border border-outline-variant overflow-hidden">
+                                        <button class="w-full flex justify-between items-center p-lg text-left hover:bg-surface-container-low transition-all"
+                                                onclick="toggleFaq(1)">
+                                                <span class="font-bold text-on-surface">Do you build for both Android
+                                                        and iOS?</span>
+                                                <span class="material-symbols-outlined text-primary transition-transform duration-300"
+                                                        id="faq-icon-1">add_circle</span>
+                                        </button>
+                                        <div class="max-h-0 overflow-hidden transition-all duration-300"
+                                                id="faq-content-1">
+                                                <div class="p-lg pt-0 text-on-surface-variant">Yes, we specialize in
+                                                        both native development (Swift/Kotlin) and cross-platform
+                                                        solutions (Flutter/React Native) to provide maximum market
+                                                        reach.</div>
+                                        </div>
+                                </div>
+                                <div class="bg-white rounded-xl border border-outline-variant overflow-hidden">
+                                        <button class="w-full flex justify-between items-center p-lg text-left hover:bg-surface-container-low transition-all"
+                                                onclick="toggleFaq(2)">
+                                                <span class="font-bold text-on-surface">How do you handle application
+                                                        security?</span>
+                                                <span class="material-symbols-outlined text-primary transition-transform duration-300"
+                                                        id="faq-icon-2">add_circle</span>
+                                        </button>
+                                        <div class="max-h-0 overflow-hidden transition-all duration-300"
+                                                id="faq-content-2">
+                                                <div class="p-lg pt-0 text-on-surface-variant">Security is baked into
+                                                        our process with data encryption, secure API protocols, and
+                                                        regular penetration testing.</div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-[#001e2d] pt-20 pb-8 text-on-tertiary">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-margin-desktop max-w-container-max mx-auto mb-20">
+                        <div class="space-y-8">
+                                <a href="index.html" class="inline-block"><img src="assets/images/logo.png"
+                                                alt="Zigma Software Logo" class="h-14 w-auto"></a>
+                                <p class="text-surface-variant/70 text-lg leading-relaxed font-medium">
+                                        Zigma Software, Erode is a trusted digital solutions company delivering web,
+                                        mobile app, and software solutions to grow your business.
+                                </p>
+
+                        </div>
+                        <div>
+                                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Get In
+                                        Touch</h4>
+                                <ul class="space-y-6 text-surface-variant/80 font-medium">
+                                        <li class="flex gap-4">
+                                                <span
+                                                        class="material-symbols-outlined text-secondary shrink-0">location_on</span>
+                                                <span class="">Door No: 4/1c.12-A, Annamalai Gounder Layout, 1st Floor,
+                                                        Near Hotel Vignesh, Mettur Road, Erode. Tamil Nadu, India</span>
+                                        </li>
+                                        <li class="flex gap-4">
+                                                <span
+                                                        class="material-symbols-outlined text-secondary shrink-0">phone</span>
+                                                <span class="">+91-9942364454, 9791902386</span>
+                                        </li>
+                                        <li class="flex gap-4">
+                                                <span
+                                                        class="material-symbols-outlined text-secondary shrink-0">mail</span>
+                                                <span class="">info@zigmasoftware.in</span>
+                                        </li>
+                                </ul>
+                        </div>
+                        <div>
+                                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">
+                                        Important Links</h4>
+                                <ul class="space-y-4 font-medium">
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="about.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        About Us</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="products.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Products</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="web-development.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Services</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="blog.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Blogs</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="contact.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Contact Us</a></li>
+                                </ul>
+                        </div>
+                        <div>
+                                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Our
+                                        Services</h4>
+                                <ul class="space-y-4 font-medium">
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="software-support.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Business Analytics</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="mobile-development.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Mobile App Dev</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="software-support.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        HRMS &amp; Payroll</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="social-marketing.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Social Media Marketing</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="web-development.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Web Hosting</a></li>
+                                </ul>
+                        </div>
+                </div>
+                <div
+                        class="border-t border-white/5 pt-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-surface-variant/50 text-sm font-medium">
+                        <p class="">© 2026 Zigma Software. All Rights Reserved.</p>
+                        <div class="flex gap-8">
+                                <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                                <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                                <a class="hover:text-white transition-colors" href="#">Cookie Policy</a>
+                        </div>
+                </div>
+        </footer>
+        <script>
+                const observerOptions = { threshold: 0.1 };
+                const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                                }
+                        });
+                }, observerOptions);
+
+                document.querySelectorAll('section > div').forEach(el => {
+                        el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                        observer.observe(el);
+                });
+
+                // FAQ Toggle Logic
+                function toggleFaq(id) {
+                        const content = document.getElementById(`faq-content-${id}`);
+                        const icon = document.getElementById(`faq-icon-${id}`);
+
+                        if (content.style.maxHeight) {
+                                content.style.maxHeight = null;
+                                icon.style.transform = 'rotate(0deg)';
+                                icon.innerText = 'add_circle';
+                        } else {
+                                document.querySelectorAll('[id^="faq-content-"]').forEach(c => c.style.maxHeight = null);
+                                document.querySelectorAll('[id^="faq-icon-"]').forEach(i => {
+                                        i.style.transform = 'rotate(0deg)';
+                                        i.innerText = 'add_circle';
+                                });
+
+                                content.style.maxHeight = content.scrollHeight + "px";
+                                icon.style.transform = 'rotate(45deg)';
+                                icon.innerText = 'cancel';
+                        }
+                }
+        </script>
+        <script src="assets/js/nav.js"></script>
+</body>
+
+</html>

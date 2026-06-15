@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en" style="">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>ZIGMA SOFTWARE | Your Trusted Digital Solution Partner</title>
+    <script src="assets/js/tailwind.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css?v=2">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Poppins:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            "darkMode": "class",
+            "theme": {
+                "extend": {
+                    "colors": {
+                        "surface": "#f9f9fc",
+                        "on-tertiary-fixed": "#001e2d",
+                        "surface-dim": "#dadadc",
+                        "on-secondary-container": "#fffbff",
+                        "outline-variant": "#c2c6d1",
+                        "primary-fixed-dim": "#a3c9ff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#c6e7ff",
+                        "surface-container-high": "#e8e8ea",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f9f9fc",
+                        "primary-fixed": "#d3e4ff",
+                        "secondary-fixed-dim": "#ffb3ae",
+                        "outline": "#727781",
+                        "on-primary-fixed-variant": "#004882",
+                        "on-primary-fixed": "#001c38",
+                        "on-background": "#1a1c1e",
+                        "background": "#f9f9fc",
+                        "on-secondary-fixed-variant": "#930015",
+                        "secondary-fixed": "#ffdad7",
+                        "surface-variant": "#e2e2e5",
+                        "surface-container-low": "#f3f3f6",
+                        "secondary": "#bb001e",
+                        "primary": "#003461",
+                        "error": "#ba1a1a",
+                        "primary-container": "#004b87",
+                        "surface-container-highest": "#e2e2e5",
+                        "inverse-surface": "#2f3133",
+                        "inverse-primary": "#a3c9ff",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#004f6f",
+                        "surface-tint": "#27609d",
+                        "on-surface": "#1a1c1e",
+                        "on-secondary-fixed": "#410004",
+                        "on-tertiary-container": "#55c4ff",
+                        "on-primary-container": "#8abcff",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#00374f",
+                        "surface-container": "#eeeef0",
+                        "on-tertiary-fixed-variant": "#004c6b",
+                        "tertiary-fixed-dim": "#82cfff",
+                        "on-surface-variant": "#424750",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#e32130",
+                        "inverse-on-surface": "#f0f0f3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "container-margin-desktop": "40px",
+                        "container-margin-mobile": "16px",
+                        "xs": "4px",
+                        "sm": "12px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "xl": "32px"
+                    },
+                    "fontFamily": {
+                        "poppins": [
+                            "Poppins",
+                            "sans-serif"
+                        ],
+                        "label-sm": [
+                            "Inter"
+                        ],
+                        "display-lg": [
+                            "Inter"
+                        ],
+                        "body-md": [
+                            "Inter"
+                        ],
+                        "title-md": [
+                            "Inter"
+                        ],
+                        "body-lg": [
+                            "Inter"
+                        ],
+                        "headline-lg-mobile": [
+                            "Inter"
+                        ],
+                        "headline-lg": [
+                            "Inter"
+                        ]
+                    },
+                    "fontSize": {
+                        "label-sm": [
+                            "12px",
+                            {
+                                "lineHeight": "1",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "display-lg": [
+                            "48px",
+                            {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                            }
+                        ],
+                        "body-md": [
+                            "16px",
+                            {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "title-md": [
+                            "20px",
+                            {
+                                "lineHeight": "1.4",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "body-lg": [
+                            "18px",
+                            {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-lg-mobile": [
+                            "24px",
+                            {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "headline-lg": [
+                            "32px",
+                            {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "label-md": [
+                            "14px",
+                            {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.01em",
+                                "fontWeight": "500"
+                            }
+                        ],
+                        "headline-md": [
+                            "24px",
+                            {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "title-lg": [
+                            "20px",
+                            {
+                                "lineHeight": "28px",
+                                "fontWeight": "600"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+        }
+
+        .shimmer-btn {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shimmer-btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transform: rotate(45deg);
+            transition: 0.5s;
+        }
+
+        .shimmer-btn:hover::after {
+            left: 100%;
+            top: 100%;
+        }
+
+        .vibrant-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .vibrant-card:hover {
+            transform: scale(1.03) translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+
+        .color-bg-blue {
+            background-color: #f0f7ff;
+        }
+
+        .color-bg-blue:hover {
+            background-color: #dbeafe;
+        }
+
+        .color-bg-red {
+            background-color: #fff1f2;
+        }
+
+        .color-bg-red:hover {
+            background-color: #ffe4e6;
+        }
+
+        .color-bg-teal {
+            background-color: #f0fdfa;
+        }
+
+        .color-bg-teal:hover {
+            background-color: #ccfbf1;
+        }
+
+        .color-bg-purple {
+            background-color: #faf5ff;
+        }
+
+        .color-bg-purple:hover {
+            background-color: #f3e8ff;
+        }
+
+        .color-bg-amber {
+            background-color: #fffbeb;
+        }
+
+        .color-bg-amber:hover {
+            background-color: #fef3c7;
+        }
+
+        .color-bg-indigo {
+            background-color: #eef2ff;
+        }
+
+        .color-bg-indigo:hover {
+            background-color: #e0e7ff;
+        }
+
+        /* Partner Logo Card Hover Effects */
+        .partner-logo-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .partner-logo-card:hover {
+            transform: translateY(-5px) scale(1.04);
+            box-shadow: 0 8px 25px rgba(0, 59, 117, 0.18);
+            border-color: #C8102E;
+            background-color: #f0f6ff;
+        }
+
+        .partner-logo-card img {
+            transition: transform 0.3s ease;
+        }
+
+        .partner-logo-card:hover img {
+            transform: scale(1.03);
+        }
+
+        /* Our Clients responsive layout */
+        .clients-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+            width: 100%;
+        }
+
+        .client-card {
+            width: 100%;
+            flex-shrink: 0;
+            box-sizing: border-box;
+        }
+
+        /* Hero carousel styles */
+        .carousel {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1.5rem;
+            min-height: 420px;
+            height: 100%;
+            background: #0c1d3b;
+        }
+
+        .carousel-inner {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.75s ease;
+            will-change: transform;
+        }
+
+        .item {
+            min-width: 100%;
+            flex-shrink: 0;
+            display: block;
+            height: 100%;
+        }
+
+        .item.active {
+            /* keep active state available for semantics */
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.5rem;
+            z-index: 5;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .carousel-indicators li {
+            width: 0.9rem;
+            height: 0.9rem;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.55);
+            border: 1px solid rgba(255, 255, 255, 0.88);
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .carousel-indicators li.active {
+            width: 1.15rem;
+            background: rgba(255, 255, 255, 1);
+            transform: scale(1.05);
+        }
+
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 5;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            border: 1px solid rgba(156, 163, 175, 0.3);
+        }
+
+        .carousel-control:hover {
+            transform: translateY(-50%) scale(1.05);
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .carousel-control.left {
+            left: 1rem;
+        }
+
+        .carousel-control.right {
+            right: 1rem;
+        }
+
+        @media (max-width: 1024px) {
+            .carousel {
+                min-height: 320px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .carousel {
+                min-height: 240px;
+                border-radius: 1rem;
+            }
+
+            .carousel-control {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+
+        /* Desktop breakpoint (1200px+) */
+        @media (min-width: 1200px) {
+            .client-card {
+                width: calc((100% - 4 * 24px) / 5);
+                max-width: 224px;
+                /* Matches original w-56 */
+            }
+
+            .clients-container {
+                flex-wrap: nowrap;
+                /* Prevent wrap on desktop */
+            }
+        }
+
+        /* Tablet breakpoint (768px-1199px) */
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .client-card {
+                width: calc((100% - 2 * 24px) / 3);
+                max-width: 224px;
+            }
+        }
+
+        /* Mobile breakpoint (<768px) */
+        @media (min-width: 480px) and (max-width: 767px) {
+            .client-card {
+                width: calc((100% - 16px) / 2);
+                max-width: 224px;
+            }
+
+            .clients-container {
+                gap: 16px;
+            }
+        }
+
+        @media (max-width: 479px) {
+            .client-card {
+                width: 100%;
+                max-width: 224px;
+            }
+
+            .clients-container {
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-surface font-body-md text-on-surface selection:bg-primary selection:text-white">
+    <!-- Top Contact Bar -->
+    <div
+        class="hidden md:flex bg-[#001D35] text-white h-10 px-container-margin-desktop items-center justify-between text-label-sm font-label-sm relative z-50 border-b border-white/10">
+        <div class="flex items-center gap-md">
+            <span class="flex items-center gap-xs"><span
+                    class="material-symbols-outlined text-[16px] text-primary-fixed-dim">mail</span>
+                info@zigmasoftware.in</span>
+        </div>
+        <div class="flex items-center gap-md">
+            <span class="flex items-center gap-xs"><span
+                    class="material-symbols-outlined text-[16px] text-primary-fixed-dim">call</span> +91 99941
+                40474</span>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="sticky top-0 w-full z-50 bg-white shadow-md border-b border-gray-200/80 h-20 flex items-center"
+        id="main-nav">
+        <div class="max-w-[1280px] mx-auto w-full px-container-margin-desktop flex items-center justify-between h-full">
+            <a href="index.html" class="flex items-center gap-base cursor-pointer shrink-0">
+                <span class="logo-crop inline-block overflow-hidden h-12">
+                    <img src="assets/images/logo.png" alt="Zigma Software Logo" class="h-14 w-auto object-contain">
+                </span>
+            </a>
+            <div class="hidden lg:flex nav-links items-center gap-md xl:gap-xl font-poppins text-label-md h-full">
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap"
+                    href="index.html">Home</a>
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap"
+                    href="about.html">About Us</a>
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap"
+                    href="products.html">Products</a>
+                <!-- Services Dropdown container -->
+                <div class="relative group h-full flex items-center">
+                    <button
+                        class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent flex items-center gap-xs focus:outline-none whitespace-nowrap">
+                        <span>Services</span>
+                        <span
+                            class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:rotate-180 font-bold">expand_more</span>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div
+                        class="absolute top-full left-0 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-1 text-left">
+                        <a href="web-development.html"
+                            class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary whitespace-nowrap"
+                            role="menuitem">Web Design & Development</a>
+                        <a href="mobile-development.html"
+                            class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary whitespace-nowrap"
+                            role="menuitem">Mobile App Development</a>
+                        <a href="seo-services.html"
+                            class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary whitespace-nowrap"
+                            role="menuitem">SEO Services</a>
+                        <a href="social-marketing.html"
+                            class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary whitespace-nowrap"
+                            role="menuitem">Social Media Marketing</a>
+                        <a href="software-support.html"
+                            class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary whitespace-nowrap"
+                            role="menuitem">Software Support</a>
+                    </div>
+                </div>
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap"
+                    href="customer.html">Customers</a>
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap"
+                    href="testimonials.html">Testimonials</a>
+                <a class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap"
+                    href="blog.html">Blogs</a>
+                <a href="contact.html"
+                    class="text-[#00497b] hover:text-[#EC3F43] transition-all duration-200 px-md py-xs rounded font-bold bg-transparent whitespace-nowrap">contact us</a>
+            </div>
+            <button class="lg:hidden text-[#00497b]" id="mobile-menu-toggle">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (Overlay) -->
+    <div class="fixed inset-0 z-[100] bg-[#001D35]/95 hidden lg:hidden flex flex-col items-center justify-center gap-lg text-white text-title-lg font-bold"
+        id="mobile-menu">
+        <button class="absolute top-6 right-6 text-white" id="mobile-menu-close">
+            <span class="material-symbols-outlined text-[32px]">close</span>
+        </button>
+        <a class="hover:text-secondary transition-colors" href="index.html">Home</a>
+        <a class="hover:text-secondary transition-colors" href="about.html">About Us</a>
+        <a class="hover:text-secondary transition-colors" href="products.html">Products</a>
+        <div class="flex flex-col items-center gap-sm">
+            <span class="text-white/60 text-sm uppercase tracking-wider">Services</span>
+            <a class="text-white hover:text-secondary text-base transition-colors" href="web-development.html">Web
+                Design & Development</a>
+            <a class="text-white hover:text-secondary text-base transition-colors" href="mobile-development.html">Mobile
+                App Development</a>
+            <a class="text-white hover:text-secondary text-base transition-colors" href="seo-services.html">SEO
+                Services</a>
+            <a class="text-white hover:text-secondary text-base transition-colors" href="social-marketing.html">Social
+                Media Marketing</a>
+            <a class="text-white hover:text-secondary text-base transition-colors" href="software-support.html">Software
+                Support</a>
+        </div>
+        <a class="hover:text-secondary transition-colors" href="customer.html">Customers</a>
+        <a class="hover:text-secondary transition-colors" href="testimonials.html">Testimonials</a>
+        <a class="hover:text-secondary transition-colors" href="blog.html">Blogs</a>
+        <a href="contact.html"
+            class="bg-[#EC3F43] text-white px-xl py-md rounded-full font-semibold hover:brightness-110 transition-all mt-md">contact us
+        </a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-[750px] overflow-hidden">
+            <div id="myCarousel" class="carousel">
+                <ol class="carousel-indicators">
+                    <li data-index="0" class="active"></li>
+                    <li data-index="1"></li>
+                    <li data-index="2"></li>
+                    <li data-index="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="assets/images/img%201.jpg" alt="Hero image 1" />
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/img%202.jpg" alt="Hero image 2" />
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/img%203.jpg" alt="Hero image 3" />
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/img%204.jpg" alt="Hero image 4" />
+                    </div>
+                </div>
+                <button class="carousel-control left" type="button" aria-label="Previous slide">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+                <button class="carousel-control right" type="button" aria-label="Next slide">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- Welcome Section -->
+        <section class="py-24 bg-amber-500/5 overflow-hidden">
+            <div
+                class="px-margin-desktop max-w-container-max mx-auto text-center relative transition-all duration-1000 opacity-100 translate-y-0">
+                <div class="absolute -top-10 left-0 w-32 h-32 bg-secondary/5 rounded-full blur-3xl"></div>
+                <div class="absolute -bottom-10 right-0 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+                <h2
+                    class="text-secondary font-black text-3xl tracking-[0.25rem] uppercase mb-4 md:mb-6 leading-tight whitespace-nowrap max-w-full mx-auto">
+                    WELCOME TO ZIGMA SOFTWARE</h2>
+                <p
+                    class="text-primary font-semibold text-lg md:text-[24px] lg:text-[28px] mb-8 max-w-5xl mx-auto leading-snug mt-2">
+                    Your
+                    Trusted Digital Solution Partner</p>
+                <p class="text-lg text-on-surface-variant max-w-4xl mx-auto mb-12 leading-relaxed font-medium">
+                    We, Zigma Software Erode, are a professional Organization comprising a set of dedicated software
+                    professionals around 10 plus, ever striving towards perfection from 1991 onwards. Doing Tailor-made
+                    software projects for large, medium Manufacturing entities, trading houses, various product
+                    Exporters, Corporate administrative offices, Professionals and Chartered Accountants etc., like
+                    Financial Accounting Systems, Payroll Management Systems, Schedule Management Systems, Equipment
+                    History Management Systems, Textile Design Management Systems, Marketing Management Systems, Ticket
+                    Booking (Travels) Systems, Bus Collection Maintenance Systems etc.
+                </p>
+                <a href="about.html"
+                    class="px-12 py-5 bg-primary text-white font-bold rounded-2xl hover:bg-secondary transition-all shadow-[0_20px_50px_rgba(0,52,97,0.3)] flex items-center gap-3 mx-auto transform hover:-translate-y-1 w-fit">
+                    Know More About Us
+                    <span class="material-symbols-outlined">info</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Grid (Vibrant Desktop) -->
+        <section class="py-24 bg-white">
+            <div
+                class="px-margin-desktop max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
+                <div class="text-center mb-16">
+                    <span
+                        class="text-secondary font-black text-2xl md:text-3xl tracking-[0.15em] uppercase block mb-3">OUR
+                        SERVICES</span>
+                    <h2 class="text-primary font-semibold text-lg md:text-xl mt-2">Solutions for Every Need</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+                    <!-- Service 1: Blue -->
+                    <div
+                        class="vibrant-card color-bg-blue p-8 rounded-[2.5rem] border border-blue-100 flex flex-col h-full">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-blue-500 text-white flex items-center justify-center mb-6 shadow-lg">
+                            <span class="material-symbols-outlined text-4xl"
+                                style="font-variation-settings: &quot;FILL&quot; 1;">analytics</span>
+                        </div>
+                        <h3 class="font-title-md text-xl text-primary mb-4 font-bold">Business Analytics</h3>
+                        <p class="text-on-surface-variant mb-8 flex-grow">Data driven insights to improve performance
+                            and support smart decisions.</p>
+                        <a class="inline-flex items-center gap-2 text-blue-600 font-black hover:gap-4 transition-all"
+                            href="software-support.html">Read More <span
+                                class="material-symbols-outlined">arrow_forward</span></a>
+                    </div>
+                    <!-- Service 2: Teal -->
+                    <div
+                        class="vibrant-card color-bg-teal p-8 rounded-[2.5rem] border border-teal-100 flex flex-col h-full">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-teal-500 text-white flex items-center justify-center mb-6 shadow-lg">
+                            <span class="material-symbols-outlined text-4xl"
+                                style="font-variation-settings: &quot;FILL&quot; 1;">smartphone</span>
+                        </div>
+                        <h3 class="font-title-md text-xl text-primary mb-4 font-bold">Mobile App Development</h3>
+                        <p class="text-on-surface-variant mb-8 flex-grow">Innovative and user friendly apps for Android
+                            &amp; iOS platforms.</p>
+                        <a class="inline-flex items-center gap-2 text-teal-600 font-black hover:gap-4 transition-all"
+                            href="mobile-development.html">Read More <span
+                                class="material-symbols-outlined">arrow_forward</span></a>
+                    </div>
+                    <!-- Service 3: Purple -->
+                    <div
+                        class="vibrant-card color-bg-purple p-8 rounded-[2.5rem] border border-purple-100 flex flex-col h-full">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-purple-500 text-white flex items-center justify-center mb-6 shadow-lg">
+                            <span class="material-symbols-outlined text-4xl"
+                                style="font-variation-settings: &quot;FILL&quot; 1;">groups</span>
+                        </div>
+                        <h3 class="font-title-md text-xl text-primary mb-4 font-bold">HRMS &amp; Payroll</h3>
+                        <p class="text-on-surface-variant mb-8 flex-grow">Streamline employee management, payroll and
+                            compliance.</p>
+                        <a class="inline-flex items-center gap-2 text-purple-600 font-black hover:gap-4 transition-all"
+                            href="software-support.html">Read More <span
+                                class="material-symbols-outlined">arrow_forward</span></a>
+                    </div>
+                    <!-- Service 4: Red -->
+                    <div
+                        class="vibrant-card color-bg-red p-8 rounded-[2.5rem] border border-red-100 flex flex-col h-full">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-red-500 text-white flex items-center justify-center mb-6 shadow-lg">
+                            <span class="material-symbols-outlined text-4xl"
+                                style="font-variation-settings: &quot;FILL&quot; 1;">hub</span>
+                        </div>
+                        <h3 class="font-title-md text-xl text-primary mb-4 font-bold">Social Media Marketing</h3>
+                        <p class="text-on-surface-variant mb-8 flex-grow">Strategic social media solutions to grow your
+                            brand online.</p>
+                        <a class="inline-flex items-center gap-2 text-red-600 font-black hover:gap-4 transition-all"
+                            href="social-marketing.html">Read More <span
+                                class="material-symbols-outlined">arrow_forward</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="py-20 bg-white">
+            <div class="px-margin-desktop max-w-container-max mx-auto text-center">
+                <span class="text-secondary font-black text-2xl md:text-3xl tracking-[0.15em] uppercase block mb-3">WHY
+                    CHOOSE US</span>
+                <h2 class="text-primary font-semibold text-xl md:text-2xl mt-2">Why our clients trust us</h2>
+            </div>
+            <div class="px-margin-desktop max-w-container-max mx-auto">
+                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <li class="vibrant-card color-bg-blue p-8 rounded-[2.5rem] border border-blue-100 flex flex-col">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-blue-500 text-white flex items-center justify-center mb-6 shadow-lg">
+                            <span class="material-symbols-outlined text-4xl"
+                                style="font-variation-settings: &quot;FILL&quot; 1;">analytics</span>
+                        </div>
+                        <h4 class="text-primary font-bold text-lg mb-3">Business Analytics Software</h4>
+                        <p class="text-on-surface-variant flex-grow">Business Analytical Software helps organizations
+                            analyze data to gain insights, improve decision-making, and identify growth opportunities.
+                        </p>
+                    </li>
+                    <li class="vibrant-card color-bg-teal p-8 rounded-[2.5rem] border border-teal-100 flex flex-col">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-teal-500 text-white flex items-center justify-center mb-6 shadow-lg">
+                            <span class="material-symbols-outlined text-4xl"
+                                style="font-variation-settings: &quot;FILL&quot; 1;">public</span>
+                        </div>
+                        <h4 class="text-primary font-bold text-lg mb-3">Creative Website Solutions</h4>
+                        <p class="text-on-surface-variant flex-grow">We design and develop fast, responsive, and
+                            visually appealing websites that reflect your brand identity.</p>
+                    </li>
+                    <li class="vibrant-card color-bg-amber p-8 rounded-[2.5rem] border border-amber-100 flex flex-col">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-amber-500 text-white flex items-center justify-center mb-6 shadow-lg">
+                            <span class="material-symbols-outlined text-4xl"
+                                style="font-variation-settings: &quot;FILL&quot; 1;">search</span>
+                        </div>
+                        <h4 class="text-primary font-bold text-lg mb-3">Search Engine Growth Strategies</h4>
+                        <p class="text-on-surface-variant flex-grow">Our SEO techniques help your business rank higher
+                            and attract quality organic traffic.</p>
+                    </li>
+                    <li class="vibrant-card color-bg-red p-8 rounded-[2.5rem] border border-red-100 flex flex-col">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-red-500 text-white flex items-center justify-center mb-6 shadow-lg">
+                            <span class="material-symbols-outlined text-4xl"
+                                style="font-variation-settings: &quot;FILL&quot; 1;">campaign</span>
+                        </div>
+                        <h4 class="text-primary font-bold text-lg mb-3">Powerful Social Media Branding</h4>
+                        <p class="text-on-surface-variant flex-grow">We manage and grow your social presence with
+                            engaging content and strategic marketing.</p>
+                    </li>
+                    <li
+                        class="vibrant-card color-bg-purple p-8 rounded-[2.5rem] border border-purple-100 flex flex-col">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-purple-500 text-white flex items-center justify-center mb-6 shadow-lg">
+                            <span class="material-symbols-outlined text-4xl"
+                                style="font-variation-settings: &quot;FILL&quot; 1;">smartphone</span>
+                        </div>
+                        <h4 class="text-primary font-bold text-lg mb-3">Smart Mobile App Solutions</h4>
+                        <p class="text-on-surface-variant flex-grow">We build intuitive Android and iOS apps that
+                            enhance user experience and expand your digital reach.</p>
+                    </li>
+                    <li class="vibrant-card color-bg-blue p-8 rounded-[2.5rem] border border-indigo-100 flex flex-col"
+                        style="background: linear-gradient(135deg, #f0f4ff 0%, #e8ecff 100%)">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-indigo-600 text-white flex items-center justify-center mb-6 shadow-lg">
+                            <span class="material-symbols-outlined text-4xl"
+                                style="font-variation-settings: &quot;FILL&quot; 1;">support_agent</span>
+                        </div>
+                        <h4 class="text-primary font-bold text-lg mb-3">Reliable Support &amp; Maintenance</h4>
+                        <p class="text-on-surface-variant flex-grow">Ongoing support and maintenance to keep your
+                            systems secure, up-to-date, and running smoothly.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Channel / Solution Partner -->
+        <section id="partners-section" class="py-16 bg-white border-b border-gray-100">
+            <div class="px-margin-desktop max-w-container-max mx-auto text-center mb-10">
+                <span
+                    class="text-secondary font-black text-2xl md:text-3xl tracking-[0.15em] uppercase block mb-3">CHANNEL
+                    / SOLUTION PARTNER</span>
+                <h2 class="text-primary font-semibold text-xl md:text-2xl mt-2">Our Trusted Partners</h2>
+            </div>
+            <div class="px-margin-desktop max-w-container-max mx-auto">
+                <div
+                    class="partners-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center">
+                    <div
+                        class="partner-logo-card vibrant-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm flex justify-center items-center h-24">
+                        <img src="assets/images/partners/abbyy.png" alt="ABBYY"
+                            class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div
+                        class="partner-logo-card vibrant-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm flex justify-center items-center h-24">
+                        <img src="assets/images/partners/busy.png" alt="Busy"
+                            class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div
+                        class="partner-logo-card vibrant-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm flex justify-center items-center h-24">
+                        <img src="assets/images/partners/dollar.jpg" alt="Dollar"
+                            class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div
+                        class="partner-logo-card vibrant-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm flex justify-center items-center h-24">
+                        <img src="assets/images/partners/erpnext.png" alt="ERPNext"
+                            class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div
+                        class="partner-logo-card vibrant-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm flex justify-center items-center h-24">
+                        <img src="assets/images/partners/foxit.png" alt="Foxit"
+                            class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div
+                        class="partner-logo-card vibrant-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm flex justify-center items-center h-24">
+                        <img src="assets/images/partners/greyhr.png" alt="greytHR"
+                            class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div
+                        class="partner-logo-card vibrant-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm flex justify-center items-center h-24">
+                        <img src="assets/images/partners/invoicenet.png" alt="InvoiceNET"
+                            class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div
+                        class="partner-logo-card vibrant-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm flex justify-center items-center h-24">
+                        <img src="assets/images/partners/queuebuster.png" alt="QueueBuster"
+                            class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div
+                        class="partner-logo-card vibrant-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm flex justify-center items-center h-24">
+                        <img src="assets/images/partners/royalpos.png" alt="RoyalPOS"
+                            class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div
+                        class="partner-logo-card vibrant-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm flex justify-center items-center h-24">
+                        <img src="assets/images/partners/saral.jpg" alt="Saral"
+                            class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div
+                        class="partner-logo-card vibrant-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm flex justify-center items-center h-24">
+                        <img src="assets/images/partners/tvs.png" alt="TVS Electronics"
+                            class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div
+                        class="partner-logo-card vibrant-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm flex justify-center items-center h-24">
+                        <img src="assets/images/partners/zoho.png" alt="Zoho"
+                            class="max-w-full max-h-full object-contain">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Grid (Vibrant Desktop) -->
+        <section class="py-24 bg-white">
+            <div
+                class="px-margin-desktop max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-black text-primary mb-2">OUR PRODUCTS</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Product 1: Amber Tint -->
+                    <div
+                        class="vibrant-card color-bg-amber rounded-[3rem] p-6 flex flex-col items-center text-center border border-amber-100">
+                        <div class="w-full aspect-video rounded-[2rem] overflow-hidden mb-8 relative shadow-xl">
+                            <img alt="Zigfas Enterprise" class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtxaQYmiABcKNM5zQxdMzxggNwMQGptNCS5G81UVOt3OIgkubiuUasebXoT76blw2OGUOp9jyPQffiLm6IFea5AZ2kKTlq-KMpvjzo_zhXIQvdCCP2rZ5yJeqKhhy5pdbLM9Uz_mBY6MnyaBMrVr4kw8oMOLTJ74FrHELdCqmQp7IYXIwAoCdru2JghHtzJyRdcyJNBFpRkv_KjlFXfu4do431jVqoljg4dKki7CYKMh8RK16uOt1MoKUAUW3HvKtCMGrxi6dCnxk">
+                        </div>
+                        <h4 class="text-2xl font-black text-primary mb-4">Zigfas Enterprise</h4>
+                        <p class="text-on-surface-variant px-4 mb-8 font-medium">Complete Accounting, Billing, Inventory
+                            and ERP solution for large businesses and industries.</p>
+                        <a class="px-10 py-3 bg-white text-primary border-2 border-primary rounded-full font-bold hover:bg-primary hover:text-white transition-all shadow-md mt-auto mb-4"
+                            href="products.html">Read More</a>
+                    </div>
+                    <!-- Product 2: Blue Tint -->
+                    <div
+                        class="vibrant-card color-bg-blue rounded-[3rem] p-6 flex flex-col items-center text-center border border-blue-100">
+                        <div class="w-full aspect-video rounded-[2rem] overflow-hidden mb-8 relative shadow-xl">
+                            <img alt="Textile Show Rooms" class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbB_zdQLHBhrwYW9gkAcRhSlwkgeOz2VbnpVB7Tb8lJEMdrnKXD3NDD_zQXtMbRZnU2nf7b4jTLG61de6SAnNi4qEgdov91XDqFnoelgO5VBz70ZbLLXAWcqiNbbPaFFPflsKEsKj8fI8XR-pYY1InuDOlG9Rh2bTH_8ToEWfR4MYMFXGkU4-ppz1k7D4mtaOGDZvk2mHTi4FE1K19we_IBwjrju4STRQ6lp4SWR_5Obo1mEKe4em2JRtDv8vRDadGHq89KurydhA">
+                        </div>
+                        <h4 class="text-2xl font-black text-primary mb-4">Textile Show Rooms</h4>
+                        <p class="text-on-surface-variant px-4 mb-8 font-medium">Bar Code enabled solution with Counter
+                            Sales and Credit Sales modules for textile showrooms.</p>
+                        <a class="px-10 py-3 bg-white text-primary border-2 border-primary rounded-full font-bold hover:bg-primary hover:text-white transition-all shadow-md mt-auto mb-4"
+                            href="products.html">Read More</a>
+                    </div>
+                    <!-- Product 3: Purple Tint -->
+                    <div
+                        class="vibrant-card color-bg-purple rounded-[3rem] p-6 flex flex-col items-center text-center border border-purple-100">
+                        <div class="w-full aspect-video rounded-[2rem] overflow-hidden mb-8 relative shadow-xl">
+                            <img alt="Website Design &amp; Hosting" class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiA-58kBoYG6TyLzF3OfSDrRo6FS5d-LtGYkyAJovCIIa8I2yPcLWzexBl9WrnLPythcfibu-UksjrBHc64hudW6QzsUff1l7a0QEuix_D6bxkxlzgB-YtKDPzDDRwDpZDfmztu1fiWocvvQv6TF4wHqoOXagTZutbgkJZBiU9f_VKYIjeJiLZXAhVU05EBXslHFrhH9RNQeLMLg6I0FlMpBF4q-MBbFN8zaUI6kqO9BkFhWOsOOKhEoEqaXmxoj2kfCgdOvVEp_Y">
+                        </div>
+                        <h4 class="text-2xl font-black text-primary mb-4">Website Design &amp; Hosting</h4>
+                        <p class="text-on-surface-variant px-4 mb-8 font-medium">Professional website designing and
+                            hosting services to grow your online presence.</p>
+                        <a class="px-10 py-3 bg-white text-primary border-2 border-primary rounded-full font-bold hover:bg-primary hover:text-white transition-all shadow-md mt-auto mb-4"
+                            href="web-development.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Key Features Section (6 Column Grid) -->
+        <section class="py-24 bg-teal-50">
+            <div
+                class="px-margin-desktop max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
+                <h2 class="text-4xl font-black text-primary mb-20 text-center">KEY FEATURES OF OUR SOFTWARE</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <!-- Feature 1 -->
+                    <div
+                        class="vibrant-card bg-white p-6 rounded-[2rem] border border-blue-100 text-center flex flex-col items-center">
+                        <div
+                            class="w-full aspect-video rounded-2xl overflow-hidden mb-6 shadow-md border border-gray-100">
+                            <img src="assets/images/features/wholesale_business.png" alt="Wholesale Business"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-primary font-extrabold text-sm uppercase leading-tight">Wholesale
+                            Business</span>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div
+                        class="vibrant-card bg-white p-6 rounded-[2rem] border border-red-100 text-center flex flex-col items-center">
+                        <div
+                            class="w-full aspect-video rounded-2xl overflow-hidden mb-6 shadow-md border border-gray-100">
+                            <img src="assets/images/features/garments_unit.png" alt="Garments Unit"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-primary font-extrabold text-sm uppercase leading-tight">Garments Unit</span>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div
+                        class="vibrant-card bg-white p-6 rounded-[2rem] border border-amber-100 text-center flex flex-col items-center">
+                        <div
+                            class="w-full aspect-video rounded-2xl overflow-hidden mb-6 shadow-md border border-gray-100">
+                            <img src="assets/images/features/retail_textile.png" alt="Retail Textile Business"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-primary font-extrabold text-sm uppercase leading-tight">Retail Textile
+                            Business</span>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div
+                        class="vibrant-card bg-white p-6 rounded-[2rem] border border-teal-100 text-center flex flex-col items-center">
+                        <div
+                            class="w-full aspect-video rounded-2xl overflow-hidden mb-6 shadow-md border border-gray-100">
+                            <img src="assets/images/features/fmcg_department.png" alt="FMCG Agencies & Dept Stores"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-primary font-extrabold text-sm uppercase leading-tight">FMCG Agencies & Dept
+                            Stores</span>
+                    </div>
+                    <!-- Feature 5 -->
+                    <div
+                        class="vibrant-card bg-white p-6 rounded-[2rem] border border-green-100 text-center flex flex-col items-center">
+                        <div
+                            class="w-full aspect-video rounded-2xl overflow-hidden mb-6 shadow-md border border-gray-100">
+                            <img src="assets/images/features/pesticides_fertilizers.png" alt="Pesticides & Fertilizers"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-primary font-extrabold text-sm uppercase leading-tight">Pesticides &
+                            Fertilizers</span>
+                    </div>
+                    <!-- Feature 6 -->
+                    <div
+                        class="vibrant-card bg-white p-6 rounded-[2rem] border border-purple-100 text-center flex flex-col items-center">
+                        <div
+                            class="w-full aspect-video rounded-2xl overflow-hidden mb-6 shadow-md border border-gray-100">
+                            <img src="assets/images/features/paints_automobiles.png"
+                                alt="Paints, Hardware & Automobiles" class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-primary font-extrabold text-sm uppercase leading-tight">Paints, Hardware &
+                            Automobiles</span>
+                    </div>
+                    <!-- Feature 7 -->
+                    <div
+                        class="vibrant-card bg-white p-6 rounded-[2rem] border border-indigo-100 text-center flex flex-col items-center">
+                        <div
+                            class="w-full aspect-video rounded-2xl overflow-hidden mb-6 shadow-md border border-gray-100">
+                            <img src="assets/images/features/home_appliances.png" alt="Home Appliances"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-primary font-extrabold text-sm uppercase leading-tight">Home Appliances</span>
+                    </div>
+                    <!-- Feature 8 -->
+                    <div
+                        class="vibrant-card bg-white p-6 rounded-[2rem] border border-teal-100 text-center flex flex-col items-center">
+                        <div
+                            class="w-full aspect-video rounded-2xl overflow-hidden mb-6 shadow-md border border-gray-100">
+                            <img src="assets/images/features/medical_surgical.png" alt="Medical Shops & Surgical"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-primary font-extrabold text-sm uppercase leading-tight">Medical Shops &
+                            Surgical</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Clients (Colorful Circles) -->
+        <section class="py-24 bg-white relative overflow-hidden">
+            <div
+                class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
+                <h2 class="text-4xl font-black text-primary mb-16 text-center">OUR CLIENTS</h2>
+
+                <div class="relative max-w-[1100px] mx-auto px-12">
+                    <!-- Left Arrow -->
+                    <button
+                        onclick="document.getElementById('clients-slider').scrollBy({left: -300, behavior: 'smooth'})"
+                        class="absolute left-0 top-[40%] -translate-y-1/2 z-10 text-gray-200 hover:text-gray-400 transition-colors">
+                        <span class="material-symbols-outlined text-6xl" style="font-weight: 300;">chevron_left</span>
+                    </button>
+
+                    <!-- Right Arrow -->
+                    <button
+                        onclick="document.getElementById('clients-slider').scrollBy({left: 300, behavior: 'smooth'})"
+                        class="absolute right-0 top-[40%] -translate-y-1/2 z-10 text-gray-200 hover:text-gray-400 transition-colors">
+                        <span class="material-symbols-outlined text-6xl" style="font-weight: 300;">chevron_right</span>
+                    </button>
+
+                    <!-- Slider -->
+                    <div id="clients-slider" class="flex overflow-x-auto gap-8 pb-4 pt-4 snap-x snap-mandatory"
+                        style="scrollbar-width: none; -ms-overflow-style: none;">
+                        <style>
+                            #clients-slider::-webkit-scrollbar {
+                                display: none;
+                            }
+                        </style>
+
+                        <!-- Client 1 -->
+                        <div class="flex flex-col items-center w-48 shrink-0 snap-start group">
+                            <div
+                                class="w-40 h-40 rounded-full border-2 border-teal-600 bg-white mb-6 flex items-center justify-center p-3 transition-transform duration-300 group-hover:scale-105">
+                                <img src="assets/images/clients/educational_institutions.png"
+                                    alt="Educational Institutions" class="max-w-full max-h-full object-contain">
+                            </div>
+                            <span
+                                class="text-red-600 font-bold text-center text-sm md:text-base leading-tight">Educational<br>Institutions</span>
+                        </div>
+                        <!-- Client 2 -->
+                        <div class="flex flex-col items-center w-48 shrink-0 snap-start group">
+                            <div
+                                class="w-40 h-40 rounded-full border-2 border-teal-600 bg-white mb-6 flex items-center justify-center p-3 transition-transform duration-300 group-hover:scale-105">
+                                <img src="assets/images/clients/chemical_agencies.png" alt="Chemical Agencies"
+                                    class="max-w-full max-h-full object-contain">
+                            </div>
+                            <span
+                                class="text-red-600 font-bold text-center text-sm md:text-base leading-tight">Chemical<br>Agencies</span>
+                        </div>
+                        <!-- Client 3 -->
+                        <div class="flex flex-col items-center w-48 shrink-0 snap-start group">
+                            <div
+                                class="w-40 h-40 rounded-full border-2 border-teal-600 bg-white mb-6 flex items-center justify-center p-3 transition-transform duration-300 group-hover:scale-105">
+                                <img src="assets/images/clients/automobile_services.png" alt="Automobile Services"
+                                    class="max-w-full max-h-full object-contain">
+                            </div>
+                            <span
+                                class="text-red-600 font-bold text-center text-sm md:text-base leading-tight">Automobile<br>Services</span>
+                        </div>
+                        <!-- Client 4 -->
+                        <div class="flex flex-col items-center w-48 shrink-0 snap-start group">
+                            <div
+                                class="w-40 h-40 rounded-full border-2 border-teal-600 bg-white mb-6 flex items-center justify-center p-3 transition-transform duration-300 group-hover:scale-105">
+                                <img src="assets/images/clients/corrugation_box.png" alt="Corrugation Box Manufacturers"
+                                    class="max-w-full max-h-full object-contain">
+                            </div>
+                            <span
+                                class="text-red-600 font-bold text-center text-sm md:text-base leading-tight">Corrugation
+                                Box<br>Manufacturers</span>
+                        </div>
+                        <!-- Client 5 -->
+                        <div class="flex flex-col items-center w-48 shrink-0 snap-start group">
+                            <div
+                                class="w-40 h-40 rounded-full border-2 border-teal-600 bg-white mb-6 flex items-center justify-center p-3 transition-transform duration-300 group-hover:scale-105">
+                                <img src="assets/images/clients/agro_industries.png" alt="Agro Industries"
+                                    class="max-w-full max-h-full object-contain">
+                            </div>
+                            <span
+                                class="text-red-600 font-bold text-center text-sm md:text-base leading-tight">Agro<br>Industries</span>
+                        </div>
+                        <!-- Client 6 -->
+                        <div class="flex flex-col items-center w-48 shrink-0 snap-start group">
+                            <div
+                                class="w-40 h-40 rounded-full border-2 border-teal-600 bg-white mb-6 flex items-center justify-center p-3 transition-transform duration-300 group-hover:scale-105">
+                                <img src="assets/images/clients/building_constructor.png" alt="Building Constructor"
+                                    class="max-w-full max-h-full object-contain">
+                            </div>
+                            <span
+                                class="text-red-600 font-bold text-center text-sm md:text-base leading-tight">Building<br>Constructor</span>
+                        </div>
+                        <!-- Client 7 -->
+                        <div class="flex flex-col items-center w-48 shrink-0 snap-start group">
+                            <div
+                                class="w-40 h-40 rounded-full border-2 border-teal-600 bg-white mb-6 flex items-center justify-center p-3 transition-transform duration-300 group-hover:scale-105">
+                                <img src="assets/images/clients/cycle_dealers.png" alt="Cycle Dealers"
+                                    class="max-w-full max-h-full object-contain">
+                            </div>
+                            <span
+                                class="text-red-600 font-bold text-center text-sm md:text-base leading-tight">Cycle<br>Dealers</span>
+                        </div>
+                        <!-- Client 8 -->
+                        <div class="flex flex-col items-center w-48 shrink-0 snap-start group">
+                            <div
+                                class="w-40 h-40 rounded-full border-2 border-teal-600 bg-white mb-6 flex items-center justify-center p-3 transition-transform duration-300 group-hover:scale-105">
+                                <img src="assets/images/clients/financiers_general.png" alt="Financiers General"
+                                    class="max-w-full max-h-full object-contain">
+                            </div>
+                            <span
+                                class="text-red-600 font-bold text-center text-sm md:text-base leading-tight">Financiers<br>General</span>
+                        </div>
+                        <!-- Client 9 -->
+                        <div class="flex flex-col items-center w-48 shrink-0 snap-start group">
+                            <div
+                                class="w-40 h-40 rounded-full border-2 border-teal-600 bg-white mb-6 flex items-center justify-center p-3 transition-transform duration-300 group-hover:scale-105">
+                                <img src="assets/images/clients/medical_agencies.png" alt="Medical Agencies"
+                                    class="max-w-full max-h-full object-contain">
+                            </div>
+                            <span
+                                class="text-red-600 font-bold text-center text-sm md:text-base leading-tight">Medical<br>Agencies</span>
+                        </div>
+                    </div>
+
+                    <!-- Pagination Dots -->
+                    <div class="flex justify-center gap-2 mt-8">
+                        <div class="w-2 h-2 rounded-full bg-gray-800"></div>
+                        <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#001e2d] pt-20 pb-8 text-on-tertiary">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-margin-desktop max-w-container-max mx-auto mb-20">
+            <div class="space-y-8">
+                <a href="index.html" class="inline-block"><img src="assets/images/logo.png" alt="Zigma Software Logo"
+                        class="h-14 w-auto"></a>
+                <p class="text-surface-variant/70 text-lg leading-relaxed font-medium">
+                    Zigma Software, Erode is a trusted digital solutions company delivering web, mobile app, and
+                    software solutions to grow your business.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Get In Touch</h4>
+                <ul class="space-y-6 text-surface-variant/80 font-medium">
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-secondary shrink-0">location_on</span>
+                        <span class="">Door No: 4/1c.12-A, Annamalai Gounder Layout, 1st Floor, Near Hotel Vignesh,
+                            Mettur Road, Erode. Tamil Nadu, India</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-secondary shrink-0">phone</span>
+                        <span class="">+91-9942364454, 9791902386</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-secondary shrink-0">mail</span>
+                        <span class="">info@zigmasoftware.in</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Important Links</h4>
+                <ul class="space-y-4 font-medium">
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="about.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> About
+                            Us</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="products.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                            Products</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="web-development.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                            Services</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="blog.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                            Blogs</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="contact.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> contact us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Our Services</h4>
+                <ul class="space-y-4 font-medium">
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="software-support.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                            Business Analytics</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="mobile-development.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> Mobile
+                            App Dev</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="software-support.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> HRMS
+                            &amp; Payroll</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="social-marketing.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> Social
+                            Media Marketing</a></li>
+                    <li class=""><a
+                            class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                            href="web-development.html"><span
+                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span> Web
+                            Design &amp; Development</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="border-t border-white/5 pt-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-surface-variant/50 text-sm font-medium">
+            <p class="">© 2026 Zigma Software. All Rights Reserved.</p>
+            <div class="flex gap-8">
+                <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                <a class="hover:text-white transition-colors" href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle logic
+        // Mobile menu toggle and active path highlight logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const mobileMenuClose = document.getElementById('mobile-menu-close');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuToggle && mobileMenuClose && mobileMenu) {
+                mobileMenuToggle.addEventListener('click', () => {
+                    mobileMenu.classList.remove('hidden');
+                });
+                mobileMenuClose.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            }
+
+            // Active page detection and highlight
+            const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+            const servicePaths = [
+                'web-development.html',
+                'mobile-development.html',
+                'seo-services.html',
+                'social-marketing.html',
+                'software-support.html'
+            ];
+
+            // 1. Highlight Desktop Nav Items
+            const desktopLinks = document.querySelectorAll('#main-nav a, #main-nav button');
+            desktopLinks.forEach(link => {
+                let isActive = false;
+                const href = link.getAttribute('href');
+                if (href) {
+                    const linkPath = href.split('/').pop();
+                    if (linkPath === currentPath) {
+                        isActive = true;
+                    } else if ((currentPath === '' || currentPath === '/') && linkPath === 'index.html') {
+                        isActive = true;
+                    }
+                } else {
+                    // Services dropdown parent button
+                    if (link.textContent.trim().toLowerCase().includes('services') && servicePaths.includes(currentPath)) {
+                        isActive = true;
+                    }
+                }
+
+                if (isActive) {
+                    link.classList.remove('bg-transparent', 'text-[#00497b]', 'hover:text-[#EC3F43]');
+                    link.classList.add('bg-[#EC3F43]', 'text-white', 'hover:brightness-110');
+                } else {
+                    link.classList.remove('bg-[#EC3F43]', 'text-white', 'hover:brightness-110');
+                    link.classList.add('bg-transparent', 'text-[#00497b]', 'hover:text-[#EC3F43]');
+                }
+            });
+
+            // 2. Highlight Mobile Nav Items
+            const mobileLinks = document.querySelectorAll('#mobile-menu a');
+            mobileLinks.forEach(link => {
+                let isActive = false;
+                const href = link.getAttribute('href');
+                if (href) {
+                    const linkPath = href.split('/').pop();
+                    if (linkPath === currentPath) {
+                        isActive = true;
+                    } else if ((currentPath === '' || currentPath === '/') && linkPath === 'index.html') {
+                        isActive = true;
+                    }
+                }
+
+                if (isActive) {
+                    if (link.classList.contains('rounded-full')) {
+                        // Mobile Contact button when active
+                        link.classList.add('bg-[#EC3F43]', 'text-white', 'hover:brightness-110');
+                    } else {
+                        // Other mobile items when active
+                        link.classList.add('bg-[#EC3F43]', 'text-white', 'px-6', 'py-2', 'rounded-full', 'hover:brightness-110');
+                        link.classList.remove('hover:text-secondary');
+                    }
+                } else {
+                    if (link.classList.contains('rounded-full') && href && href.endsWith('contact.html')) {
+                        // Mobile Contact button when inactive (bordered layout)
+                        link.classList.remove('bg-[#EC3F43]', 'hover:brightness-110');
+                        link.classList.add('border', 'border-white/20', 'text-white', 'hover:bg-white/10');
+                    } else {
+                        // Other mobile items when inactive
+                        link.classList.remove('bg-[#EC3F43]', 'px-6', 'py-2', 'rounded-full', 'hover:brightness-110');
+                        link.classList.add('hover:text-secondary');
+                    }
+                }
+            });
+        });
+
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+
+    <!-- Clients Carousel Autoplay -->
+    <script>
+        (function () {
+            const slider = document.getElementById('clients-slider');
+            if (!slider) return;
+
+            const SCROLL_AMOUNT = 300;
+            const INTERVAL_MS = 3000;
+            let autoplayTimer = null;
+
+            function scrollNext() {
+                const maxScroll = slider.scrollWidth - slider.clientWidth;
+                if (slider.scrollLeft >= maxScroll - 5) {
+                    // Loop back to the start
+                    slider.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    slider.scrollBy({ left: SCROLL_AMOUNT, behavior: 'smooth' });
+                }
+            }
+
+            function startAutoplay() {
+                stopAutoplay();
+                autoplayTimer = setInterval(scrollNext, INTERVAL_MS);
+            }
+
+            function stopAutoplay() {
+                if (autoplayTimer) {
+                    clearInterval(autoplayTimer);
+                    autoplayTimer = null;
+                }
+            }
+
+            // Pause on hover, resume on leave
+            slider.addEventListener('mouseenter', stopAutoplay);
+            slider.addEventListener('mouseleave', startAutoplay);
+
+            // Also pause on touch (mobile)
+            slider.addEventListener('touchstart', stopAutoplay, { passive: true });
+            slider.addEventListener('touchend', function () {
+                setTimeout(startAutoplay, 1000);
+            });
+
+            // Update pagination dots based on scroll position
+            slider.addEventListener('scroll', function () {
+                const maxScroll = slider.scrollWidth - slider.clientWidth;
+                const progress = slider.scrollLeft / maxScroll;
+                const dots = slider.closest('.relative')?.querySelectorAll('.flex.justify-center.gap-2 > div');
+                if (dots && dots.length >= 2) {
+                    if (progress > 0.5) {
+                        dots[0].classList.remove('bg-gray-800');
+                        dots[0].classList.add('bg-gray-300');
+                        dots[1].classList.remove('bg-gray-300');
+                        dots[1].classList.add('bg-gray-800');
+                    } else {
+                        dots[0].classList.remove('bg-gray-300');
+                        dots[0].classList.add('bg-gray-800');
+                        dots[1].classList.remove('bg-gray-800');
+                        dots[1].classList.add('bg-gray-300');
+                    }
+                }
+            });
+
+            startAutoplay();
+        })();
+    </script>
+
+    <script>
+        (function () {
+            const carousel = document.getElementById('myCarousel');
+            if (!carousel) return;
+
+            const slides = Array.from(carousel.querySelectorAll('.carousel-inner .item'));
+            const indicators = Array.from(carousel.querySelectorAll('.carousel-indicators li'));
+            const prevBtn = carousel.querySelector('.carousel-control.left');
+            const nextBtn = carousel.querySelector('.carousel-control.right');
+            let currentIndex = 0;
+            let timer = null;
+
+            function setActive(index) {
+                currentIndex = (index + slides.length) % slides.length;
+                const offset = currentIndex * 100;
+                carousel.querySelector('.carousel-inner').style.transform = `translateX(-${offset}%)`;
+                slides.forEach((slide, slideIndex) => {
+                    slide.classList.toggle('active', slideIndex === currentIndex);
+                });
+                indicators.forEach((indicator, indicatorIndex) => {
+                    indicator.classList.toggle('active', indicatorIndex === currentIndex);
+                });
+            }
+
+            function nextSlide() {
+                setActive(currentIndex + 1);
+            }
+
+            function prevSlide() {
+                setActive(currentIndex - 1);
+            }
+
+            function startAutoplay() {
+                stopAutoplay();
+                timer = setInterval(nextSlide, 4500);
+            }
+
+            function stopAutoplay() {
+                if (timer) {
+                    clearInterval(timer);
+                    timer = null;
+                }
+            }
+
+            prevBtn?.addEventListener('click', prevSlide);
+            nextBtn?.addEventListener('click', nextSlide);
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => setActive(index));
+            });
+
+            carousel.addEventListener('mouseenter', stopAutoplay);
+            carousel.addEventListener('mouseleave', startAutoplay);
+            carousel.addEventListener('touchstart', stopAutoplay, { passive: true });
+            carousel.addEventListener('touchend', () => setTimeout(startAutoplay, 800), { passive: true });
+
+            setActive(0);
+            startAutoplay();
+        })();
+    </script>
+</body>
+
+</html>

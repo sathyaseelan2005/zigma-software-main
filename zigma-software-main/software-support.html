@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Software Implementation &amp; Support | Zigma Software</title>
+        <script src="assets/js/tailwind.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Poppins:wght@700&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <style>
+                .material-symbols-outlined {
+                        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+                }
+
+                .glass-card {
+                        background: rgba(255, 255, 255, 0.7);
+                        backdrop-filter: blur(12px);
+                        border: 1px solid rgba(255, 255, 255, 0.3);
+                }
+
+                .timeline-line {
+                        background: linear-gradient(to bottom, #005791, #b71323);
+                }
+
+                .reveal-line {
+                        height: 0;
+                        transition: height 1.5s ease-out;
+                }
+
+                .reveal-line.visible {
+                        height: 100%;
+                }
+
+                .text-shadow-sm {
+                        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                }
+
+                .wave-divider {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        overflow: hidden;
+                        line-height: 0;
+                        transform: rotate(180deg);
+                }
+
+                .wave-divider svg {
+                        position: relative;
+                        display: block;
+                        width: calc(100% + 1.3px);
+                        height: 60px;
+                }
+
+                .wave-divider .shape-fill {
+                        fill: #f9f9ff;
+                }
+        </style>
+        <script id="tailwind-config">
+                tailwind.config = {
+                        "darkMode": "class",
+                        "theme": {
+                                "extend": {
+                                        "colors": {
+                                                "on-background": "#111c2d",
+                                                "outline-variant": "#c0c7d2",
+                                                "on-tertiary": "#ffffff",
+                                                "on-secondary-fixed": "#410005",
+                                                "on-primary-fixed": "#001d35",
+                                                "surface-bright": "#f9f9ff",
+                                                "on-primary-fixed-variant": "#00497b",
+                                                "error": "#ba1a1a",
+                                                "outline": "#717882",
+                                                "primary-container": "#0670b7",
+                                                "on-error-container": "#93000a",
+                                                "tertiary-fixed-dim": "#e9c349",
+                                                "surface-container-highest": "#d8e3fb",
+                                                "on-surface-variant": "#404751",
+                                                "on-tertiary-fixed": "#241a00",
+                                                "on-secondary-fixed-variant": "#930016",
+                                                "surface-variant": "#d8e3fb",
+                                                "secondary-fixed": "#ffdad7",
+                                                "on-primary": "#ffffff",
+                                                "secondary": "#b71323",
+                                                "on-secondary-container": "#fffbff",
+                                                "surface-dim": "#cfdaf2",
+                                                "surface-tint": "#0062a1",
+                                                "tertiary-container": "#cca72f",
+                                                "on-primary-container": "#e6f0ff",
+                                                "surface-container-high": "#dee8ff",
+                                                "tertiary": "#735c00",
+                                                "inverse-on-surface": "#ecf1ff",
+                                                "background": "#f9f9ff",
+                                                "surface-container": "#e7eeff",
+                                                "primary": "#005791",
+                                                "on-secondary": "#ffffff",
+                                                "secondary-container": "#db3238",
+                                                "primary-fixed": "#d0e4ff",
+                                                "on-tertiary-container": "#4e3d00",
+                                                "primary-fixed-dim": "#9ccaff",
+                                                "on-surface": "#111c2d",
+                                                "surface-container-lowest": "#ffffff",
+                                                "surface": "#f9f9ff",
+                                                "secondary-fixed-dim": "#ffb3ae",
+                                                "surface-container-low": "#f0f3ff",
+                                                "on-tertiary-fixed-variant": "#574500",
+                                                "inverse-primary": "#9ccaff",
+                                                "on-error": "#ffffff",
+                                                "inverse-surface": "#263143",
+                                                "tertiary-fixed": "#ffe088",
+                                                "error-container": "#ffdad6"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "20px",
+                                                "xl": "24px",
+                                                "full": "9999px"
+                                        },
+                                        "spacing": {
+
+                                                "gutter": "24px",
+
+                                                "margin-desktop": "64px",
+
+                                                "margin-mobile": "16px",
+
+                                                "base": "8px",
+
+                                                "container-max": "1280px",
+
+                                                "container-margin-desktop": "40px",
+
+                                                "container-margin-mobile": "16px",
+
+                                                "xs": "4px",
+
+                                                "sm": "12px",
+
+                                                "md": "16px",
+
+                                                "lg": "24px",
+
+                                                "xl": "32px"
+
+                                        },
+                                        "fontFamily": {
+                                                "poppins": [
+                                                        "Poppins",
+                                                        "sans-serif"
+                                                ],
+                                                "label-md": [
+                                                        "Inter"
+                                                ],
+                                                "headline-lg-mobile": [
+                                                        "Hanken Grotesk"
+                                                ],
+                                                "display-lg": [
+                                                        "Hanken Grotesk"
+                                                ],
+                                                "body-lg": [
+                                                        "Inter"
+                                                ],
+                                                "label-sm": [
+                                                        "Inter"
+                                                ],
+                                                "title-lg": [
+                                                        "Hanken Grotesk"
+                                                ],
+                                                "headline-lg": [
+                                                        "Hanken Grotesk"
+                                                ],
+                                                "headline-md": [
+                                                        "Hanken Grotesk"
+                                                ],
+                                                "body-md": [
+                                                        "Inter"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "label-md": [
+                                                        "14px",
+                                                        {
+                                                                "lineHeight": "20px",
+                                                                "letterSpacing": "0.01em",
+                                                                "fontWeight": "500"
+                                                        }
+                                                ],
+                                                "headline-lg-mobile": [
+                                                        "28px",
+                                                        {
+                                                                "lineHeight": "36px",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "display-lg": [
+                                                        "48px",
+                                                        {
+                                                                "lineHeight": "56px",
+                                                                "letterSpacing": "-0.02em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "28px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "label-sm": [
+                                                        "12px",
+                                                        {
+                                                                "lineHeight": "16px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "title-lg": [
+                                                        "20px",
+                                                        {
+                                                                "lineHeight": "28px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "headline-lg": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "40px",
+                                                                "letterSpacing": "-0.01em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "headline-md": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "32px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "body-md": [
+                                                        "16px",
+                                                        {
+                                                                "lineHeight": "24px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ]
+                                        }
+                                }
+                        }
+                }
+        </script>
+        <style>
+                body {
+                        min-height: max(884px, 100dvh);
+                }
+        </style>
+</head>
+
+<body class="bg-surface font-body-md text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+        <div id="header-placeholder"></div>
+
+        <main>
+                <!-- Hero Banner -->
+                <section
+                        class="relative h-[340px] md:h-[420px] flex flex-col items-center justify-center text-center overflow-hidden">
+                        <div class="absolute inset-0 z-0">
+                                <img class="w-full h-full object-cover object-center" src="assets/images/img%203.jpg"
+                                        alt="Software Support Hero">
+                                <div
+                                        class="absolute inset-0 bg-gradient-to-r from-[#001d35]/80 via-[#001d35]/30 to-[#001d35]/80">
+                                </div>
+                        </div>
+                        <div class="relative z-10 text-white">
+                                <h1 class="font-display-lg text-display-lg mb-sm text-shadow-sm">Software Support</h1>
+                                <p class="font-label-md opacity-90"><a href="index.html"
+                                                class="hover:underline">Home</a> <span class="mx-xs">&gt;</span>
+                                        Services <span class="mx-xs">&gt;</span> Software Support</p>
+                        </div>
+                </section>
+                <!-- Introduction Section -->
+                <section class="py-xl max-w-[1280px] mx-auto px-container-desktop">
+                        <div class="grid md:grid-cols-2 gap-xl items-center">
+                                <div class="order-2 md:order-1 fade-up">
+                                        <img alt="Team Deployment" class="w-full rounded-lg shadow-md"
+                                                data-alt="A futuristic 3D render of professional software developers collaborating around a large interactive digital table showing deployment progress maps. The lighting is crisp and modern, featuring the brand's Royal Blue and Premium Red as key focal colors within a clean minimalist office environment. The style is sharp, authoritative, and corporate, emphasizing precision and stability."
+                                                src="assets/images/office_collaboration.png" />
+                                </div>
+                                <div class="order-1 md:order-2 space-y-lg fade-up delay-150">
+                                        <h2 class="font-poppins text-headline-lg text-primary font-headline">Reliable
+                                                Implementation. Continuous Support.</h2>
+                                        <p class="text-body-md text-on-surface-variant leading-relaxed">
+                                                Transitioning to new software shouldn't be a gamble. Our specialized
+                                                team handles the technical heavy lifting, ensuring your enterprise
+                                                systems are integrated seamlessly while providing the long-term support
+                                                needed to optimize performance and security.
+                                        </p>
+                                        <div class="space-y-md">
+                                                <div
+                                                        class="glass-card p-md rounded-lg flex items-center gap-md hover:shadow-md transition-all border-l-4 border-primary">
+                                                        <div
+                                                                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                                                <span
+                                                                        class="material-symbols-outlined">rocket_launch</span>
+                                                        </div>
+                                                        <div>
+                                                                <h4 class="font-bold text-on-surface">Rapid Deployment
+                                                                </h4>
+                                                                <p class="text-label-md text-on-surface-variant">
+                                                                        Accelerated timelines without compromising
+                                                                        stability.</p>
+                                                        </div>
+                                                </div>
+                                                <div
+                                                        class="glass-card p-md rounded-lg flex items-center gap-md hover:shadow-md transition-all border-l-4 border-primary">
+                                                        <div
+                                                                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                                                <span
+                                                                        class="material-symbols-outlined">support_agent</span>
+                                                        </div>
+                                                        <div>
+                                                                <h4 class="font-bold text-on-surface">24/7 Global
+                                                                        Support</h4>
+                                                                <p class="text-label-md text-on-surface-variant">
+                                                                        Dedicated experts available whenever you need
+                                                                        them.</p>
+                                                        </div>
+                                                </div>
+                                                <div
+                                                        class="glass-card p-md rounded-lg flex items-center gap-md hover:shadow-md transition-all border-l-4 border-primary">
+                                                        <div
+                                                                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                                                <span class="material-symbols-outlined">insights</span>
+                                                        </div>
+                                                        <div>
+                                                                <h4 class="font-bold text-on-surface">Performance
+                                                                        Optimization</h4>
+                                                                <p class="text-label-md text-on-surface-variant">
+                                                                        Continuous tuning to maximize your ROI.</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- Support Benefits Grid -->
+                <section class="bg-surface-container-low py-xl overflow-hidden">
+                        <div class="max-w-[1280px] mx-auto px-container-desktop">
+                                <div class="text-center mb-xl fade-up">
+                                        <h2 class="font-poppins text-headline-lg text-primary mb-sm font-headline">
+                                                Comprehensive Support Ecosystem</h2>
+                                        <p class="text-on-surface-variant max-w-2xl mx-auto">From the initial strategy
+                                                session to round-the-clock monitoring, we provide the pillars of
+                                                technical success.</p>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+                                        <!-- Cards -->
+                                        <div
+                                                class="bg-surface-container-lowest p-lg rounded-lg shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group fade-up">
+                                                <div
+                                                        class="w-14 h-14 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                                                        <span
+                                                                class="material-symbols-outlined text-title-lg">strategy</span>
+                                                </div>
+                                                <h3 class="font-title-lg text-on-surface mb-sm">Planning</h3>
+                                                <p class="text-body-md text-on-surface-variant">Defining project scope,
+                                                        resource allocation, and success metrics for a flawless start.
+                                                </p>
+                                        </div>
+                                        <div
+                                                class="bg-surface-container-lowest p-lg rounded-lg shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group fade-up delay-100">
+                                                <div
+                                                        class="w-14 h-14 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                                                        <span
+                                                                class="material-symbols-outlined text-title-lg">settings_suggest</span>
+                                                </div>
+                                                <h3 class="font-title-lg text-on-surface mb-sm">Configuration</h3>
+                                                <p class="text-body-md text-on-surface-variant">Customizing software
+                                                        features to align perfectly with your unique business processes.
+                                                </p>
+                                        </div>
+                                        <div
+                                                class="bg-surface-container-lowest p-lg rounded-lg shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group fade-up delay-200">
+                                                <div
+                                                        class="w-14 h-14 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                                                        <span
+                                                                class="material-symbols-outlined text-title-lg">data_thresholding</span>
+                                                </div>
+                                                <h3 class="font-title-lg text-on-surface mb-sm">Migration</h3>
+                                                <p class="text-body-md text-on-surface-variant">Seamless data transfer
+                                                        protocols ensuring zero data loss and integrity across
+                                                        platforms.</p>
+                                        </div>
+                                        <div
+                                                class="bg-surface-container-lowest p-lg rounded-lg shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group fade-up delay-300">
+                                                <div
+                                                        class="w-14 h-14 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                                                        <span
+                                                                class="material-symbols-outlined text-title-lg">school</span>
+                                                </div>
+                                                <h3 class="font-title-lg text-on-surface mb-sm">Training</h3>
+                                                <p class="text-body-md text-on-surface-variant">Empowering your
+                                                        workforce through hands-on workshops and extensive
+                                                        documentation.</p>
+                                        </div>
+                                        <div
+                                                class="bg-surface-container-lowest p-lg rounded-lg shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group fade-up delay-400">
+                                                <div
+                                                        class="w-14 h-14 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                                                        <span class="material-symbols-outlined text-title-lg">contact
+                                                                us_support</span>
+                                                </div>
+                                                <h3 class="font-title-lg text-on-surface mb-sm">Support</h3>
+                                                <p class="text-body-md text-on-surface-variant">Multi-tiered technical
+                                                        assistance available via phone, chat, and on-site visits.</p>
+                                        </div>
+                                        <div
+                                                class="bg-surface-container-lowest p-lg rounded-lg shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group fade-up delay-500">
+                                                <div
+                                                        class="w-14 h-14 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                                                        <span
+                                                                class="material-symbols-outlined text-title-lg">monitor_heart</span>
+                                                </div>
+                                                <h3 class="font-title-lg text-on-surface mb-sm">Monitoring</h3>
+                                                <p class="text-body-md text-on-surface-variant">Proactive performance
+                                                        tracking and health checks to prevent downtime before it occurs.
+                                                </p>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- Implementation Process Timeline -->
+                <section class="py-xl max-w-[1280px] mx-auto px-container-desktop">
+                        <div class="text-center mb-xl fade-up">
+                                <h2 class="font-poppins text-headline-lg text-primary font-headline">Implementation
+                                        Lifecycle</h2>
+                                <div class="w-24 h-1 bg-secondary mx-auto mt-sm"></div>
+                        </div>
+                        <div class="relative">
+                                <!-- Vertical Line -->
+                                <div
+                                        class="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 timeline-line rounded-full opacity-20 reveal-line">
+                                </div>
+                                <div class="space-y-xl relative">
+                                        <!-- Step 1 -->
+                                        <div class="flex flex-col md:flex-row items-center gap-lg md:gap-0 fade-up">
+                                                <div class="md:w-1/2 md:pr-xl text-left md:text-right">
+                                                        <h4 class="font-bold text-title-lg text-primary">01.
+                                                                Consultation</h4>
+                                                        <p class="text-on-surface-variant text-body-md">Understanding
+                                                                your architecture and identifying pain points.</p>
+                                                </div>
+                                                <div
+                                                        class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center z-10 shrink-0 border-4 border-surface shadow-md">
+                                                        <span class="material-symbols-outlined">forum</span>
+                                                </div>
+                                                <div class="md:w-1/2 md:pl-xl hidden md:block"></div>
+                                        </div>
+                                        <!-- Step 2 -->
+                                        <div
+                                                class="flex flex-col md:flex-row items-center gap-lg md:gap-0 fade-up delay-100">
+                                                <div class="md:w-1/2 md:pr-xl hidden md:block"></div>
+                                                <div
+                                                        class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center z-10 shrink-0 border-4 border-surface shadow-md">
+                                                        <span class="material-symbols-outlined">architecture</span>
+                                                </div>
+                                                <div class="md:w-1/2 md:pl-xl text-left">
+                                                        <h4 class="font-bold text-title-lg text-primary">02. Planning
+                                                        </h4>
+                                                        <p class="text-on-surface-variant text-body-md">Drafting a
+                                                                technical roadmap with milestones and KPIs.</p>
+                                                </div>
+                                        </div>
+                                        <!-- Step 3 -->
+                                        <div
+                                                class="flex flex-col md:flex-row items-center gap-lg md:gap-0 fade-up delay-200">
+                                                <div class="md:w-1/2 md:pr-xl text-left md:text-right">
+                                                        <h4 class="font-bold text-title-lg text-primary">03.
+                                                                Installation</h4>
+                                                        <p class="text-on-surface-variant text-body-md">Physical and
+                                                                cloud-based deployment of software cores.</p>
+                                                </div>
+                                                <div
+                                                        class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center z-10 shrink-0 border-4 border-surface shadow-md">
+                                                        <span class="material-symbols-outlined">downloading</span>
+                                                </div>
+                                                <div class="md:w-1/2 md:pl-xl hidden md:block"></div>
+                                        </div>
+                                        <!-- Step 4 -->
+                                        <div
+                                                class="flex flex-col md:flex-row items-center gap-lg md:gap-0 fade-up delay-300">
+                                                <div class="md:w-1/2 md:pl-xl hidden md:block"></div>
+                                                <div
+                                                        class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center z-10 shrink-0 border-4 border-surface shadow-md">
+                                                        <span class="material-symbols-outlined">tune</span>
+                                                </div>
+                                                <div class="md:w-1/2 md:pl-xl text-left">
+                                                        <h4 class="font-bold text-title-lg text-primary">04.
+                                                                Configuration</h4>
+                                                        <p class="text-on-surface-variant text-body-md">Fine-tuning
+                                                                permissions, modules, and integrations.</p>
+                                                </div>
+                                        </div>
+                                        <!-- Step 5 -->
+                                        <div
+                                                class="flex flex-col md:flex-row items-center gap-lg md:gap-0 fade-up delay-400">
+                                                <div class="md:w-1/2 md:pr-xl text-left md:text-right">
+                                                        <h4 class="font-bold text-title-lg text-primary">05. Testing
+                                                        </h4>
+                                                        <p class="text-on-surface-variant text-body-md">Rigorous UAT and
+                                                                stress testing for stability.</p>
+                                                </div>
+                                                <div
+                                                        class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center z-10 shrink-0 border-4 border-surface shadow-md">
+                                                        <span class="material-symbols-outlined">quiz</span>
+                                                </div>
+                                                <div class="md:w-1/2 md:pl-xl hidden md:block"></div>
+                                        </div>
+                                        <!-- Step 6 -->
+                                        <div
+                                                class="flex flex-col md:flex-row items-center gap-lg md:gap-0 fade-up delay-500">
+                                                <div class="md:w-1/2 md:pr-xl hidden md:block"></div>
+                                                <div
+                                                        class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center z-10 shrink-0 border-4 border-surface shadow-md">
+                                                        <span class="material-symbols-outlined">auto_mode</span>
+                                                </div>
+                                                <div class="md:w-1/2 md:pl-xl text-left">
+                                                        <h4 class="font-bold text-title-lg text-primary">06. Go Live
+                                                        </h4>
+                                                        <p class="text-on-surface-variant text-body-md">Controlled
+                                                                rollout and organizational deployment.</p>
+                                                </div>
+                                        </div>
+                                        <!-- Step 7 -->
+                                        <div
+                                                class="flex flex-col md:flex-row items-center gap-lg md:gap-0 fade-up delay-600">
+                                                <div class="md:w-1/2 md:pr-xl text-left md:text-right">
+                                                        <h4 class="font-bold text-title-lg text-secondary">07. Ongoing
+                                                                Support</h4>
+                                                        <p class="text-on-surface-variant text-body-md">Continuous
+                                                                lifecycle management and updates.</p>
+                                                </div>
+                                                <div
+                                                        class="w-16 h-16 rounded-full bg-secondary text-on-secondary flex items-center justify-center z-10 shrink-0 border-4 border-surface shadow-md">
+                                                        <span class="material-symbols-outlined">favorite</span>
+                                                </div>
+                                                <div class="md:w-1/2 md:pl-xl hidden md:block"></div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- Support Services & Checklist -->
+                <section class="bg-surface py-xl">
+                        <div class="max-w-[1280px] mx-auto px-container-desktop">
+                                <div class="grid md:grid-cols-2 gap-xl items-center">
+                                        <div class="fade-up">
+                                                <h2
+                                                        class="font-poppins text-headline-lg text-primary mb-lg font-headline">
+                                                        Full-Spectrum Technical Services</h2>
+                                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+                                                        <div class="flex items-center gap-sm">
+                                                                <span class="material-symbols-outlined text-primary"
+                                                                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                                                <span class="font-medium">Strategic Planning</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-sm">
+                                                                <span class="material-symbols-outlined text-primary"
+                                                                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                                                <span class="font-medium">Core Installation</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-sm">
+                                                                <span class="material-symbols-outlined text-primary"
+                                                                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                                                <span class="font-medium">ERP Integration</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-sm">
+                                                                <span class="material-symbols-outlined text-primary"
+                                                                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                                                <span class="font-medium">CRM Deployment</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-sm">
+                                                                <span class="material-symbols-outlined text-primary"
+                                                                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                                                <span class="font-medium">Database Migration</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-sm">
+                                                                <span class="material-symbols-outlined text-primary"
+                                                                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                                                <span class="font-medium">Cloud Scaling</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-sm">
+                                                                <span class="material-symbols-outlined text-primary"
+                                                                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                                                <span class="font-medium">Security Audits</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-sm">
+                                                                <span class="material-symbols-outlined text-primary"
+                                                                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                                                <span class="font-medium">Optimization</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-sm">
+                                                                <span class="material-symbols-outlined text-primary"
+                                                                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                                                <span class="font-medium">Routine Maintenance</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-sm">
+                                                                <span class="material-symbols-outlined text-primary"
+                                                                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                                                <span class="font-medium">SLA Contracts</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="fade-up delay-200">
+                                                <div
+                                                        class="relative p-base bg-white rounded-lg shadow-xl overflow-hidden">
+                                                        <img alt="Support Dashboard" class="w-full h-auto rounded-lg"
+                                                                data-alt="A high-fidelity 3D rendering of a futuristic IT support dashboard displaying real-time system metrics, glowing network maps, and performance indicators. The palette focuses on deep indigo and bright cyan with pops of emergency red. The layout is clean and professional, using glassmorphic UI elements and soft ambient shadows to convey a high-end corporate support environment."
+                                                                src="assets/images/board_room.png" />
+                                                        <div
+                                                                class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent">
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- FAQ & Sidebar Section -->
+                <section class="py-xl bg-surface-container-low">
+                        <div class="max-w-[1280px] mx-auto px-container-desktop">
+                                <div class="grid lg:grid-cols-3 gap-xl">
+                                        <!-- FAQ Column -->
+                                        <div class="lg:col-span-2 space-y-lg">
+                                                <div class="text-left mb-lg fade-up">
+                                                        <h2
+                                                                class="font-poppins text-headline-lg text-primary font-headline">
+                                                                Frequently Asked Questions</h2>
+                                                        <div class="flex gap-xs mt-xs">
+                                                                <div class="w-12 h-1 bg-primary"></div>
+                                                                <div class="w-4 h-1 bg-secondary"></div>
+                                                        </div>
+                                                </div>
+                                                <div class="space-y-md fade-up delay-100">
+                                                        <!-- Accordion Items -->
+                                                        <details
+                                                                class="group bg-surface-container-lowest rounded-lg shadow-sm open:shadow-md transition-all overflow-hidden border border-outline-variant/30">
+                                                                <summary
+                                                                        class="flex justify-between items-center p-lg cursor-pointer list-none font-bold text-on-surface">
+                                                                        What types of software do you implement?
+                                                                        <span
+                                                                                class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add_circle</span>
+                                                                </summary>
+                                                                <div
+                                                                        class="px-lg pb-lg text-on-surface-variant text-body-md">
+                                                                        We specialize in enterprise-level solutions
+                                                                        including ERP, CRM, Cloud Infrastructure, and
+                                                                        custom-built software architectures tailored to
+                                                                        your specific industry needs.
+                                                                </div>
+                                                        </details>
+                                                        <details
+                                                                class="group bg-surface-container-lowest rounded-lg shadow-sm open:shadow-md transition-all overflow-hidden border border-outline-variant/30">
+                                                                <summary
+                                                                        class="flex justify-between items-center p-lg cursor-pointer list-none font-bold text-on-surface">
+                                                                        How do you handle data security during
+                                                                        migration?
+                                                                        <span
+                                                                                class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add_circle</span>
+                                                                </summary>
+                                                                <div
+                                                                        class="px-lg pb-lg text-on-surface-variant text-body-md">
+                                                                        Security is our top priority. We use end-to-end
+                                                                        encryption for all data transfers, conduct
+                                                                        rigorous pre-migration audits, and ensure
+                                                                        compliance with standard safety guidelines.
+                                                                </div>
+                                                        </details>
+                                                        <details
+                                                                class="group bg-surface-container-lowest rounded-lg shadow-sm open:shadow-md transition-all overflow-hidden border border-outline-variant/30">
+                                                                <summary
+                                                                        class="flex justify-between items-center p-lg cursor-pointer list-none font-bold text-on-surface">
+                                                                        What is the typical timeline for an
+                                                                        implementation?
+                                                                        <span
+                                                                                class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add_circle</span>
+                                                                </summary>
+                                                                <div
+                                                                        class="px-lg pb-lg text-on-surface-variant text-body-md">
+                                                                        Timeline varies based on project complexity.
+                                                                        Small-scale migrations typically take 4-8 weeks,
+                                                                        while full enterprise-wide deployments can range
+                                                                        from 4-9 months. We provide a detailed project
+                                                                        schedule during our consultation phase.
+                                                                </div>
+                                                        </details>
+                                                        <details
+                                                                class="group bg-surface-container-lowest rounded-lg shadow-sm open:shadow-md transition-all overflow-hidden border border-outline-variant/30">
+                                                                <summary
+                                                                        class="flex justify-between items-center p-lg cursor-pointer list-none font-bold text-on-surface">
+                                                                        Do you offer training for our internal staff?
+                                                                        <span
+                                                                                class="material-symbols-outlined text-primary transition-transform group-open:rotate-45">add_circle</span>
+                                                                </summary>
+                                                                <div
+                                                                        class="px-lg pb-lg text-on-surface-variant text-body-md">
+                                                                        Yes, training is a core component of our
+                                                                        implementation process. We provide customized
+                                                                        training modules, live workshops, and exhaustive
+                                                                        documentation to ensure your team is proficient
+                                                                        and confident.
+                                                                </div>
+                                                        </details>
+                                                </div>
+                                        </div>
+                                        <!-- Sidebar Column -->
+                                        <div class="space-y-lg">
+                                                <!-- Categories -->
+                                                <div
+                                                        class="bg-surface-container-lowest p-lg rounded-lg shadow-sm border border-outline-variant/30 fade-up delay-300">
+                                                        <h3
+                                                                class="font-bold text-title-lg text-primary mb-lg flex items-center gap-xs">
+                                                                <span class="material-symbols-outlined">category</span>
+                                                                Categories
+                                                        </h3>
+                                                        <ul class="space-y-sm">
+                                                                <li
+                                                                        class="flex justify-between items-center p-sm hover:bg-surface-container-low rounded-lg transition-colors cursor-pointer group">
+                                                                        <span
+                                                                                class="text-on-surface-variant group-hover:text-primary">Software
+                                                                                Implementation</span>
+                                                                        <span
+                                                                                class="bg-primary/10 text-primary text-label-sm px-sm py-xs rounded-full">12</span>
+                                                                </li>
+                                                                <li
+                                                                        class="flex justify-between items-center p-sm hover:bg-surface-container-low rounded-lg transition-colors cursor-pointer group">
+                                                                        <span
+                                                                                class="text-on-surface-variant group-hover:text-primary">ERP
+                                                                                Solutions</span>
+                                                                        <span
+                                                                                class="bg-primary/10 text-primary text-label-sm px-sm py-xs rounded-full">08</span>
+                                                                </li>
+                                                                <li
+                                                                        class="flex justify-between items-center p-sm hover:bg-surface-container-low rounded-lg transition-colors cursor-pointer group">
+                                                                        <span
+                                                                                class="text-on-surface-variant group-hover:text-primary">CRM
+                                                                                Systems</span>
+                                                                        <span
+                                                                                class="bg-primary/10 text-primary text-label-sm px-sm py-xs rounded-full">15</span>
+                                                                </li>
+                                                                <li
+                                                                        class="flex justify-between items-center p-sm hover:bg-surface-container-low rounded-lg transition-colors cursor-pointer group">
+                                                                        <span
+                                                                                class="text-on-surface-variant group-hover:text-primary">Cloud
+                                                                                Migration</span>
+                                                                        <span
+                                                                                class="bg-primary/10 text-primary text-label-sm px-sm py-xs rounded-full">22</span>
+                                                                </li>
+                                                                <li
+                                                                        class="flex justify-between items-center p-sm hover:bg-surface-container-low rounded-lg transition-colors cursor-pointer group">
+                                                                        <span
+                                                                                class="text-on-surface-variant group-hover:text-primary">Technical
+                                                                                Support</span>
+                                                                        <span
+                                                                                class="bg-primary/10 text-primary text-label-sm px-sm py-xs rounded-full">31</span>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                                <!-- Archives -->
+                                                <div
+                                                        class="bg-surface-container-lowest p-lg rounded-lg shadow-sm border border-outline-variant/30 fade-up delay-400">
+                                                        <h3
+                                                                class="font-bold text-title-lg text-primary mb-lg flex items-center gap-xs">
+                                                                <span
+                                                                        class="material-symbols-outlined">calendar_month</span>
+                                                                Archives
+                                                        </h3>
+                                                        <ul class="space-y-sm">
+                                                                <li
+                                                                        class="p-sm hover:bg-surface-container-low rounded-lg transition-colors cursor-pointer text-on-surface-variant hover:text-primary flex items-center gap-sm">
+                                                                        <span>May 2026</span>
+                                                                        <span
+                                                                                class="text-label-sm opacity-50">(4)</span>
+                                                                </li>
+                                                                <li
+                                                                        class="p-sm hover:bg-surface-container-low rounded-lg transition-colors cursor-pointer text-on-surface-variant hover:text-primary flex items-center gap-sm">
+                                                                        <span>April 2026</span>
+                                                                        <span
+                                                                                class="text-label-sm opacity-50">(7)</span>
+                                                                </li>
+                                                                <li
+                                                                        class="p-sm hover:bg-surface-container-low rounded-lg transition-colors cursor-pointer text-on-surface-variant hover:text-primary flex items-center gap-sm">
+                                                                        <span>March 2026</span>
+                                                                        <span
+                                                                                class="text-label-sm opacity-50">(3)</span>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-[#001e2d] pt-20 pb-8 text-on-tertiary">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-margin-desktop max-w-container-max mx-auto mb-20">
+                        <div class="space-y-8">
+                                <a href="index.html" class="inline-block"><img src="assets/images/logo.png"
+                                                alt="Zigma Software Logo" class="h-14 w-auto"></a>
+                                <p class="text-surface-variant/70 text-lg leading-relaxed font-medium">
+                                        Zigma Software, Erode is a trusted digital solutions company delivering web,
+                                        mobile app, and software solutions to grow your business.
+                                </p>
+
+                        </div>
+                        <div>
+                                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Get In
+                                        Touch</h4>
+                                <ul class="space-y-6 text-surface-variant/80 font-medium">
+                                        <li class="flex gap-4">
+                                                <span
+                                                        class="material-symbols-outlined text-secondary shrink-0">location_on</span>
+                                                <span class="">Door No: 4/1c.12-A, Annamalai Gounder Layout, 1st Floor,
+                                                        Near Hotel Vignesh, Mettur Road, Erode. Tamil Nadu, India</span>
+                                        </li>
+                                        <li class="flex gap-4">
+                                                <span
+                                                        class="material-symbols-outlined text-secondary shrink-0">phone</span>
+                                                <span class="">+91-9942364454, 9791902386</span>
+                                        </li>
+                                        <li class="flex gap-4">
+                                                <span
+                                                        class="material-symbols-outlined text-secondary shrink-0">mail</span>
+                                                <span class="">info@zigmasoftware.in</span>
+                                        </li>
+                                </ul>
+                        </div>
+                        <div>
+                                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">
+                                        Important Links</h4>
+                                <ul class="space-y-4 font-medium">
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="about.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        About Us</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="products.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Products</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="web-development.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Services</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="blog.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Blogs</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="contact.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Contact Us</a></li>
+                                </ul>
+                        </div>
+                        <div>
+                                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Our
+                                        Services</h4>
+                                <ul class="space-y-4 font-medium">
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="software-support.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Business Analytics</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="mobile-development.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Mobile App Dev</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="software-support.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        HRMS &amp; Payroll</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="social-marketing.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Social Media Marketing</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="web-development.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Web Hosting</a></li>
+                                </ul>
+                        </div>
+                </div>
+                <div
+                        class="border-t border-white/5 pt-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-surface-variant/50 text-sm font-medium">
+                        <p class="">© 2026 Zigma Software. All Rights Reserved.</p>
+                        <div class="flex gap-8">
+                                <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                                <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                                <a class="hover:text-white transition-colors" href="#">Cookie Policy</a>
+                        </div>
+                </div>
+        </footer>
+        <script>
+                const observerOptions = { threshold: 0.1 };
+                const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                                }
+                        });
+                }, observerOptions);
+
+                document.querySelectorAll('section > div').forEach(el => {
+                        el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                        observer.observe(el);
+                });
+
+                // Hover effect for support cards
+                document.querySelectorAll('.border-outline-variant').forEach(card => {
+                        card.addEventListener('mouseenter', () => {
+                                card.classList.add('border-primary-container', 'shadow-lg');
+                        });
+                        card.addEventListener('mouseleave', () => {
+                                card.classList.remove('border-primary-container', 'shadow-lg');
+                        });
+                });
+        </script>
+        <script src="assets/js/nav.js"></script>
+</body>
+
+</html>

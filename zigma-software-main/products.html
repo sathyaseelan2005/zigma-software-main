@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Products | Zigma Software</title>
+        <script src="assets/js/tailwind.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Poppins:wght@400;500;600;700;800&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet">
+        <script id="tailwind-config">
+                tailwind.config = {
+                        "darkMode": "class",
+                        "theme": {
+                                "extend": {
+                                        "colors": {
+                                                "surface": "#f9f9fc",
+                                                "on-tertiary-fixed": "#001e2d",
+                                                "surface-dim": "#dadadc",
+                                                "on-secondary-container": "#fffbff",
+                                                "outline-variant": "#c2c6d1",
+                                                "primary-fixed-dim": "#a3c9ff",
+                                                "surface-container-lowest": "#ffffff",
+                                                "tertiary-fixed": "#c6e7ff",
+                                                "surface-container-high": "#e8e8ea",
+                                                "on-secondary": "#ffffff",
+                                                "on-error": "#ffffff",
+                                                "surface-bright": "#f9f9fc",
+                                                "primary-fixed": "#d3e4ff",
+                                                "secondary-fixed-dim": "#ffb3ae",
+                                                "outline": "#727781",
+                                                "on-primary-fixed-variant": "#004882",
+                                                "on-primary-fixed": "#001c38",
+                                                "on-background": "#1a1c1e",
+                                                "background": "#f9f9fc",
+                                                "on-secondary-fixed-variant": "#930015",
+                                                "secondary-fixed": "#ffdad7",
+                                                "surface-variant": "#e2e2e5",
+                                                "surface-container-low": "#f3f3f6",
+                                                "secondary": "#bb001e",
+                                                "primary": "#003461",
+                                                "error": "#ba1a1a",
+                                                "primary-container": "#004b87",
+                                                "surface-container-highest": "#e2e2e5",
+                                                "inverse-surface": "#2f3133",
+                                                "inverse-primary": "#a3c9ff",
+                                                "on-tertiary": "#ffffff",
+                                                "error-container": "#ffdad6",
+                                                "tertiary-container": "#004f6f",
+                                                "surface-tint": "#27609d",
+                                                "on-surface": "#1a1c1e",
+                                                "on-secondary-fixed": "#410004",
+                                                "on-tertiary-container": "#55c4ff",
+                                                "on-primary-container": "#8abcff",
+                                                "on-error-container": "#93000a",
+                                                "tertiary": "#00374f",
+                                                "surface-container": "#eeeef0",
+                                                "on-tertiary-fixed-variant": "#004c6b",
+                                                "tertiary-fixed-dim": "#82cfff",
+                                                "on-surface-variant": "#424750",
+                                                "on-primary": "#ffffff",
+                                                "secondary-container": "#e32130",
+                                                "inverse-on-surface": "#f0f0f3"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.25rem",
+                                                "lg": "0.5rem",
+                                                "xl": "0.75rem",
+                                                "full": "9999px"
+                                        },
+                                        "spacing": {
+                                                "gutter": "24px",
+                                                "margin-desktop": "64px",
+                                                "margin-mobile": "16px",
+                                                "base": "8px",
+                                                "container-max": "1280px",
+                                                "container-margin-desktop": "40px",
+                                                "container-margin-mobile": "16px",
+                                                "xs": "4px",
+                                                "sm": "12px",
+                                                "md": "16px",
+                                                "lg": "24px",
+                                                "xl": "32px"
+                                        },
+                                        "fontFamily": {
+                                                "poppins": [
+                                                        "Poppins",
+                                                        "sans-serif"
+                                                ],
+                                                "label-sm": [
+                                                        "Inter"
+                                                ],
+                                                "display-lg": [
+                                                        "Inter"
+                                                ],
+                                                "body-md": [
+                                                        "Inter"
+                                                ],
+                                                "title-md": [
+                                                        "Inter"
+                                                ],
+                                                "body-lg": [
+                                                        "Inter"
+                                                ],
+                                                "headline-lg-mobile": [
+                                                        "Inter"
+                                                ],
+                                                "headline-lg": [
+                                                        "Inter"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "label-sm": [
+                                                        "12px",
+                                                        {
+                                                                "lineHeight": "1",
+                                                                "letterSpacing": "0.05em",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "display-lg": [
+                                                        "48px",
+                                                        {
+                                                                "lineHeight": "1.1",
+                                                                "letterSpacing": "-0.02em",
+                                                                "fontWeight": "800"
+                                                        }
+                                                ],
+                                                "body-md": [
+                                                        "16px",
+                                                        {
+                                                                "lineHeight": "1.6",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "title-md": [
+                                                        "20px",
+                                                        {
+                                                                "lineHeight": "1.4",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "1.6",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "headline-lg-mobile": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "headline-lg": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "label-md": [
+                                                        "14px",
+                                                        {
+                                                                "lineHeight": "20px",
+                                                                "letterSpacing": "0.01em",
+                                                                "fontWeight": "500"
+                                                        }
+                                                ],
+                                                "headline-md": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "32px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "title-lg": [
+                                                        "20px",
+                                                        {
+                                                                "lineHeight": "28px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ]
+                                        }
+                                }
+                        }
+                }
+        </script>
+        <style>
+                .glass-card {
+                        background: rgba(255, 255, 255, 0.7);
+                        backdrop-filter: blur(12px);
+                        border: 1px solid rgba(255, 255, 255, 0.3);
+                        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+                }
+
+                .shimmer-btn {
+                        position: relative;
+                        overflow: hidden;
+                }
+
+                .shimmer-btn::after {
+                        content: '';
+                        position: absolute;
+                        top: -50%;
+                        left: -50%;
+                        width: 200%;
+                        height: 200%;
+                        background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+                        transform: rotate(45deg);
+                        transition: 0.5s;
+                }
+
+                .shimmer-btn:hover::after {
+                        left: 100%;
+                        top: 100%;
+                }
+
+                .vibrant-card {
+                        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                }
+
+                .vibrant-card:hover {
+                        transform: scale(1.03) translateY(-10px);
+                        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+                }
+
+                .color-bg-blue {
+                        background-color: #f0f7ff;
+                }
+
+                .color-bg-blue:hover {
+                        background-color: #dbeafe;
+                }
+
+                .color-bg-red {
+                        background-color: #fff1f2;
+                }
+
+                .color-bg-red:hover {
+                        background-color: #ffe4e6;
+                }
+
+                .color-bg-teal {
+                        background-color: #f0fdfa;
+                }
+
+                .color-bg-teal:hover {
+                        background-color: #ccfbf1;
+                }
+
+                .color-bg-purple {
+                        background-color: #faf5ff;
+                }
+
+                .color-bg-purple:hover {
+                        background-color: #f3e8ff;
+                }
+
+                .color-bg-amber {
+                        background-color: #fffbeb;
+                }
+
+                .color-bg-amber:hover {
+                        background-color: #fef3c7;
+                }
+
+                .color-bg-indigo {
+                        background-color: #eef2ff;
+                }
+
+                .color-bg-indigo:hover {
+                        background-color: #e0e7ff;
+                }
+
+                .dropdown-content {
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
+                }
+
+                .dropdown-item.active .dropdown-content {
+                        max-height: 2000px;
+                        /* High enough for content */
+                        padding-bottom: 24px;
+                }
+
+                .dropdown-item.active .chevron-icon {
+                        transform: rotate(180deg);
+                }
+
+                .brand-gradient {
+                        background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+                }
+
+                .bullet-red {
+                        color: #bb001e;
+                }
+
+                .quotation-fab {
+                        box-shadow: 0 10px 25px -5px rgba(0, 52, 97, 0.4);
+                }
+
+                .modal-overlay {
+                        background: rgba(0, 52, 97, 0.6);
+                        backdrop-filter: blur(4px);
+                }
+        </style>
+
+</head>
+
+<body class="bg-surface font-body-md text-on-surface selection:bg-primary selection:text-white">
+        <div id="header-placeholder"></div>
+
+
+
+
+        <main class="bg-surface">
+                <!-- Hero Banner -->
+                <section
+                        class="relative h-[340px] md:h-[420px] flex flex-col items-center justify-center text-center overflow-hidden">
+                        <div class="absolute inset-0 z-0">
+                                <img class="w-full h-full object-cover object-center" src="assets/images/img%203.jpg"
+                                        alt="Our Products Hero">
+                                <div
+                                        class="absolute inset-0 bg-gradient-to-r from-[#001d35]/80 via-[#001d35]/30 to-[#001d35]/80">
+                                </div>
+                        </div>
+                        <div class="relative z-10 text-white">
+                                <h1 class="font-display-lg text-display-lg mb-sm text-shadow-sm">Our Products</h1>
+                                <p class="font-label-md opacity-90"><a href="index.html"
+                                                class="hover:underline">Home</a> <span class="mx-xs">&gt;</span>
+                                        Products</p>
+                        </div>
+                </section>
+                <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12">
+                        <div class="max-w-container-max mx-auto">
+                                <!-- Product List -->
+                                <div class="space-y-4" id="products-container">
+                                        <!-- FA - Basic Account -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-primary overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-primary text-2xl"
+                                                                        data-icon="account_balance">account_balance</span>
+                                                                <span
+                                                                        class="font-title-md text-primary font-bold text-lg">FA
+                                                                        - Basic Account Package</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-primary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-4 pt-2 pb-4">
+                                                                <p class="text-secondary italic font-semibold">"FA -
+                                                                        Financial Accounting System" has been developed
+                                                                        in 1991, still used by more than 200s of
+                                                                        Auditors.</p>
+                                                                <p class="text-on-surface-variant">Day Book (Using our
+                                                                        Rough Day Book / Chitta) Entry only. Will
+                                                                        automatically posts from Ledgers to Balance
+                                                                        Sheets. Financial Reports like Day Book,
+                                                                        Ledgers, Trial Balance, Trading, Profit &amp;
+                                                                        Loss a/c, Income &amp; Expenditure and Balance
+                                                                        Reports will be generated.</p>
+                                                                <div
+                                                                        class="bg-primary/5 p-4 rounded-lg border border-primary/10">
+                                                                        <p
+                                                                                class="font-title-md text-primary text-sm uppercase mb-2 font-bold">
+                                                                                Key Features</p>
+                                                                        <ul class="space-y-2">
+                                                                                <li class="flex items-start gap-2">
+                                                                                        <span
+                                                                                                class="material-symbols-outlined text-sm mt-1 bullet-red font-bold">arrow_forward_ios</span>
+                                                                                        <span class="">Simple &amp;
+                                                                                                Powerful Tool</span>
+                                                                                </li>
+                                                                                <li class="flex items-start gap-2">
+                                                                                        <span
+                                                                                                class="material-symbols-outlined text-sm mt-1 bullet-red font-bold">arrow_forward_ios</span>
+                                                                                        <span class="">Automated Ledger
+                                                                                                Posting</span>
+                                                                                </li>
+                                                                                <li class="flex items-start gap-2">
+                                                                                        <span
+                                                                                                class="material-symbols-outlined text-sm mt-1 bullet-red font-bold">arrow_forward_ios</span>
+                                                                                        <span class="">Comprehensive
+                                                                                                Financial
+                                                                                                Reporting</span>
+                                                                                </li>
+                                                                        </ul>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Bills -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-secondary overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-secondary text-2xl"
+                                                                        data-icon="receipt_long">receipt_long</span>
+                                                                <span
+                                                                        class="font-title-md text-secondary font-bold text-lg">Bills
+                                                                        - Basic Billing Package</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-secondary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-4 pt-2 pb-4">
+                                                                <p class="text-on-surface-variant">Using this Sales Bill
+                                                                        module we can view the reports like Date wise,
+                                                                        Customer wise, Product wise, Area wise, Sales
+                                                                        Representative wise Sales details for a Day,
+                                                                        Month, Year or any Specific Periods.</p>
+                                                                <div
+                                                                        class="bg-secondary/5 p-4 rounded-lg border border-secondary/10">
+                                                                        <p
+                                                                                class="font-title-md text-secondary text-sm uppercase mb-2 font-bold">
+                                                                                Supported Bill Types</p>
+                                                                        <ul class="grid grid-cols-2 gap-2">
+                                                                                <li class="flex items-center gap-2">
+                                                                                        <span
+                                                                                                class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+                                                                                        Cash / Credits</li>
+                                                                                <li class="flex items-center gap-2">
+                                                                                        <span
+                                                                                                class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+                                                                                        VAT Tax Invoices</li>
+                                                                                <li class="flex items-center gap-2">
+                                                                                        <span
+                                                                                                class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+                                                                                        Counters Sale Bill</li>
+                                                                                <li class="flex items-center gap-2">
+                                                                                        <span
+                                                                                                class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+                                                                                        Central Excise Bills</li>
+                                                                        </ul>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Stores -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-primary/60 overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-primary text-2xl"
+                                                                        data-icon="inventory_2">inventory_2</span>
+                                                                <span
+                                                                        class="font-title-md text-primary font-bold text-lg">Stores</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-primary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-4 pt-2 pb-4">
+                                                                <p class="text-on-surface-variant">Opening Stock, Stock
+                                                                        Inwards (Store Receipts) and Stock Outwards
+                                                                        (Store Issues) only. Opening Stock, Store
+                                                                        Inwards and Store Outwards Reports can be viewed
+                                                                        as Date wise and Product wise.</p>
+                                                                <p class="text-on-surface-variant">Inventory Reports
+                                                                        like Stock Ledger, Stock Status, Stock
+                                                                        Valuations, Stock Movements, Re-Order Level
+                                                                        Analysis, Dead Stock Report etc., can also be
+                                                                        analysed. View any Products Stock
+                                                                        instantaneously in single stroke.</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Zigfas STD -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-secondary/60 overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-secondary text-2xl"
+                                                                        data-icon="verified_user">verified_user</span>
+                                                                <span
+                                                                        class="font-title-md text-secondary font-bold text-lg">Zigfas
+                                                                        STD</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-secondary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-4 pt-2 pb-4">
+                                                                <p class="text-on-surface-variant mb-2">In addition to the Basic Accounting System, We Integrate the Billing and Inventory package with the existing Accounting system, our outstanding innovations, State-of-the-art software Package – “ZIGFAS” (Zigma InteGrated Financial Accounting System) designed for complete Manufacturing Industries and Trading Houses, and considerably enhances the quality of the major modules from Purchase to end Sale (having modules like Purchase, Payments to Purchase Bills, Purchase Returns, Sales, Receipts for Sales Bills, Sales Returns, Expense Vouchers, Debit Notes, Credit Notes, Bank Entries, A/c Journals etc.,) launched in 1994 was developed using FoxPro is a DOS Version The software has been running successfully approximately more than 900 customers. This is not only an Accounting system, it also play as a Business Analytical Tool which aid our clients to take right decision in many ways using our Analytical M.I.S. Reports for Multiple Accounting Years of Single or Consolidating of Multiple Firms too.</p>
+                                                                <div class="bg-secondary/5 p-4 rounded-lg border border-secondary/10 mt-4">
+                                                                        <p class="font-title-md text-secondary text-sm uppercase mb-2 font-bold">Zigfas Features</p>
+                                                                        <ul class="space-y-2">
+                                                                                <li class="flex items-start gap-2">
+                                                                                        <span class="material-symbols-outlined text-sm mt-1 bullet-red font-bold">send</span>
+                                                                                        <span class="">Financial Reports like Daybook, Ledgers, Trading, Profit &amp; Loss a/c, Income &amp; Expenditure and Balance Reports, Sundry Creditors and Debtors etc.,</span>
+                                                                                </li>
+                                                                                <li class="flex items-start gap-2">
+                                                                                        <span class="material-symbols-outlined text-sm mt-1 bullet-red font-bold">send</span>
+                                                                                        <span class="">Inventory Reports like Stock Ledger, Stock Status, Stock Valuations, Stock Movements, Re-Order Level Analysis, Dead Stock Report etc.</span>
+                                                                                </li>
+                                                                                <li class="flex items-start gap-2">
+                                                                                        <span class="material-symbols-outlined text-sm mt-1 bullet-red font-bold">send</span>
+                                                                                        <span class="">Statutory Reports for Central Excise, Service Taxes, VAT Taxes With VAT eReturn / VAT e-Filing will be directly uploaded as annexures at tnvat.gov.in.</span>
+                                                                                </li>
+                                                                                <li class="flex items-start gap-2">
+                                                                                        <span class="material-symbols-outlined text-sm mt-1 bullet-red font-bold">send</span>
+                                                                                        <span class="">Individual Module’s Reports can be retrieved as Date wise, Customer wise, Supplier wise, Product wise, Area wise, and Sales Representative wise as a details of a Day, Month, Year or any Specific Periods.</span>
+                                                                                </li>
+                                                                        </ul>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Zigfas Prof -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-primary/40 overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-primary text-2xl"
+                                                                        data-icon="precision_manufacturing">precision_manufacturing</span>
+                                                                <span
+                                                                        class="font-title-md text-primary font-bold text-lg">Zigfas
+                                                                        Prof</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-primary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-4 pt-2 pb-4">
+                                                                <p class="text-on-surface-variant">Standard Trading
+                                                                        Package + Manufacturing Modules + Delivery
+                                                                        Management Modules forms the Zigfas Professional
+                                                                        Package.</p>
+                                                                <p class="text-on-surface-variant">Manufacturing Modules
+                                                                        include Issue to Productions (Raw Materials),
+                                                                        Receipts from Productions (Finished Goods),
+                                                                        Store Issues, Store Receipts and Bill of
+                                                                        Materials. Can be used for Bulk to Loose
+                                                                        Conversions and Re-Packings.</p>
+                                                                <p class="text-on-surface-variant">Delivery Management
+                                                                        Modules include Purchase Delivery Challan, Sales
+                                                                        Delivery Challan and Sales DC Returns. Reports
+                                                                        can be retrieved as Pending / Completed Purchase
+                                                                        DCs and Pending / Completed Sales DCs by Date,
+                                                                        Supplier, Customer, and Product.</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Zigfas Enterprise -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-primary overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-primary text-2xl"
+                                                                        data-icon="domain">domain</span>
+                                                                <span
+                                                                        class="font-title-md text-primary font-bold text-lg">Zigfas
+                                                                        Enterprise</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-primary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-4 pt-2 pb-4">
+                                                                <p class="font-body-md text-on-surface-variant">
+                                                                        Professional Package + Order Processing Modules
+                                                                        + Stock Transfer Modules together integrated as
+                                                                        Zigfas Enterprise Package.</p>
+                                                                <div class="space-y-4">
+                                                                        <div>
+                                                                                <p
+                                                                                        class="font-title-md text-sm text-primary uppercase font-bold">
+                                                                                        Order Processing Modules</p>
+                                                                                <p
+                                                                                        class="text-on-surface-variant text-sm">
+                                                                                        Includes Purchase Orders and
+                                                                                        Sales Orders.</p>
+                                                                        </div>
+                                                                        <div>
+                                                                                <p
+                                                                                        class="font-title-md text-sm text-primary uppercase font-bold">
+                                                                                        Stock Transfers Modules</p>
+                                                                                <p
+                                                                                        class="text-on-surface-variant text-sm">
+                                                                                        Material Transfers between
+                                                                                        Warehouses / Godowns, Head
+                                                                                        Office / Branch Office Transfer
+                                                                                        Issues.</p>
+                                                                        </div>
+                                                                        <ul class="space-y-2 text-sm">
+                                                                                <li class="flex items-start gap-2"><span
+                                                                                                class="material-symbols-outlined text-sm mt-0.5 bullet-red font-bold">forward</span>
+                                                                                        Reports can be retrieved as
+                                                                                        Pending / Completed Purchase
+                                                                                        Orders and Pending / Completed
+                                                                                        Sales Orders.</li>
+                                                                                <li class="flex items-start gap-2"><span
+                                                                                                class="material-symbols-outlined text-sm mt-0.5 bullet-red font-bold">forward</span>
+                                                                                        Stock Transfers, HO/BO Transfers
+                                                                                        Reports can be analysed Date
+                                                                                        wise, Supplier wise / Customer
+                                                                                        wise.</li>
+                                                                        </ul>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Zigpams -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-secondary overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-secondary text-2xl"
+                                                                        data-icon="groups">groups</span>
+                                                                <span
+                                                                        class="font-title-md text-secondary font-bold text-lg">Zigpams</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-secondary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-4 pt-2 pb-4">
+                                                                <p class="text-on-surface-variant">Payroll management
+                                                                        system will maintain the Employee Attendance,
+                                                                        Salaries, Wages, Leaves, Over Time Wages,
+                                                                        Holiday Wages, Lay Offs, Opening Leave, Salary
+                                                                        Advances, Loans, Bonus.</p>
+                                                                <p
+                                                                        class="text-on-surface-variant text-sm italic font-semibold">
+                                                                        Available for With/Without PF, ESI and
+                                                                        Bio-metric Supports. View any Pump's /
+                                                                        Customer's / Service's JOB History
+                                                                        instantaneously in single stroke.</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- HPLMS -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-primary/40 overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-primary text-2xl"
+                                                                        data-icon="clinical_notes">clinical_notes</span>
+                                                                <span
+                                                                        class="font-title-md text-primary font-bold text-lg">HPLMS</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-primary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-4 pt-2 pb-4">
+                                                                <p class="">Customised Package for Vehicle Hire Purchase
+                                                                        Loan Management Systems for Financiers with HP
+                                                                        Loan Master (HP No, Vehicle Details, Hirer
+                                                                        Details, Guarantor Details, Finance Amount, No.
+                                                                        of Dues EMI Amount etc.), HP Loan Receipts with
+                                                                        all the features of Financial Accounting
+                                                                        Package.</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- MSS -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-secondary/40 overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-secondary text-2xl"
+                                                                        data-icon="settings_input_component">settings_input_component</span>
+                                                                <span
+                                                                        class="font-title-md text-secondary font-bold text-lg">MSS</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-secondary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-4 pt-2 pb-4">
+                                                                <p class="">Products Marketing Enquiry Initiations
+                                                                        (Enquiry Mode, Enquired Product, Follow up By,
+                                                                        Status) and Follow-up Entry. This Marketing
+                                                                        Management Systems used to follow-up the
+                                                                        customers with follow-up history.</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- SFRMS -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-primary/40 overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-primary text-2xl"
+                                                                        data-icon="school">school</span>
+                                                                <span
+                                                                        class="font-title-md text-primary font-bold text-lg">SFRMS</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-primary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-4 pt-2 pb-4">
+                                                                <p class="">Customised Package for College / School
+                                                                        Students Fees Collection Management Systems with
+                                                                        modules like Application Fees Receipts,
+                                                                        Admission Fees Receipts and Fees Receivables &
+                                                                        Student Fees Receipts with all the features of
+                                                                        Financial Accounting Package.</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- SMSPRO -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-primary overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-primary text-2xl"
+                                                                        data-icon="sms">sms</span>
+                                                                <span
+                                                                        class="font-title-md text-primary font-bold text-lg">SMSPRO</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-primary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-3 pt-2 pb-4">
+                                                                <li class="flex items-start gap-2"><span
+                                                                                class="material-symbols-outlined text-xs mt-1 bullet-red font-bold">fiber_manual_record</span>
+                                                                        Bulk SMS made easy through this SMS Pro Utility.
+                                                                </li>
+                                                                <li class="flex items-start gap-2"><span
+                                                                                class="material-symbols-outlined text-xs mt-1 bullet-red font-bold">fiber_manual_record</span>
+                                                                        Able to Manage contact us Persons Name, Mailing
+                                                                        Address, Birth Date, etc.</li>
+                                                                <li class="flex items-start gap-2"><span
+                                                                                class="material-symbols-outlined text-xs mt-1 bullet-red font-bold">fiber_manual_record</span>
+                                                                        Supports to Import from Excel and Send SMS on
+                                                                        fly.</li>
+                                                                <li class="flex items-start gap-2"><span
+                                                                                class="material-symbols-outlined text-xs mt-1 bullet-red font-bold">fiber_manual_record</span>
+                                                                        Alerts for Birth Day, Anniversary and Religious
+                                                                        Festival Wishes.</li>
+                                                                <li class="flex items-start gap-2"><span
+                                                                                class="material-symbols-outlined text-xs mt-1 bullet-red font-bold">fiber_manual_record</span>
+                                                                        Predefined SMS to post dates and Auto SMS on
+                                                                        that particular Date.</li>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Reminder -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-secondary/80 overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-secondary text-2xl"
+                                                                        data-icon="alarm">alarm</span>
+                                                                <span
+                                                                        class="font-title-md text-secondary font-bold text-lg">Reminder</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-secondary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-4 pt-2 pb-4">
+                                                                <p class="text-on-surface-variant">Can create official,
+                                                                        personal, LIC insurance premium, vehicle
+                                                                        insurance, vehicle road taxes, FCs, DOB, DOA,
+                                                                        religious festivals, and work allocation
+                                                                        reminders with forwarding control.</p>
+                                                                <p class="text-on-surface-variant">Reminding alerts
+                                                                        scroll on system startup. Schedule alerts popup
+                                                                        before, at, or after the configured time.</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Textile Sections -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-secondary overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-secondary text-2xl"
+                                                                        data-icon="precision_manufacturing">precision_manufacturing</span>
+                                                                <span
+                                                                        class="font-title-md text-secondary font-bold text-lg">Textile
+                                                                        Solutions</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-secondary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-6 pt-2 pb-4">
+                                                                <div>
+                                                                        <p
+                                                                                class="font-title-md text-primary font-bold mb-2">
+                                                                                Textile Show Rooms</p>
+                                                                        <p class="text-on-surface-variant text-sm">
+                                                                                Zigfas Professional Package with Bar
+                                                                                Code enabled system with Counter Sales
+                                                                                and Credit Sales Modules.</p>
+                                                                </div>
+                                                                <div>
+                                                                        <p
+                                                                                class="font-title-md text-primary font-bold mb-2">
+                                                                                Textile Grey Manufacturing</p>
+                                                                        <p class="text-on-surface-variant text-sm mb-2">
+                                                                                Zigfas Professional Package with:</p>
+                                                                        <ul class="space-y-1 text-sm">
+                                                                                <li class="flex items-start gap-2"><span
+                                                                                                class="material-symbols-outlined text-xs mt-1 bullet-red font-bold">chevron_right</span>
+                                                                                        Sizing Conversions: Warp Yarn
+                                                                                        Issued to Sizing Mills, Warped
+                                                                                        Beam (Paavu) Receipts etc.</li>
+                                                                        </ul>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Textile Towel Manufacturing -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-secondary/40 overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-secondary text-2xl"
+                                                                        data-icon="local_laundry_service">local_laundry_service</span>
+                                                                <span
+                                                                        class="font-title-md text-secondary font-bold text-lg">Textile
+                                                                        Towel Manufacturing</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-secondary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-4 pt-2 pb-4">
+                                                                <p class="text-on-surface-variant">Zigfas Professional
+                                                                        Package with Yarn Issues to Weavers and Towels &
+                                                                        Napkins Receipts from Weavers with Weaving
+                                                                        Coolly Bill.</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Textile Sizing Mills -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-primary/40 overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-primary text-2xl"
+                                                                        data-icon="factory">factory</span>
+                                                                <span
+                                                                        class="font-title-md text-primary font-bold text-lg">Textile
+                                                                        Sizing Mills</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-primary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-4 pt-2 pb-4">
+                                                                <p class="text-on-surface-variant">Zigfas Trading
+                                                                        Package with Customisation for Job Work Bills.
+                                                                </p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Textile Printing / Processing -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-secondary/40 overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-secondary text-2xl"
+                                                                        data-icon="print">print</span>
+                                                                <span
+                                                                        class="font-title-md text-secondary font-bold text-lg">Textile
+                                                                        Printing / Processing</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-secondary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-4 pt-2 pb-4">
+                                                                <p class="text-on-surface-variant">Zigfas Professional
+                                                                        Package with fully customised features for
+                                                                        Printing / Processing Mills. Includes Work Order
+                                                                        Processing, Receipts for WO, Raw Materials
+                                                                        Consumption, Job Work DCs, Job Work Bills, and
+                                                                        Receipts for Job Work Bills with TDS deductions
+                                                                        adjustments.</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Sticker Pro -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-primary/40 overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-primary text-2xl"
+                                                                        data-icon="label">label</span>
+                                                                <span
+                                                                        class="font-title-md text-primary font-bold text-lg">Sticker
+                                                                        Pro</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-primary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-4 pt-2 pb-4">
+                                                                <p class="text-on-surface-variant">Customised package
+                                                                        for pricing bulk sticker printing, bar coded
+                                                                        sticker printing, and pallet stocking stickers
+                                                                        for turmeric, packaging, and more.</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- Web Site Designing & Hosting -->
+                                        <div
+                                                class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-primary overflow-hidden transition-all duration-300">
+                                                <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                        onclick="toggleDropdown(this)">
+                                                        <div class="flex items-center gap-4">
+                                                                <span class="material-symbols-outlined text-primary text-2xl"
+                                                                        data-icon="language">language</span>
+                                                                <span
+                                                                        class="font-title-md text-primary font-bold text-lg">Web
+                                                                        Site Designing &amp; Hosting</span>
+                                                        </div>
+                                                        <span
+                                                                class="material-symbols-outlined transition-transform duration-300 chevron-icon text-primary font-bold">expand_more</span>
+                                                </button>
+                                                <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                        <div class="space-y-4 pt-2 pb-4">
+                                                                <p class="text-on-surface-variant">Get your online
+                                                                        identity with professionally designed website.
+                                                                        At Zigma, we focus on developing websites that
+                                                                        are attractive, easy to navigate, and friendly
+                                                                        for search engines.</p>
+                                                                <ul
+                                                                        class="space-y-3 font-semibold text-on-surface-variant">
+                                                                        <li class="flex items-start gap-3">
+                                                                                <span
+                                                                                        class="material-symbols-outlined text-secondary text-lg mt-0.5">check_circle</span>
+                                                                                <span class="">Modern design technology
+                                                                                        including XHTML, CSS, JavaScript
+                                                                                        etc.</span>
+                                                                        </li>
+                                                                        <li class="flex items-start gap-3">
+                                                                                <span
+                                                                                        class="material-symbols-outlined text-secondary text-lg mt-0.5">check_circle</span>
+                                                                                <span class="">Responsive and secure
+                                                                                        business sites.</span>
+                                                                        </li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Furniture Manufactures -->
+                                <div
+                                        class="dropdown-item bg-white rounded-xl shadow-sm border-l-4 border-secondary/80 overflow-hidden transition-all duration-300">
+                                        <button class="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                                                onclick="toggleDropdown(this)">
+                                                <div class="flex items-center gap-4">
+                                                        <span class="material-symbols-outlined text-secondary text-2xl"
+                                                                data-icon="bed">bed</span>
+                                                        <span class="font-title-md text-secondary font-bold text-lg">Furniture
+                                                                Manufactures</span>
+                                                </div>
+                                                <span
+                                                        class="material-symbols-outlined transition-transform duration-300 chevron-icon text-secondary font-bold">expand_more</span>
+                                        </button>
+                                        <div class="dropdown-content px-5 text-on-surface-variant font-medium">
+                                                <div class="space-y-4 pt-2 pb-4">
+                                                        <p class="text-on-surface-variant">Zigfas Professional Package
+                                                                with fully customised furniture manufacturing modules
+                                                                like Job Requirement, Job Quotation, Job Confirmation,
+                                                                Job Sheet, Job Delivery, and Job Bill.</p>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </main>
+        <!-- Floating Action Button for Quotation -->
+        <button class="fixed bottom-24 right-6 w-14 h-14 bg-secondary text-white rounded-full flex items-center justify-center quotation-fab z-40 transition-transform hover:scale-105 active:scale-95 duration-200"
+                onclick="toggleQuotationForm()">
+                <span class="material-symbols-outlined text-2xl">request_quote</span>
+        </button>
+        <!-- Quotation Form Modal -->
+        <div class="fixed inset-0 z-[60] flex items-center justify-center p-6 hidden" id="quotation-modal">
+                <div class="modal-overlay absolute inset-0" onclick="toggleQuotationForm()"></div>
+                <div
+                        class="bg-white w-full max-w-md rounded-2xl shadow-2xl relative z-10 overflow-hidden border border-outline-variant/10">
+                        <div class="bg-primary p-6 text-white flex justify-between items-center">
+                                <div>
+                                        <h3 class="font-title-md text-lg font-black text-white">Request Free Quotation
+                                        </h3>
+                                        <p class="text-xs text-primary-fixed-dim">Expert business solution for your
+                                                workflow</p>
+                                </div>
+                                <button class="p-2 text-white hover:opacity-85" onclick="toggleQuotationForm()">
+                                        <span class="material-symbols-outlined">close</span>
+                                </button>
+                        </div>
+                        <form class="p-6 space-y-4 text-on-surface">
+                                <div>
+                                        <label class="block text-xs font-bold text-primary uppercase mb-1">Full
+                                                Name</label>
+                                        <input class="w-full border border-gray-200 rounded-lg p-3 bg-surface focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-on-surface"
+                                                placeholder="Enter your name" type="text" required>
+                                </div>
+                                <div>
+                                        <label class="block text-xs font-bold text-primary uppercase mb-1">Mobile
+                                                Number</label>
+                                        <input class="w-full border border-gray-200 rounded-lg p-3 bg-surface focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-on-surface"
+                                                placeholder="Enter your mobile" type="tel" required>
+                                </div>
+                                <div>
+                                        <label class="block text-xs font-bold text-primary uppercase mb-1">Email
+                                                Address</label>
+                                        <input class="w-full border border-gray-200 rounded-lg p-3 bg-surface focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-on-surface"
+                                                placeholder="Enter your email" type="email" required>
+                                </div>
+                                <div>
+                                        <label
+                                                class="block text-xs font-bold text-primary uppercase mb-1">Message</label>
+                                        <textarea
+                                                class="w-full border border-gray-200 rounded-lg p-3 bg-surface focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-on-surface"
+                                                placeholder="Tell us about your needs" rows="3" required></textarea>
+                                </div>
+                                <button class="w-full bg-secondary text-white py-4 rounded-xl font-bold shadow-lg hover:brightness-110 transition-all active:scale-95 uppercase tracking-wider text-sm"
+                                        type="submit">Submit Now</button>
+                        </form>
+                </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-[#001e2d] pt-20 pb-8 text-on-tertiary">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-margin-desktop max-w-container-max mx-auto mb-20">
+                        <div class="space-y-8">
+                                <a href="index.html" class="inline-block"><img src="assets/images/logo.png"
+                                                alt="Zigma Software Logo" class="h-14 w-auto"></a>
+                                <p class="text-surface-variant/70 text-lg leading-relaxed font-medium">
+                                        Zigma Software, Erode is a trusted digital solutions company delivering web,
+                                        mobile app, and software solutions to grow your business.
+                                </p>
+
+                        </div>
+                        <div>
+                                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Get In
+                                        Touch</h4>
+                                <ul class="space-y-6 text-surface-variant/80 font-medium">
+                                        <li class="flex gap-4">
+                                                <span
+                                                        class="material-symbols-outlined text-secondary shrink-0">location_on</span>
+                                                <span class="">Door No: 4/1c.12-A, Annamalai Gounder Layout, 1st Floor,
+                                                        Near Hotel Vignesh, Mettur Road, Erode. Tamil Nadu, India</span>
+                                        </li>
+                                        <li class="flex gap-4">
+                                                <span
+                                                        class="material-symbols-outlined text-secondary shrink-0">phone</span>
+                                                <span class="">+91-9942364454, 9791902386</span>
+                                        </li>
+                                        <li class="flex gap-4">
+                                                <span
+                                                        class="material-symbols-outlined text-secondary shrink-0">mail</span>
+                                                <span class="">info@zigmasoftware.in</span>
+                                        </li>
+                                </ul>
+                        </div>
+                        <div>
+                                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">
+                                        Important Links</h4>
+                                <ul class="space-y-4 font-medium">
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="about.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        About Us</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="products.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Products</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="web-development.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Services</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="blog.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Blogs</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="contact.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Contact Us</a></li>
+                                </ul>
+                        </div>
+                        <div>
+                                <h4 class="text-xl font-black text-white mb-8 border-l-4 border-secondary pl-4">Our
+                                        Services</h4>
+                                <ul class="space-y-4 font-medium">
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="software-support.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Business Analytics</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="mobile-development.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Mobile App Dev</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="software-support.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        HRMS &amp; Payroll</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="social-marketing.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Social Media Marketing</a></li>
+                                        <li class=""><a class="text-surface-variant/70 hover:text-white transition-all flex items-center gap-3 group"
+                                                        href="web-development.html"><span
+                                                                class="w-2 h-2 bg-secondary rounded-full group-hover:w-6 transition-all"></span>
+                                                        Web Hosting</a></li>
+                                </ul>
+                        </div>
+                </div>
+                <div
+                        class="border-t border-white/5 pt-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-surface-variant/50 text-sm font-medium">
+                        <p class="">© 2026 Zigma Software. All Rights Reserved.</p>
+                        <div class="flex gap-8">
+                                <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                                <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                                <a class="hover:text-white transition-colors" href="#">Cookie Policy</a>
+                        </div>
+                </div>
+        </footer>
+        <script>
+                const observerOptions = { threshold: 0.1 };
+                const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                                }
+                        });
+                }, observerOptions);
+
+                document.querySelectorAll('section > div').forEach(el => {
+                        el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                        observer.observe(el);
+                });
+
+                const prodObserver = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                        entry.target.classList.add('translate-y-0', 'opacity-100');
+                                        entry.target.classList.remove('translate-y-4', 'opacity-0');
+                                }
+                        });
+                }, observerOptions);
+
+                document.querySelectorAll('.transform').forEach(el => {
+                        prodObserver.observe(el);
+                });
+
+                function toggleQuotationForm() {
+                        const modal = document.getElementById('quotation-modal');
+                        modal.classList.toggle('hidden');
+                }
+        </script>
+        <script>
+                function toggleDropdown(btn) {
+                        const item = btn.closest('.dropdown-item');
+                        const all = document.querySelectorAll('.dropdown-item');
+                        all.forEach(i => {
+                                if (i !== item) i.classList.remove('active');
+                        });
+                        item.classList.toggle('active');
+                }
+        </script>
+
+        <script src="assets/js/nav.js"></script>
+</body>
+
+</html>
